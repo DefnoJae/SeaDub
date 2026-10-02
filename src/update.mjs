@@ -14,14 +14,14 @@ const FEED_URL =
   "https://raw.githubusercontent.com/RockinChaos/AniSchedule/master/raw/dub-episode-feed.json";
 
 const HISTORY_DAYS = Number(process.env.SEADUB_HISTORY_DAYS || 180);
+const FUTURE_DAYS = Number(process.env.SEADUB_FUTURE_DAYS || 90);
+const DAY_MS = 24 * 60 * 60 * 1000;
 const MIN_SCHEDULE_ROWS = 5;
 const MIN_FEED_ROWS = 50;
 
 async function fetchJson(url) {
   const response = await fetch(url, {
-    headers: {
-      "user-agent": "SeaDub/1.0"
-    }
+    headers: { "user-agent": "SeaDub/1.1" }
   });
 
   if (!response.ok) {
@@ -35,8 +35,13 @@ function validDate(value) {
   return typeof value === "string" && !Number.isNaN(Date.parse(value));
 }
 
+function itemKey(item) {
+  return `${item.mediaId}-${item.episodeNumber}`;
+}
+
 function normalizeSchedule(item) {
   const media = item?.media?.media || {};
+  const total = Number(item?.episodes || media?.episodes || 0);
 
   return {
     mediaId: Number(media.id),
@@ -49,11 +54,15 @@ function normalizeSchedule(item) {
       "Unknown",
     episodeNumber: Number(item?.episodeNumber),
     episodeDate: item?.episodeDate,
+    totalEpisodes: Number.isFinite(total) && total > 0 ? total : null,
     format: media?.format || null,
     image: media?.coverImage?.large || media?.coverImage?.medium || null,
-    delayed: Boolean(item?.delayedIndefinitely || item?.delayedText),
+    delayed: Boolean(item?.delayedIndefinitely),
+    delayedIndefinitely: Boolean(item?.delayedIndefinitely),
     delayedText: item?.delayedText || null,
     verified: item?.verified !== false,
+    dateType: "confirmed",
+    projected: false,
     source: "RockinChaos/AniSchedule"
   };
 }
@@ -62,12 +71,37 @@ function normalizeFeed(item) {
   return {
     mediaId: Number(item?.id),
     idMal: item?.idMal == null ? null : Number(item.idMal),
+    title: null,
     format: item?.format || null,
     duration: item?.duration == null ? null : Number(item.duration),
     episodeNumber: Number(item?.episode?.aired),
     episodeDate: item?.episode?.airedAt,
     addedAt: item?.episode?.addedAt || null,
+    dateType: "historical",
+    projected: false,
     source: "RockinChaos/AniSchedule"
+  };
+}
+
+function normalizeCustom(item) {
+  const total = Number(item?.totalEpisodes || item?.episodes || 0);
+
+  return {
+    mediaId: Number(item.mediaId),
+    idMal: item.idMal == null ? null : Number(item.idMal),
+    title: item.title || "Unknown",
+    episodeNumber: Number(item.episodeNumber),
+    episodeDate: item.episodeDate,
+    totalEpisodes: Number.isFinite(total) && total > 0 ? total : null,
+    format: item.format || null,
+    image: item.image || null,
+    delayed: Boolean(item.delayed),
+    delayedIndefinitely: Boolean(item.delayedIndefinitely),
+    delayedText: item.delayedText || null,
+    verified: item.verified !== false,
+    dateType: item.dateType || "confirmed",
+    projected: item.dateType === "projected" || Boolean(item.projected),
+    source: "SeaDub/custom"
   };
 }
 
@@ -78,10 +112,6 @@ function isValidScheduleItem(item) {
     item.episodeNumber > 0 &&
     validDate(item.episodeDate)
   );
-}
-
-function itemKey(item) {
-  return `${item.mediaId}-${item.episodeNumber}`;
 }
 
 async function loadCustomDubs() {
@@ -99,22 +129,6 @@ async function readExistingJson(file) {
   } catch {
     return null;
   }
-}
-
-function normalizeCustom(item) {
-  return {
-    mediaId: Number(item.mediaId),
-    idMal: item.idMal == null ? null : Number(item.idMal),
-    title: item.title || "Unknown",
-    episodeNumber: Number(item.episodeNumber),
-    episodeDate: item.episodeDate,
-    format: item.format || null,
-    image: item.image || null,
-    delayed: Boolean(item.delayed),
-    delayedText: item.delayedText || null,
-    verified: item.verified !== false,
-    source: "SeaDub/custom"
-  };
 }
 
 async function main() {
@@ -138,12 +152,58 @@ async function main() {
     );
   }
 
+  const now = Date.now();
+  const confirmedRows = sourceSchedule
+    .map(normalizeSchedule)
+    .filter(isValidScheduleItem);
+
   const scheduleMap = new Map();
 
-  for (const row of sourceSchedule.map(normalizeSchedule).filter(isValidScheduleItem)) {
+  for (const row of confirmedRows) {
     scheduleMap.set(itemKey(row), row);
   }
 
+  // AniSchedule's current feed normally contains only the current/next dub
+  // episode for each active title. Fill later calendar weeks conservatively
+  // by projecting weekly releases only for verified, non-delayed titles with
+  // a known total episode count. Confirmed/custom rows always override these.
+  for (const row of confirmedRows) {
+    const baseMs = Date.parse(row.episodeDate);
+
+    if (!row.verified) continue;
+    if (row.delayedIndefinitely) continue;
+    if (row.format === "MOVIE") continue;
+    if (!row.totalEpisodes || row.totalEpisodes <= row.episodeNumber) continue;
+    if (baseMs < now - 21 * DAY_MS || baseMs > now + 45 * DAY_MS) continue;
+
+    const maxEpisode = Math.min(row.totalEpisodes, row.episodeNumber + 26);
+
+    for (let ep = row.episodeNumber + 1; ep <= maxEpisode; ep++) {
+      const projectedMs = baseMs + (ep - row.episodeNumber) * 7 * DAY_MS;
+
+      if (projectedMs > now + FUTURE_DAYS * DAY_MS) break;
+
+      const projected = {
+        ...row,
+        episodeNumber: ep,
+        episodeDate: new Date(projectedMs).toISOString(),
+        delayed: false,
+        delayedIndefinitely: false,
+        delayedText: null,
+        dateType: "projected",
+        projected: true,
+        projectionBaseEpisode: row.episodeNumber,
+        projectionBaseDate: row.episodeDate,
+        source: "SeaDub/projection"
+      };
+
+      if (!scheduleMap.has(itemKey(projected))) {
+        scheduleMap.set(itemKey(projected), projected);
+      }
+    }
+  }
+
+  // Manual corrections always win.
   for (const row of customRaw.map(normalizeCustom).filter(isValidScheduleItem)) {
     scheduleMap.set(itemKey(row), row);
   }
@@ -152,7 +212,7 @@ async function main() {
     (a, b) => Date.parse(a.episodeDate) - Date.parse(b.episodeDate)
   );
 
-  const cutoff = Date.now() - HISTORY_DAYS * 24 * 60 * 60 * 1000;
+  const cutoff = now - HISTORY_DAYS * DAY_MS;
   const feedMap = new Map();
 
   for (const row of sourceFeed.map(normalizeFeed)) {
@@ -167,17 +227,21 @@ async function main() {
     }
   }
 
-  // Custom episodes that have already aired also become part of the history feed.
   for (const row of customRaw.map(normalizeCustom).filter(isValidScheduleItem)) {
-    if (Date.parse(row.episodeDate) <= Date.now() && Date.parse(row.episodeDate) >= cutoff) {
+    const ms = Date.parse(row.episodeDate);
+
+    if (ms <= now && ms >= cutoff) {
       feedMap.set(itemKey(row), {
         mediaId: row.mediaId,
         idMal: row.idMal,
+        title: row.title,
         format: row.format,
         duration: null,
         episodeNumber: row.episodeNumber,
         episodeDate: row.episodeDate,
         addedAt: null,
+        dateType: "historical",
+        projected: false,
         source: "SeaDub/custom"
       });
     }
@@ -193,21 +257,48 @@ async function main() {
     );
   }
 
+  const calendarMap = new Map();
+
+  for (const row of feed) {
+    calendarMap.set(itemKey(row), row);
+  }
+
+  // Schedule/current data overrides history for the same episode.
+  for (const row of schedule) {
+    calendarMap.set(itemKey(row), row);
+  }
+
+  const calendar = [...calendarMap.values()]
+    .filter((row) => {
+      const ms = Date.parse(row.episodeDate);
+      return ms >= cutoff && ms <= now + FUTURE_DAYS * DAY_MS;
+    })
+    .sort((a, b) => Date.parse(a.episodeDate) - Date.parse(b.episodeDate));
+
+  const projectedCount = schedule.filter((row) => row.projected).length;
+  const confirmedCount = schedule.length - projectedCount;
+
   const schedulePath = path.join(RAW_DIR, "dub-schedule.json");
   const feedPath = path.join(RAW_DIR, "dub-episode-feed.json");
+  const calendarPath = path.join(RAW_DIR, "calendar.json");
   const healthPath = path.join(RAW_DIR, "health.json");
 
-  const [existingSchedule, existingFeed] = await Promise.all([
+  const [existingSchedule, existingFeed, existingCalendar] = await Promise.all([
     readExistingJson(schedulePath),
-    readExistingJson(feedPath)
+    readExistingJson(feedPath),
+    readExistingJson(calendarPath)
   ]);
 
-  const scheduleChanged = JSON.stringify(existingSchedule) !== JSON.stringify(schedule);
-  const feedChanged = JSON.stringify(existingFeed) !== JSON.stringify(feed);
+  const scheduleChanged =
+    JSON.stringify(existingSchedule) !== JSON.stringify(schedule);
+  const feedChanged =
+    JSON.stringify(existingFeed) !== JSON.stringify(feed);
+  const calendarChanged =
+    JSON.stringify(existingCalendar) !== JSON.stringify(calendar);
 
-  if (!scheduleChanged && !feedChanged) {
+  if (!scheduleChanged && !feedChanged && !calendarChanged) {
     console.log(
-      `SeaDub checked successfully: no data changes (${schedule.length} schedule entries, ${feed.length} feed entries)`
+      `SeaDub checked successfully: no data changes (${confirmedCount} confirmed, ${projectedCount} projected, ${feed.length} history)`
     );
     return;
   }
@@ -216,20 +307,25 @@ async function main() {
     status: "ok",
     updatedAt: new Date().toISOString(),
     scheduleItems: schedule.length,
+    confirmedScheduleItems: confirmedCount,
+    projectedScheduleItems: projectedCount,
     feedItems: feed.length,
+    calendarItems: calendar.length,
     historyDays: HISTORY_DAYS,
+    futureDays: FUTURE_DAYS,
     source: "RockinChaos/AniSchedule",
-    schemaVersion: 1
+    schemaVersion: 2
   };
 
   await Promise.all([
     writeFile(schedulePath, JSON.stringify(schedule, null, 2) + "\n"),
     writeFile(feedPath, JSON.stringify(feed, null, 2) + "\n"),
+    writeFile(calendarPath, JSON.stringify(calendar, null, 2) + "\n"),
     writeFile(healthPath, JSON.stringify(health, null, 2) + "\n")
   ]);
 
   console.log(
-    `SeaDub updated: ${schedule.length} schedule entries, ${feed.length} feed entries`
+    `SeaDub updated: ${confirmedCount} confirmed + ${projectedCount} projected schedule entries, ${feed.length} history entries, ${calendar.length} calendar rows`
   );
 }
 
