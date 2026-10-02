@@ -53,3 +53,8 @@ SeaDub currently normalizes the maintained public dub data from `RockinChaos/Ani
 ## Safety
 
 The updater refuses to overwrite healthy data when the source unexpectedly returns too few schedule/feed rows.
+
+
+## Search
+
+SeaDub's tray includes a case-insensitive title search. It works together with **All**, **Prefer Dubs**, **Dubs Only**, and **Subs Only**. The query is debounced before Seanime's schedule cache is rebuilt, so typing a title does not trigger a refresh for every individual keystroke. Use **Clear** to return to the full calendar.
