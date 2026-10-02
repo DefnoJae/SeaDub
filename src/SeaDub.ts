@@ -177,15 +177,17 @@ function init() {
 
                 try {
                     console.log(
-                        "SeaDub: rebuilding Seanime schedule cache",
+                        "SeaDub: clearing Seanime schedule cache",
                     );
 
-                    // Seanime caches /library/schedule server-side.
-                    // Refreshing the AniList collection is currently the
-                    // supported way to clear that cache so SeaDub's hook
-                    // can re-run immediately after a filter/format change.
-                    await $anilist.getAnimeCollection(true);
+                    // Seanime exposes a dedicated schedule-cache API to plugins.
+                    // This avoids refreshing the entire AniList collection just
+                    // to make a SeaDub filter/format change take effect.
+                    ctx.anime.clearScheduleCache();
 
+                    // Ask the React client to refetch /library/schedule.
+                    // The AniList collection and platform caches remain intact,
+                    // so this should normally complete almost immediately.
                     invalidateSchedule();
 
                     if (showToast) {
@@ -195,11 +197,10 @@ function init() {
                     }
                 } catch (error) {
                     console.error(
-                        "SeaDub: schedule cache rebuild failed",
+                        "SeaDub: schedule cache clear failed",
                         error,
                     );
 
-                    // Still ask the client to refetch whatever is cached.
                     invalidateSchedule();
                 } finally {
                     rebuildInFlight = false;
