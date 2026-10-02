@@ -29,6 +29,49 @@ function init() {
 
             const prefixes = ["🎙️Dub - ", "🎙️ - ", "[DUB] "];
 
+            // Build the complete schedule first. The tray needs this unfiltered
+            // snapshot so Highlights can contain both subs and dubs.
+            e.next();
+
+            const baseSubItems = (e.items || []).filter((item) => {
+                const title = item?.title || "";
+                return !prefixes.some((prefix) =>
+                    title.startsWith(prefix),
+                );
+            });
+
+            const highlightsMap = new Map();
+
+            for (const item of baseSubItems) {
+                highlightsMap.set(
+                    `sub-${item?.mediaId}-${item?.episodeNumber}-${item?.dateTime || item?.time || ""}`,
+                    {
+                        ...item,
+                        isDub: false,
+                        releaseType: "sub",
+                    },
+                );
+            }
+
+            for (const item of rawDubItems) {
+                highlightsMap.set(
+                    `dub-${item?.mediaId}-${item?.episodeNumber}-${item?.dateTime || item?.time || ""}`,
+                    {
+                        ...item,
+                        isDub: true,
+                        releaseType: "dub",
+                    },
+                );
+            }
+
+            $store.set(
+                "seadub-all-schedule-items",
+                Array.from(highlightsMap.values()),
+            );
+
+            const subItems =
+                baseSubItems.filter(matchesSearch);
+
             const dubItems = rawDubItems
                 .filter(matchesSearch)
                 .map((item) => ({
@@ -38,35 +81,7 @@ function init() {
 
             if (filter === "dub") {
                 e.items = dubItems;
-
-                e.items?.sort(
-                    (a, b) =>
-                        new Date(a.dateTime).getTime() -
-                        new Date(b.dateTime).getTime(),
-                );
-
-                console.log(
-                    `SeaDub: applied schedule filter=dub search="${searchQuery}" dubs=${dubItems.length} final=${e.items?.length || 0}`,
-                );
-
-                // Intentionally do not call e.next().
-                // Dubs Only does not need rows from downstream schedule plugins.
-                return;
-            }
-
-            // Let other schedule plugins finish before applying SeaDub's final filter.
-            e.next();
-
-            const subItems = (e.items || [])
-                .filter((item) => {
-                    const title = item?.title || "";
-                    return !prefixes.some((prefix) =>
-                        title.startsWith(prefix),
-                    );
-                })
-                .filter(matchesSearch);
-
-            if (filter === "sub") {
+            } else if (filter === "sub") {
                 e.items = subItems;
             } else if (filter === "prefer-dub") {
                 const merged = new Map();
@@ -113,7 +128,7 @@ function init() {
             );
 
             console.log(
-                `SeaDub: applied schedule filter=${filter} search="${searchQuery}" dubs=${dubItems.length} subs=${subItems.length} final=${e.items?.length || 0}`,
+                `SeaDub: applied schedule filter=${filter} search="${searchQuery}" dubs=${dubItems.length} subs=${subItems.length} highlights=${highlightsMap.size} final=${e.items?.length || 0}`,
             );
         } catch (error) {
             console.error("SeaDub: schedule hook error", error);
@@ -127,6 +142,9 @@ function init() {
     $ui.register(async (ctx) => {
         const SCHEDULE_QUERY_KEY =
             "ANIME-COLLECTION-get-anime-collection-schedule";
+
+        const ICON_URL =
+            "https://raw.githubusercontent.com/DefnoJae/SeaDub/refs/heads/main/assets/seadub.png";
 
         const CALENDAR_URL =
             "https://raw.githubusercontent.com/DefnoJae/SeaDub/refs/heads/main/raw/calendar.json";
@@ -189,6 +207,7 @@ function init() {
 
         const tray = ctx.newTray({
             tooltipText: "SeaDub Schedule",
+            iconUrl: ICON_URL,
             withContent: true,
             width: "600px",
         });
@@ -724,11 +743,38 @@ function init() {
                     searchMatches,
                 );
 
+            const allScheduleItems =
+                $store.get(
+                    "seadub-all-schedule-items",
+                ) || allDubItems.map(
+                    (item) => ({
+                        ...item,
+                        isDub: true,
+                        releaseType: "dub",
+                    }),
+                );
+
             const now =
                 new Date();
 
             const nowMs =
                 now.getTime();
+
+            const todayStart =
+                new Date(now);
+
+            todayStart.setHours(
+                0,
+                0,
+                0,
+                0,
+            );
+
+            const tomorrowStart =
+                new Date(
+                    todayStart.getTime() +
+                        24 * 60 * 60 * 1000,
+                );
 
             const weekStart =
                 new Date(now);
@@ -795,9 +841,22 @@ function init() {
                         ),
                 ).length;
 
-            const upcomingHighlights =
-                futureItems
-                    .slice()
+            const todayHighlights =
+                allScheduleItems
+                    .filter((item) => {
+                        const time =
+                            new Date(
+                                item?.dateTime,
+                            ).getTime();
+
+                        return (
+                            Number.isFinite(time) &&
+                            time >=
+                                todayStart.getTime() &&
+                            time <
+                                tomorrowStart.getTime()
+                        );
+                    })
                     .sort(
                         (a, b) =>
                             new Date(
@@ -806,8 +865,34 @@ function init() {
                             new Date(
                                 b.dateTime,
                             ).getTime(),
+                    );
+
+            const searchedUpcomingHighlights =
+                allScheduleItems
+                    .filter(
+                        (item) =>
+                            searchMatches(item) &&
+                            new Date(
+                                item?.dateTime,
+                            ).getTime() >=
+                                nowMs,
                     )
-                    .slice(0, 2);
+                    .sort(
+                        (a, b) =>
+                            new Date(
+                                a.dateTime,
+                            ).getTime() -
+                            new Date(
+                                b.dateTime,
+                            ).getTime(),
+                    );
+
+            // Empty search: every release on the current day.
+            // Active search: the complete future episode list for that title.
+            const upcomingHighlights =
+                normalizedSearch
+                    ? searchedUpcomingHighlights
+                    : todayHighlights;
 
             const formatShortDate =
                 (value) => {
@@ -984,19 +1069,25 @@ function init() {
                                                               ),
 
                                                               tray.span(
-                                                                  "🎙  Dub",
+                                                                  item?.isDub
+                                                                      ? "🎙  Dub"
+                                                                      : "Sub",
                                                                   {
                                                                       className:
-                                                                          "seadub-dub-badge",
+                                                                          item?.isDub
+                                                                              ? "seadub-dub-badge"
+                                                                              : "seadub-sub-badge",
                                                                   },
                                                               ),
                                                           ],
                                                       }),
 
                                                       tray.text(
-                                                          item?.projected
-                                                              ? "Projected release"
-                                                              : "Confirmed release",
+                                                          item?.isDub
+                                                              ? item?.projected
+                                                                  ? "Projected dub release"
+                                                                  : "Dub release"
+                                                              : "Sub release",
                                                           {
                                                               className:
                                                                   "seadub-highlight-meta",
@@ -1057,8 +1148,8 @@ function init() {
                               [
                                   tray.text(
                                       normalizedSearch
-                                          ? "No upcoming dub releases match this search."
-                                          : "No upcoming dub releases are available yet.",
+                                          ? "No upcoming episodes match this search."
+                                          : "No episodes are scheduled for today.",
                                       {
                                           className:
                                               "seadub-empty-text",
@@ -1120,32 +1211,16 @@ function init() {
                         }
 
                         .seadub-logo {
-                            width: 48px;
-                            height: 48px;
+                            width: 48px !important;
+                            height: 48px !important;
                             min-width: 48px;
                             border-radius: 14px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            font-size: 24px;
-                            font-weight: 900;
-                            font-style: italic;
-                            color: white;
-                            border: 1px solid rgba(196, 181, 253, 0.58);
-                            background:
-                                radial-gradient(circle at 30% 20%, rgba(196, 181, 253, 0.95), transparent 30%),
-                                linear-gradient(145deg, #7c3aed 0%, #4f46e5 52%, #24185e 100%);
+                            object-fit: cover;
+                            display: block;
+                            border: 1px solid rgba(196, 181, 253, 0.42);
                             box-shadow:
-                                0 8px 25px rgba(124, 58, 237, 0.35),
-                                inset 0 1px 0 rgba(255,255,255,0.18);
-                        }
-
-                        .seadub-logo-letter {
-                            font-size: 24px;
-                            line-height: 1;
-                            font-weight: 900;
-                            font-style: italic;
-                            color: white;
+                                0 8px 25px rgba(124, 58, 237, 0.28),
+                                inset 0 1px 0 rgba(255,255,255,0.12);
                         }
 
                         .seadub-title {
@@ -1182,15 +1257,25 @@ function init() {
 
                         .seadub-search-wrap {
                             margin-bottom: 10px;
-                            padding: 2px;
+                            padding: 4px;
                             border-radius: 14px;
                             border: 1px solid rgba(139, 92, 246, 0.52);
                             background: rgba(17, 16, 30, 0.86);
                             box-shadow: 0 0 0 1px rgba(124, 58, 237, 0.08), 0 8px 26px rgba(0,0,0,0.18);
                         }
 
+                        .seadub-search-row {
+                            width: 100%;
+                            align-items: center;
+                        }
+
+                        .seadub-search-input {
+                            flex: 1;
+                            min-width: 0;
+                        }
+
                         .seadub-search-wrap input {
-                            min-height: 38px;
+                            min-height: 36px;
                             border: 0 !important;
                             background: transparent !important;
                             box-shadow: none !important;
@@ -1200,6 +1285,10 @@ function init() {
                         .seadub-clear-search {
                             width: 62px;
                             min-width: 62px;
+                            height: 34px;
+                            min-height: 34px !important;
+                            align-self: center;
+                            margin: 0 !important;
                             border-radius: 10px !important;
                         }
 
@@ -1374,15 +1463,25 @@ function init() {
                             color: #f8fafc;
                         }
 
-                        .seadub-dub-badge {
+                        .seadub-dub-badge,
+                        .seadub-sub-badge {
                             flex: none;
                             padding: 3px 7px;
                             border-radius: 999px;
                             font-size: 9px;
                             font-weight: 800;
+                        }
+
+                        .seadub-dub-badge {
                             color: #c4b5fd;
                             background: rgba(124, 58, 237, 0.18);
                             border: 1px solid rgba(167, 139, 250, 0.16);
+                        }
+
+                        .seadub-sub-badge {
+                            color: #93c5fd;
+                            background: rgba(59, 130, 246, 0.13);
+                            border: 1px solid rgba(96, 165, 250, 0.16);
                         }
 
                         .seadub-highlight-meta {
@@ -1478,21 +1577,18 @@ function init() {
                                 className:
                                     "seadub-brand",
                                 items: [
-                                    tray.div(
-                                        [
-                                            tray.text(
-                                                "S",
-                                                {
-                                                    className:
-                                                        "seadub-logo-letter",
-                                                },
-                                            ),
-                                        ],
-                                        {
-                                            className:
-                                                "seadub-logo",
-                                        },
-                                    ),
+                                    tray.img({
+                                        src:
+                                            ICON_URL,
+                                        alt:
+                                            "SeaDub",
+                                        width:
+                                            "48px",
+                                        height:
+                                            "48px",
+                                        className:
+                                            "seadub-logo",
+                                    }),
 
                                     tray.div(
                                         [
@@ -1541,6 +1637,8 @@ function init() {
                         [
                             tray.flex({
                                 gap: 2,
+                                className:
+                                    "seadub-search-row",
                                 items: [
                                     tray.input({
                                         placeholder:
@@ -1745,7 +1843,9 @@ function init() {
                         gap: 2,
                         items: [
                             tray.text(
-                                "✦ Upcoming Highlights",
+                                normalizedSearch
+                                    ? "✦ Upcoming Search Results"
+                                    : "✦ Today’s Highlights",
                                 {
                                     className:
                                         "seadub-highlights-label",
@@ -1753,7 +1853,9 @@ function init() {
                             ),
 
                             tray.text(
-                                `${futureItems.length} upcoming`,
+                                normalizedSearch
+                                    ? `${upcomingHighlights.length} upcoming`
+                                    : `${upcomingHighlights.length} today`,
                                 {
                                     className:
                                         "seadub-highlights-note",
