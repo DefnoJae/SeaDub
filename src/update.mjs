@@ -93,6 +93,14 @@ async function loadCustomDubs() {
   }
 }
 
+async function readExistingJson(file) {
+  try {
+    return JSON.parse(await readFile(file, "utf8"));
+  } catch {
+    return null;
+  }
+}
+
 function normalizeCustom(item) {
   return {
     mediaId: Number(item.mediaId),
@@ -185,6 +193,25 @@ async function main() {
     );
   }
 
+  const schedulePath = path.join(RAW_DIR, "dub-schedule.json");
+  const feedPath = path.join(RAW_DIR, "dub-episode-feed.json");
+  const healthPath = path.join(RAW_DIR, "health.json");
+
+  const [existingSchedule, existingFeed] = await Promise.all([
+    readExistingJson(schedulePath),
+    readExistingJson(feedPath)
+  ]);
+
+  const scheduleChanged = JSON.stringify(existingSchedule) !== JSON.stringify(schedule);
+  const feedChanged = JSON.stringify(existingFeed) !== JSON.stringify(feed);
+
+  if (!scheduleChanged && !feedChanged) {
+    console.log(
+      `SeaDub checked successfully: no data changes (${schedule.length} schedule entries, ${feed.length} feed entries)`
+    );
+    return;
+  }
+
   const health = {
     status: "ok",
     updatedAt: new Date().toISOString(),
@@ -196,18 +223,9 @@ async function main() {
   };
 
   await Promise.all([
-    writeFile(
-      path.join(RAW_DIR, "dub-schedule.json"),
-      JSON.stringify(schedule, null, 2) + "\n"
-    ),
-    writeFile(
-      path.join(RAW_DIR, "dub-episode-feed.json"),
-      JSON.stringify(feed, null, 2) + "\n"
-    ),
-    writeFile(
-      path.join(RAW_DIR, "health.json"),
-      JSON.stringify(health, null, 2) + "\n"
-    )
+    writeFile(schedulePath, JSON.stringify(schedule, null, 2) + "\n"),
+    writeFile(feedPath, JSON.stringify(feed, null, 2) + "\n"),
+    writeFile(healthPath, JSON.stringify(health, null, 2) + "\n")
   ]);
 
   console.log(
