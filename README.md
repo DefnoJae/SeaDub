@@ -63,3 +63,10 @@ SeaDub's tray includes a case-insensitive title search. It works together with *
 ## Control Center redesign
 
 SeaDub 1.3 introduces a redesigned tray control center with a wider glass-style dashboard, quick schedule statistics, segmented schedule/label controls, title search, upcoming dub highlights, and the existing refresh controls. The schedule feed, filtering rules, projection behavior, search behavior, and cache logic remain unchanged.
+
+
+## Daily highlights
+
+With an empty search box, the SeaDub tray shows every scheduled episode for the current day from Seanime's combined schedule, including both sub and dub entries. When a title search is active, Highlights switches to the complete upcoming episode list matching that anime.
+
+SeaDub 1.4 also uses the calendar artwork in `assets/seadub.png` for the collapsed tray, pop-out header, and extension icon.
