@@ -6,6 +6,19 @@ function init() {
             const filter = $store.get("seadub-filter") || "all";
             const dubFormat = $store.get("seadub-format") || "icon";
             const rawDubItems = $store.get("seadub-items") || [];
+            const searchQuery = String(
+                $store.get("seadub-search") || "",
+            )
+                .trim()
+                .toLowerCase();
+
+            const matchesSearch = (item) => {
+                if (!searchQuery) return true;
+
+                return String(item?.title || "")
+                    .toLowerCase()
+                    .includes(searchQuery);
+            };
 
             let dubPrefix = "🎙️Dub - ";
             if (dubFormat === "bracket") {
@@ -16,10 +29,12 @@ function init() {
 
             const prefixes = ["🎙️Dub - ", "🎙️ - ", "[DUB] "];
 
-            const dubItems = rawDubItems.map((item) => ({
-                ...item,
-                title: `${dubPrefix}${item.title}`,
-            }));
+            const dubItems = rawDubItems
+                .filter(matchesSearch)
+                .map((item) => ({
+                    ...item,
+                    title: `${dubPrefix}${item.title}`,
+                }));
 
             if (filter === "dub") {
                 e.items = dubItems;
@@ -31,7 +46,7 @@ function init() {
                 );
 
                 console.log(
-                    `SeaDub: applied schedule filter=dub dubs=${dubItems.length} final=${e.items?.length || 0}`,
+                    `SeaDub: applied schedule filter=dub search="${searchQuery}" dubs=${dubItems.length} final=${e.items?.length || 0}`,
                 );
 
                 // Intentionally do not call e.next().
@@ -42,10 +57,14 @@ function init() {
             // Let other schedule plugins finish before applying SeaDub's final filter.
             e.next();
 
-            const subItems = (e.items || []).filter((item) => {
-                const title = item?.title || "";
-                return !prefixes.some((prefix) => title.startsWith(prefix));
-            });
+            const subItems = (e.items || [])
+                .filter((item) => {
+                    const title = item?.title || "";
+                    return !prefixes.some((prefix) =>
+                        title.startsWith(prefix),
+                    );
+                })
+                .filter(matchesSearch);
 
             if (filter === "sub") {
                 e.items = subItems;
@@ -94,7 +113,7 @@ function init() {
             );
 
             console.log(
-                `SeaDub: applied schedule filter=${filter} dubs=${dubItems.length} subs=${subItems.length} final=${e.items?.length || 0}`,
+                `SeaDub: applied schedule filter=${filter} search="${searchQuery}" dubs=${dubItems.length} subs=${subItems.length} final=${e.items?.length || 0}`,
             );
         } catch (error) {
             console.error("SeaDub: schedule hook error", error);
@@ -145,6 +164,17 @@ function init() {
         $store.set(
             "seadub-format",
             savedFormat,
+        );
+
+        const savedSearch =
+            $storage.get("seadub-search") || "";
+
+        const searchState =
+            ctx.state(savedSearch);
+
+        $store.set(
+            "seadub-search",
+            savedSearch,
         );
 
         const cachedItems =
@@ -250,6 +280,22 @@ function init() {
             queueScheduleRebuild(false);
         };
 
+        const setSearch = (value) => {
+            const nextValue = String(value || "");
+
+            if (searchState.get() === nextValue) {
+                return;
+            }
+
+            searchState.set(nextValue);
+            $storage.set("seadub-search", nextValue);
+            $store.set("seadub-search", nextValue);
+
+            // Uses the same debounce as the other controls so typing
+            // several characters does not rebuild the schedule each time.
+            queueScheduleRebuild(false);
+        };
+
         ctx.registerEventHandler(
             "seadub-filter-all",
             () => setFilter("all"),
@@ -283,6 +329,11 @@ function init() {
         ctx.registerEventHandler(
             "seadub-format-bracket",
             () => setFormat("bracket"),
+        );
+
+        ctx.registerEventHandler(
+            "seadub-search-clear",
+            () => setSearch(""),
         );
 
         let retryCount = 0;
@@ -627,12 +678,63 @@ function init() {
             const currentFormat =
                 formatState.get();
 
+            const currentSearch =
+                searchState.get();
+
             return tray.stack({
                 gap: 2,
 
                 items: [
                     tray.text(
                         "SeaDub Schedule",
+                    ),
+
+                    tray.flex({
+                        gap: 1,
+                        items: [
+                            tray.input({
+                                placeholder:
+                                    "Search anime...",
+                                value:
+                                    currentSearch,
+                                onChange:
+                                    ctx.eventHandler(
+                                        "seadub-search-change",
+                                        (event) =>
+                                            setSearch(
+                                                event?.value ||
+                                                    "",
+                                            ),
+                                    ),
+                                style: {
+                                    width: "100%",
+                                },
+                            }),
+
+                            tray.button(
+                                "Clear",
+                                {
+                                    intent:
+                                        "gray-subtle",
+                                    disabled:
+                                        !currentSearch,
+                                    onClick:
+                                        "seadub-search-clear",
+                                },
+                            ),
+                        ],
+                    }),
+
+                    tray.text(
+                        currentSearch
+                            ? `Showing titles matching “${currentSearch}”`
+                            : "Search filters the calendar by anime title.",
+                        {
+                            style: {
+                                opacity: "0.65",
+                                fontSize: "12px",
+                            },
+                        },
                     ),
 
                     tray.button(
