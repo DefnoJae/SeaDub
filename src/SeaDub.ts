@@ -1,7 +1,15 @@
 function init() {
     // Inject SeaDub entries into Seanime's schedule response.
+    //
+    // IMPORTANT: Run SeaDub's filtering AFTER every hook registered after us.
+    // Other schedule plugins (for example LiveChart Schedule) may append items
+    // when e.next() is called. If we filter before e.next(), those plugins can
+    // add sub entries back afterwards, making "Dubs Only" look broken.
     $app.onAnimeScheduleItems((e) => {
         try {
+            // Let the rest of Seanime's schedule hook chain finish first.
+            e.next();
+
             const dubFormat = $store.get("seadub-format") || "icon";
             let dubPrefix = "🎙️Dub - ";
 
@@ -13,7 +21,9 @@ function init() {
 
             const prefixes = ["🎙️Dub - ", "🎙️ - ", "[DUB] "];
 
-            // Remove previously injected SeaDub rows before rebuilding.
+            // Work from the FINAL schedule after every downstream hook has run.
+            // Strip dub rows injected by other/older dub schedule hooks so SeaDub
+            // is the single source of truth for dub formatting and filtering.
             const subItems = (e.items || []).filter((item) => {
                 const title = item?.title || "";
                 return !prefixes.some((prefix) => title.startsWith(prefix));
@@ -28,8 +38,10 @@ function init() {
             }));
 
             if (filter === "dub") {
+                // Final output contains ONLY SeaDub rows.
                 e.items = dubItems;
             } else if (filter === "sub") {
+                // Final output contains only non-dub rows.
                 e.items = subItems;
             } else if (filter === "prefer-dub") {
                 const merged = new Map();
@@ -38,14 +50,14 @@ function init() {
                     merged.set(`${item.mediaId}-${item.episodeNumber}`, item);
                 }
 
+                // SeaDub replaces the matching sub entry.
                 for (const item of dubItems) {
-                    // Dub replaces sub when both represent the same media + episode.
                     merged.set(`${item.mediaId}-${item.episodeNumber}`, item);
                 }
 
                 e.items = Array.from(merged.values());
             } else {
-                // Keep subs and dubs side by side.
+                // All: keep sub and dub rows side-by-side.
                 const merged = new Map();
 
                 for (const item of subItems) {
@@ -64,10 +76,12 @@ function init() {
                 const bTime = b?.dateTime ? new Date(b.dateTime).getTime() : 0;
                 return aTime - bTime;
             });
+
+            console.log(
+                `SeaDub: applied schedule filter=${filter} format=${dubFormat} dubs=${dubItems.length} final=${e.items?.length || 0}`,
+            );
         } catch (error) {
             console.error("SeaDub: schedule hook error", error);
-        } finally {
-            e.next();
         }
     });
 
