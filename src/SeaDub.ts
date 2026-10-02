@@ -190,8 +190,7 @@ function init() {
         const tray = ctx.newTray({
             tooltipText: "SeaDub Schedule",
             withContent: true,
-            width: "720px",
-            minHeight: "620px",
+            width: "600px",
         });
 
         let pendingRebuildCancel = null;
@@ -808,7 +807,7 @@ function init() {
                                 b.dateTime,
                             ).getTime(),
                     )
-                    .slice(0, 3);
+                    .slice(0, 2);
 
             const formatShortDate =
                 (value) => {
@@ -985,7 +984,7 @@ function init() {
                                                               ),
 
                                                               tray.span(
-                                                                  "🎙 Dub",
+                                                                  "🎙  Dub",
                                                                   {
                                                                       className:
                                                                           "seadub-dub-badge",
@@ -1105,15 +1104,15 @@ function init() {
                         .seadub-content {
                             position: relative;
                             z-index: 1;
-                            padding: 18px;
-                            max-height: min(790px, 82vh);
+                            padding: 14px;
+                            max-height: min(650px, 76vh);
                             overflow-y: auto;
                         }
 
                         .seadub-header {
                             align-items: center;
                             justify-content: space-between;
-                            margin-bottom: 16px;
+                            margin-bottom: 12px;
                         }
 
                         .seadub-brand {
@@ -1121,14 +1120,14 @@ function init() {
                         }
 
                         .seadub-logo {
-                            width: 58px;
-                            height: 58px;
-                            min-width: 58px;
-                            border-radius: 16px;
+                            width: 48px;
+                            height: 48px;
+                            min-width: 48px;
+                            border-radius: 14px;
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            font-size: 30px;
+                            font-size: 24px;
                             font-weight: 900;
                             font-style: italic;
                             color: white;
@@ -1142,7 +1141,7 @@ function init() {
                         }
 
                         .seadub-logo-letter {
-                            font-size: 30px;
+                            font-size: 24px;
                             line-height: 1;
                             font-weight: 900;
                             font-style: italic;
@@ -1150,7 +1149,7 @@ function init() {
                         }
 
                         .seadub-title {
-                            font-size: 26px;
+                            font-size: 22px;
                             line-height: 1;
                             font-weight: 800;
                             letter-spacing: -0.03em;
@@ -1158,20 +1157,20 @@ function init() {
                         }
 
                         .seadub-subtitle {
-                            margin-top: 5px;
-                            font-size: 13px;
+                            margin-top: 4px;
+                            font-size: 12px;
                             color: rgba(221, 214, 254, 0.7);
                         }
 
                         .seadub-sync-pill {
                             align-items: center;
                             gap: 7px;
-                            padding: 8px 12px;
+                            padding: 7px 10px;
                             border-radius: 999px;
                             border: 1px solid rgba(52, 211, 153, 0.2);
                             background: rgba(16, 185, 129, 0.10);
                             color: #6ee7b7;
-                            font-size: 12px;
+                            font-size: 10px;
                             font-weight: 700;
                         }
 
@@ -1182,8 +1181,8 @@ function init() {
                         }
 
                         .seadub-search-wrap {
-                            margin-bottom: 14px;
-                            padding: 3px;
+                            margin-bottom: 10px;
+                            padding: 2px;
                             border-radius: 14px;
                             border: 1px solid rgba(139, 92, 246, 0.52);
                             background: rgba(17, 16, 30, 0.86);
@@ -1191,7 +1190,7 @@ function init() {
                         }
 
                         .seadub-search-wrap input {
-                            min-height: 44px;
+                            min-height: 38px;
                             border: 0 !important;
                             background: transparent !important;
                             box-shadow: none !important;
@@ -1199,22 +1198,22 @@ function init() {
                         }
 
                         .seadub-clear-search {
-                            width: 78px;
-                            min-width: 78px;
+                            width: 62px;
+                            min-width: 62px;
                             border-radius: 10px !important;
                         }
 
                         .seadub-stats {
                             display: grid !important;
                             grid-template-columns: repeat(4, minmax(0, 1fr));
-                            gap: 9px !important;
-                            margin-bottom: 18px;
+                            gap: 7px !important;
+                            margin-bottom: 12px;
                         }
 
                         .seadub-stat-card {
                             min-width: 0;
-                            padding: 11px 12px;
-                            border-radius: 14px;
+                            padding: 7px 8px;
+                            border-radius: 12px;
                             border: 1px solid rgba(255,255,255,0.075);
                             background: linear-gradient(160deg, rgba(255,255,255,0.065), rgba(255,255,255,0.025));
                             box-shadow: inset 0 1px 0 rgba(255,255,255,0.025);
@@ -1231,8 +1230,8 @@ function init() {
                         }
 
                         .seadub-stat-value {
-                            margin-top: 5px;
-                            font-size: 22px;
+                            margin-top: 4px;
+                            font-size: 18px;
                             line-height: 1;
                             font-weight: 800;
                             color: #f8fafc;
@@ -1243,17 +1242,17 @@ function init() {
                         .seadub-tone-violet { color: #a78bfa; }
 
                         .seadub-section {
-                            margin-top: 15px;
+                            margin-top: 11px;
                         }
 
                         .seadub-section-header {
                             align-items: end;
                             justify-content: space-between;
-                            margin-bottom: 8px;
+                            margin-bottom: 6px;
                         }
 
                         .seadub-section-title {
-                            font-size: 13px;
+                            font-size: 12px;
                             font-weight: 800;
                             color: #f8fafc;
                         }
@@ -1272,8 +1271,8 @@ function init() {
 
                         .seadub-mode-button,
                         .seadub-format-button {
-                            min-height: 40px;
-                            border-radius: 12px !important;
+                            min-height: 36px;
+                            border-radius: 10px !important;
                             font-weight: 700 !important;
                             border: 1px solid rgba(255,255,255,0.075) !important;
                             background: rgba(255,255,255,0.045) !important;
@@ -1294,14 +1293,14 @@ function init() {
 
                         .seadub-divider {
                             height: 1px;
-                            margin: 17px 0 12px;
+                            margin: 12px 0 9px;
                             background: linear-gradient(90deg, transparent, rgba(167,139,250,0.18), rgba(255,255,255,0.08), transparent);
                         }
 
                         .seadub-highlights-head {
                             align-items: center;
                             justify-content: space-between;
-                            margin-bottom: 7px;
+                            margin-bottom: 5px;
                         }
 
                         .seadub-highlights-label {
@@ -1315,7 +1314,7 @@ function init() {
                         }
 
                         .seadub-highlights-list {
-                            border-radius: 15px;
+                            border-radius: 12px;
                             overflow: hidden;
                             border: 1px solid rgba(255,255,255,0.065);
                             background: rgba(8, 8, 15, 0.34);
@@ -1335,10 +1334,10 @@ function init() {
                         }
 
                         .seadub-highlight-poster {
-                            width: 46px !important;
-                            height: 62px !important;
-                            min-width: 46px;
-                            border-radius: 9px;
+                            width: 40px !important;
+                            height: 54px !important;
+                            min-width: 40px;
+                            border-radius: 8px;
                             object-fit: cover;
                             border: 1px solid rgba(255,255,255,0.11);
                             background: #161525;
@@ -1366,7 +1365,7 @@ function init() {
                         }
 
                         .seadub-highlight-title {
-                            max-width: 245px;
+                            max-width: 205px;
                             overflow: hidden;
                             text-overflow: ellipsis;
                             white-space: nowrap;
@@ -1393,7 +1392,7 @@ function init() {
                         }
 
                         .seadub-highlight-right {
-                            min-width: 88px;
+                            min-width: 72px;
                             align-items: flex-end;
                             text-align: right;
                         }
@@ -1429,12 +1428,12 @@ function init() {
                             display: grid !important;
                             grid-template-columns: 1.35fr 1fr;
                             gap: 9px !important;
-                            margin-top: 12px;
+                            margin-top: 9px;
                         }
 
                         .seadub-refresh {
-                            min-height: 48px;
-                            border-radius: 13px !important;
+                            min-height: 42px;
+                            border-radius: 11px !important;
                             font-weight: 800 !important;
                             border: 1px solid rgba(167,139,250,0.72) !important;
                             background: linear-gradient(135deg, rgba(109,40,217,0.8), rgba(79,70,229,0.72)) !important;
@@ -1442,19 +1441,19 @@ function init() {
                         }
 
                         .seadub-secondary-action {
-                            min-height: 48px;
-                            border-radius: 13px !important;
+                            min-height: 42px;
+                            border-radius: 11px !important;
                         }
 
                         .seadub-projection-note {
-                            margin-top: 9px;
+                            margin-top: 7px;
                             font-size: 9px;
                             line-height: 1.45;
                             color: rgba(203,213,225,0.42);
                             text-align: center;
                         }
 
-                        @media (max-width: 760px) {
+                        @media (max-width: 640px) {
                             .seadub-stats {
                                 grid-template-columns: repeat(2, minmax(0, 1fr));
                             }
@@ -1568,9 +1567,7 @@ function init() {
                                     }),
 
                                     tray.button(
-                                        currentSearch
-                                            ? "Clear"
-                                            : "Search",
+                                        "Clear",
                                         {
                                             intent:
                                                 "gray-subtle",
@@ -1640,15 +1637,15 @@ function init() {
                                         },
                                     ),
 
-                                    tray.text(
-                                        normalizedSearch
-                                            ? `Filtering “${currentSearch}”`
-                                            : "Choose what appears in your calendar",
-                                        {
-                                            className:
-                                                "seadub-section-help",
-                                        },
-                                    ),
+                                    normalizedSearch
+                                        ? tray.text(
+                                              `Filtering “${currentSearch}”`,
+                                              {
+                                                  className:
+                                                      "seadub-section-help",
+                                              },
+                                          )
+                                        : [],
                                 ],
                                 className:
                                     "seadub-section-header",
@@ -1701,13 +1698,7 @@ function init() {
                                         },
                                     ),
 
-                                    tray.text(
-                                        "How dub releases are labeled",
-                                        {
-                                            className:
-                                                "seadub-section-help",
-                                        },
-                                    ),
+                                    [],
                                 ],
                                 className:
                                     "seadub-section-header",
