@@ -1,21 +1,20 @@
 function init() {
-    const getPrefix = () => {
-        const dubFormat = $store.get("seadub-format") || "icon";
-
-        if (dubFormat === "bracket") return "[DUB] ";
-        if (dubFormat === "icon-only") return "🎙️ - ";
-        return "🎙️Dub - ";
-    };
-
-    const prefixes = ["🎙️Dub - ", "🎙️ - ", "[DUB] "];
-
     // SeaDub is applied after downstream schedule plugins for All/Sub/Prefer Dub.
     // Dubs Only can stop the downstream chain because no sub schedule rows are needed.
     $app.onAnimeScheduleItems((e) => {
         try {
             const filter = $store.get("seadub-filter") || "all";
+            const dubFormat = $store.get("seadub-format") || "icon";
             const rawDubItems = $store.get("seadub-items") || [];
-            const dubPrefix = getPrefix();
+
+            let dubPrefix = "🎙️Dub - ";
+            if (dubFormat === "bracket") {
+                dubPrefix = "[DUB] ";
+            } else if (dubFormat === "icon-only") {
+                dubPrefix = "🎙️ - ";
+            }
+
+            const prefixes = ["🎙️Dub - ", "🎙️ - ", "[DUB] "];
 
             const dubItems = rawDubItems.map((item) => ({
                 ...item,
