@@ -1,13 +1,20 @@
 {
   "name": "SeaDub",
-  "version": 1,
-  "schemaVersion": 1,
+  "version": 2,
+  "schemaVersion": 2,
   "description": "A normalized English-dub anime schedule feed designed for Seanime.",
   "endpoints": {
+    "calendar": "raw/calendar.json",
     "schedule": "raw/dub-schedule.json",
     "episodeFeed": "raw/dub-episode-feed.json",
     "health": "raw/health.json"
   },
   "updateIntervalMinutes": 30,
-  "historyDays": 180
+  "historyDays": 180,
+  "futureDays": 90,
+  "projections": {
+    "enabled": true,
+    "rule": "Verified, non-delayed titles with a known total episode count are projected weekly from the latest confirmed release.",
+    "replacement": "Confirmed and custom rows override projected rows with the same mediaId and episodeNumber."
+  }
 }
