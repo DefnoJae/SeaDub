@@ -58,3 +58,8 @@ The updater refuses to overwrite healthy data when the source unexpectedly retur
 ## Search
 
 SeaDub's tray includes a case-insensitive title search. It works together with **All**, **Prefer Dubs**, **Dubs Only**, and **Subs Only**. The query is debounced before Seanime's schedule cache is rebuilt, so typing a title does not trigger a refresh for every individual keystroke. Use **Clear** to return to the full calendar.
+
+
+## Control Center redesign
+
+SeaDub 1.3 introduces a redesigned tray control center with a wider glass-style dashboard, quick schedule statistics, segmented schedule/label controls, title search, upcoming dub highlights, and the existing refresh controls. The schedule feed, filtering rules, projection behavior, search behavior, and cache logic remain unchanged.
