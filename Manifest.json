@@ -1,11 +1,11 @@
 {
   "id": "SeaDub",
   "name": "SeaDub",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "manifestURI": "https://raw.githubusercontent.com/DefnoJae/SeaDub/refs/heads/main/Manifest.json",
   "language": "typescript",
   "type": "plugin",
-  "description": "Adds English dub release dates from SeaDub to Seanime's release schedule.",
+  "description": "Adds fast English dub release dates and future weekly projections from SeaDub to Seanime's release schedule.",
   "author": "Jae",
   "icon": "",
   "website": "https://github.com/DefnoJae/SeaDub",
