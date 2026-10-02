@@ -190,6 +190,8 @@ function init() {
         const tray = ctx.newTray({
             tooltipText: "SeaDub Schedule",
             withContent: true,
+            width: "720px",
+            minHeight: "620px",
         });
 
         let pendingRebuildCancel = null;
@@ -566,6 +568,21 @@ function init() {
                                         0 &&
                                     episodeNumber ===
                                         totalEpisodes,
+
+                                // UI-only metadata. Seanime ignores these extra
+                                // properties when rendering schedule items.
+                                dateType:
+                                    row?.dateType ||
+                                    (row?.projected
+                                        ? "projected"
+                                        : "confirmed"),
+
+                                projected:
+                                    Boolean(
+                                        row?.projected ||
+                                        row?.dateType ===
+                                            "projected",
+                                    ),
                             },
                         );
                     }
@@ -681,202 +698,1145 @@ function init() {
             const currentSearch =
                 searchState.get();
 
-            return tray.stack({
-                gap: 2,
+            const allDubItems =
+                $store.get(
+                    "seadub-items",
+                ) || [];
 
-                items: [
-                    tray.text(
-                        "SeaDub Schedule",
+            const normalizedSearch =
+                String(
+                    currentSearch || "",
+                )
+                    .trim()
+                    .toLowerCase();
+
+            const searchMatches = (item) =>
+                !normalizedSearch ||
+                String(
+                    item?.title || "",
+                )
+                    .toLowerCase()
+                    .includes(
+                        normalizedSearch,
+                    );
+
+            const matchedDubItems =
+                allDubItems.filter(
+                    searchMatches,
+                );
+
+            const now =
+                new Date();
+
+            const nowMs =
+                now.getTime();
+
+            const weekStart =
+                new Date(now);
+
+            weekStart.setHours(
+                0,
+                0,
+                0,
+                0,
+            );
+
+            weekStart.setDate(
+                weekStart.getDate() -
+                    weekStart.getDay(),
+            );
+
+            const weekEnd =
+                new Date(
+                    weekStart.getTime() +
+                        7 *
+                            24 *
+                            60 *
+                            60 *
+                            1000,
+                );
+
+            const futureItems =
+                matchedDubItems.filter(
+                    (item) =>
+                        new Date(
+                            item?.dateTime,
+                        ).getTime() >=
+                        nowMs,
+                );
+
+            const thisWeekCount =
+                matchedDubItems.filter(
+                    (item) => {
+                        const time =
+                            new Date(
+                                item?.dateTime,
+                            ).getTime();
+
+                        return (
+                            time >=
+                                weekStart.getTime() &&
+                            time <
+                                weekEnd.getTime()
+                        );
+                    },
+                ).length;
+
+            const confirmedCount =
+                futureItems.filter(
+                    (item) =>
+                        !item?.projected,
+                ).length;
+
+            const projectedCount =
+                futureItems.filter(
+                    (item) =>
+                        Boolean(
+                            item?.projected,
+                        ),
+                ).length;
+
+            const upcomingHighlights =
+                futureItems
+                    .slice()
+                    .sort(
+                        (a, b) =>
+                            new Date(
+                                a.dateTime,
+                            ).getTime() -
+                            new Date(
+                                b.dateTime,
+                            ).getTime(),
+                    )
+                    .slice(0, 3);
+
+            const formatShortDate =
+                (value) => {
+                    const date =
+                        new Date(value);
+
+                    const months = [
+                        "Jan",
+                        "Feb",
+                        "Mar",
+                        "Apr",
+                        "May",
+                        "Jun",
+                        "Jul",
+                        "Aug",
+                        "Sep",
+                        "Oct",
+                        "Nov",
+                        "Dec",
+                    ];
+
+                    return `${months[
+                        date.getMonth()
+                    ]} ${date.getDate()}`;
+                };
+
+            const statCard = (
+                icon,
+                label,
+                value,
+                toneClass,
+            ) =>
+                tray.div(
+                    [
+                        tray.flex({
+                            gap: 2,
+                            items: [
+                                tray.span(
+                                    icon,
+                                    {
+                                        className:
+                                            "seadub-stat-icon",
+                                    },
+                                ),
+                                tray.text(
+                                    label,
+                                    {
+                                        className:
+                                            "seadub-stat-label",
+                                    },
+                                ),
+                            ],
+                        }),
+
+                        tray.text(
+                            String(value),
+                            {
+                                className:
+                                    `seadub-stat-value ${toneClass}`,
+                            },
+                        ),
+                    ],
+                    {
+                        className:
+                            "seadub-stat-card",
+                    },
+                );
+
+            const modeButton = (
+                label,
+                value,
+            ) =>
+                tray.button(
+                    label,
+                    {
+                        intent:
+                            currentFilter ===
+                            value
+                                ? "primary"
+                                : "gray-subtle",
+
+                        className:
+                            `seadub-mode-button ${currentFilter === value ? "is-active" : ""}`,
+
+                        onClick:
+                            value === "all"
+                                ? "seadub-filter-all"
+                                : value ===
+                                    "prefer-dub"
+                                  ? "seadub-filter-prefer"
+                                  : value ===
+                                      "dub"
+                                    ? "seadub-filter-dub"
+                                    : "seadub-filter-sub",
+                    },
+                );
+
+            const formatButton = (
+                label,
+                value,
+                event,
+            ) =>
+                tray.button(
+                    label,
+                    {
+                        intent:
+                            currentFormat ===
+                            value
+                                ? "primary"
+                                : "gray-subtle",
+
+                        className:
+                            `seadub-format-button ${currentFormat === value ? "is-active" : ""}`,
+
+                        onClick:
+                            event,
+                    },
+                );
+
+            const highlightRows =
+                upcomingHighlights.length
+                    ? upcomingHighlights.map(
+                          (
+                              item,
+                              index,
+                          ) =>
+                              tray.div(
+                                  [
+                                      tray.flex({
+                                          gap: 3,
+                                          items: [
+                                              item?.image
+                                                  ? tray.img({
+                                                        src:
+                                                            item.image,
+                                                        alt:
+                                                            item.title ||
+                                                            "Anime",
+                                                        width:
+                                                            "46px",
+                                                        height:
+                                                            "62px",
+                                                        className:
+                                                            "seadub-highlight-poster",
+                                                    })
+                                                  : tray.div(
+                                                        [
+                                                            tray.text(
+                                                                "S",
+                                                                {
+                                                                    className:
+                                                                        "seadub-poster-fallback-letter",
+                                                                },
+                                                            ),
+                                                        ],
+                                                        {
+                                                            className:
+                                                                "seadub-highlight-poster seadub-poster-fallback",
+                                                        },
+                                                    ),
+
+                                              tray.div(
+                                                  [
+                                                      tray.flex({
+                                                          gap: 2,
+                                                          items: [
+                                                              tray.text(
+                                                                  item?.title ||
+                                                                      "Unknown",
+                                                                  {
+                                                                      className:
+                                                                          "seadub-highlight-title",
+                                                                  },
+                                                              ),
+
+                                                              tray.span(
+                                                                  "🎙 Dub",
+                                                                  {
+                                                                      className:
+                                                                          "seadub-dub-badge",
+                                                                  },
+                                                              ),
+                                                          ],
+                                                      }),
+
+                                                      tray.text(
+                                                          item?.projected
+                                                              ? "Projected release"
+                                                              : "Confirmed release",
+                                                          {
+                                                              className:
+                                                                  "seadub-highlight-meta",
+                                                          },
+                                                      ),
+                                                  ],
+                                                  {
+                                                      className:
+                                                          "seadub-highlight-info",
+                                                  },
+                                              ),
+
+                                              tray.div(
+                                                  [
+                                                      tray.text(
+                                                          `Ep. ${item?.episodeNumber || 1}`,
+                                                          {
+                                                              className:
+                                                                  "seadub-highlight-episode",
+                                                          },
+                                                      ),
+
+                                                      tray.text(
+                                                          formatShortDate(
+                                                              item?.dateTime,
+                                                          ),
+                                                          {
+                                                              className:
+                                                                  "seadub-highlight-date",
+                                                          },
+                                                      ),
+
+                                                      tray.text(
+                                                          item?.time ||
+                                                              "",
+                                                          {
+                                                              className:
+                                                                  "seadub-highlight-time",
+                                                          },
+                                                      ),
+                                                  ],
+                                                  {
+                                                      className:
+                                                          "seadub-highlight-right",
+                                                  },
+                                              ),
+                                          ],
+                                      }),
+                                  ],
+                                  {
+                                      className:
+                                          `seadub-highlight-row ${index === upcomingHighlights.length - 1 ? "is-last" : ""}`,
+                                  },
+                              ),
+                      )
+                    : [
+                          tray.div(
+                              [
+                                  tray.text(
+                                      normalizedSearch
+                                          ? "No upcoming dub releases match this search."
+                                          : "No upcoming dub releases are available yet.",
+                                      {
+                                          className:
+                                              "seadub-empty-text",
+                                      },
+                                  ),
+                              ],
+                              {
+                                  className:
+                                      "seadub-empty-state",
+                              },
+                          ),
+                      ];
+
+            return tray.div(
+                [
+
+                    tray.css(`
+                        .seadub-shell {
+                            position: relative;
+                            overflow: hidden;
+                            border-radius: 22px;
+                            border: 1px solid rgba(139, 92, 246, 0.42);
+                            background:
+                                radial-gradient(circle at 12% -5%, rgba(124, 58, 237, 0.26), transparent 38%),
+                                radial-gradient(circle at 90% 10%, rgba(79, 70, 229, 0.18), transparent 32%),
+                                linear-gradient(155deg, rgba(20, 18, 33, 0.98), rgba(10, 10, 18, 0.985));
+                            box-shadow:
+                                0 26px 70px rgba(0, 0, 0, 0.5),
+                                inset 0 1px 0 rgba(255,255,255,0.04);
+                            color: #f7f5ff;
+                        }
+
+                        .seadub-shell::before {
+                            content: "";
+                            position: absolute;
+                            inset: 0;
+                            pointer-events: none;
+                            background:
+                                linear-gradient(120deg, rgba(167, 139, 250, 0.07), transparent 32%),
+                                radial-gradient(circle at 72% 0%, rgba(109, 40, 217, 0.12), transparent 30%);
+                        }
+
+                        .seadub-content {
+                            position: relative;
+                            z-index: 1;
+                            padding: 18px;
+                            max-height: min(790px, 82vh);
+                            overflow-y: auto;
+                        }
+
+                        .seadub-header {
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-bottom: 16px;
+                        }
+
+                        .seadub-brand {
+                            align-items: center;
+                        }
+
+                        .seadub-logo {
+                            width: 58px;
+                            height: 58px;
+                            min-width: 58px;
+                            border-radius: 16px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 30px;
+                            font-weight: 900;
+                            font-style: italic;
+                            color: white;
+                            border: 1px solid rgba(196, 181, 253, 0.58);
+                            background:
+                                radial-gradient(circle at 30% 20%, rgba(196, 181, 253, 0.95), transparent 30%),
+                                linear-gradient(145deg, #7c3aed 0%, #4f46e5 52%, #24185e 100%);
+                            box-shadow:
+                                0 8px 25px rgba(124, 58, 237, 0.35),
+                                inset 0 1px 0 rgba(255,255,255,0.18);
+                        }
+
+                        .seadub-title {
+                            font-size: 26px;
+                            line-height: 1;
+                            font-weight: 800;
+                            letter-spacing: -0.03em;
+                            color: #fff;
+                        }
+
+                        .seadub-subtitle {
+                            margin-top: 5px;
+                            font-size: 13px;
+                            color: rgba(221, 214, 254, 0.7);
+                        }
+
+                        .seadub-sync-pill {
+                            align-items: center;
+                            gap: 7px;
+                            padding: 8px 12px;
+                            border-radius: 999px;
+                            border: 1px solid rgba(52, 211, 153, 0.2);
+                            background: rgba(16, 185, 129, 0.10);
+                            color: #6ee7b7;
+                            font-size: 12px;
+                            font-weight: 700;
+                        }
+
+                        .seadub-sync-dot {
+                            color: #34d399;
+                            font-size: 10px;
+                            filter: drop-shadow(0 0 5px rgba(52, 211, 153, 0.8));
+                        }
+
+                        .seadub-search-wrap {
+                            margin-bottom: 14px;
+                            padding: 3px;
+                            border-radius: 14px;
+                            border: 1px solid rgba(139, 92, 246, 0.52);
+                            background: rgba(17, 16, 30, 0.86);
+                            box-shadow: 0 0 0 1px rgba(124, 58, 237, 0.08), 0 8px 26px rgba(0,0,0,0.18);
+                        }
+
+                        .seadub-search-wrap input {
+                            min-height: 44px;
+                            border: 0 !important;
+                            background: transparent !important;
+                            box-shadow: none !important;
+                            font-size: 14px;
+                        }
+
+                        .seadub-clear-search {
+                            width: 78px;
+                            min-width: 78px;
+                            border-radius: 10px !important;
+                        }
+
+                        .seadub-stats {
+                            display: grid !important;
+                            grid-template-columns: repeat(4, minmax(0, 1fr));
+                            gap: 9px !important;
+                            margin-bottom: 18px;
+                        }
+
+                        .seadub-stat-card {
+                            min-width: 0;
+                            padding: 11px 12px;
+                            border-radius: 14px;
+                            border: 1px solid rgba(255,255,255,0.075);
+                            background: linear-gradient(160deg, rgba(255,255,255,0.065), rgba(255,255,255,0.025));
+                            box-shadow: inset 0 1px 0 rgba(255,255,255,0.025);
+                        }
+
+                        .seadub-stat-icon {
+                            font-size: 13px;
+                        }
+
+                        .seadub-stat-label {
+                            font-size: 11px;
+                            color: rgba(226, 232, 240, 0.64);
+                            white-space: nowrap;
+                        }
+
+                        .seadub-stat-value {
+                            margin-top: 5px;
+                            font-size: 22px;
+                            line-height: 1;
+                            font-weight: 800;
+                            color: #f8fafc;
+                        }
+
+                        .seadub-tone-green { color: #6ee7b7; }
+                        .seadub-tone-amber { color: #fdba74; }
+                        .seadub-tone-violet { color: #a78bfa; }
+
+                        .seadub-section {
+                            margin-top: 15px;
+                        }
+
+                        .seadub-section-header {
+                            align-items: end;
+                            justify-content: space-between;
+                            margin-bottom: 8px;
+                        }
+
+                        .seadub-section-title {
+                            font-size: 13px;
+                            font-weight: 800;
+                            color: #f8fafc;
+                        }
+
+                        .seadub-section-help {
+                            font-size: 10px;
+                            color: rgba(203, 213, 225, 0.48);
+                            text-align: right;
+                        }
+
+                        .seadub-mode-grid {
+                            display: grid !important;
+                            grid-template-columns: repeat(4, minmax(0, 1fr));
+                            gap: 8px !important;
+                        }
+
+                        .seadub-mode-button,
+                        .seadub-format-button {
+                            min-height: 40px;
+                            border-radius: 12px !important;
+                            font-weight: 700 !important;
+                            border: 1px solid rgba(255,255,255,0.075) !important;
+                            background: rgba(255,255,255,0.045) !important;
+                        }
+
+                        .seadub-mode-button.is-active,
+                        .seadub-format-button.is-active {
+                            border-color: rgba(167, 139, 250, 0.86) !important;
+                            background: linear-gradient(135deg, rgba(124, 58, 237, 0.88), rgba(99, 102, 241, 0.86)) !important;
+                            box-shadow: 0 7px 22px rgba(124, 58, 237, 0.26), inset 0 1px 0 rgba(255,255,255,0.15) !important;
+                        }
+
+                        .seadub-format-grid {
+                            display: grid !important;
+                            grid-template-columns: repeat(3, minmax(0, 1fr));
+                            gap: 8px !important;
+                        }
+
+                        .seadub-divider {
+                            height: 1px;
+                            margin: 17px 0 12px;
+                            background: linear-gradient(90deg, transparent, rgba(167,139,250,0.18), rgba(255,255,255,0.08), transparent);
+                        }
+
+                        .seadub-highlights-head {
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-bottom: 7px;
+                        }
+
+                        .seadub-highlights-label {
+                            font-size: 13px;
+                            font-weight: 800;
+                        }
+
+                        .seadub-highlights-note {
+                            font-size: 10px;
+                            color: #a78bfa;
+                        }
+
+                        .seadub-highlights-list {
+                            border-radius: 15px;
+                            overflow: hidden;
+                            border: 1px solid rgba(255,255,255,0.065);
+                            background: rgba(8, 8, 15, 0.34);
+                        }
+
+                        .seadub-highlight-row {
+                            padding: 9px 10px;
+                            border-bottom: 1px solid rgba(255,255,255,0.055);
+                        }
+
+                        .seadub-highlight-row.is-last {
+                            border-bottom: 0;
+                        }
+
+                        .seadub-highlight-row > div {
+                            align-items: center;
+                        }
+
+                        .seadub-highlight-poster {
+                            width: 46px !important;
+                            height: 62px !important;
+                            min-width: 46px;
+                            border-radius: 9px;
+                            object-fit: cover;
+                            border: 1px solid rgba(255,255,255,0.11);
+                            background: #161525;
+                        }
+
+                        .seadub-poster-fallback {
+                            align-items: center;
+                            justify-content: center;
+                            display: flex;
+                            background: linear-gradient(145deg, #7c3aed, #312e81);
+                        }
+
+                        .seadub-poster-fallback-letter {
+                            font-weight: 900;
+                            font-size: 21px;
+                        }
+
+                        .seadub-highlight-info {
+                            flex: 1;
+                            min-width: 0;
+                        }
+
+                        .seadub-highlight-info > div {
+                            align-items: center;
+                        }
+
+                        .seadub-highlight-title {
+                            max-width: 245px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            font-size: 13px;
+                            font-weight: 750;
+                            color: #f8fafc;
+                        }
+
+                        .seadub-dub-badge {
+                            flex: none;
+                            padding: 3px 7px;
+                            border-radius: 999px;
+                            font-size: 9px;
+                            font-weight: 800;
+                            color: #c4b5fd;
+                            background: rgba(124, 58, 237, 0.18);
+                            border: 1px solid rgba(167, 139, 250, 0.16);
+                        }
+
+                        .seadub-highlight-meta {
+                            margin-top: 4px;
+                            font-size: 10px;
+                            color: rgba(203, 213, 225, 0.47);
+                        }
+
+                        .seadub-highlight-right {
+                            min-width: 88px;
+                            align-items: flex-end;
+                            text-align: right;
+                        }
+
+                        .seadub-highlight-episode {
+                            font-size: 12px;
+                            font-weight: 800;
+                            color: #e9e7ff;
+                        }
+
+                        .seadub-highlight-date {
+                            margin-top: 3px;
+                            font-size: 10px;
+                            color: rgba(226,232,240,0.66);
+                        }
+
+                        .seadub-highlight-time {
+                            font-size: 9px;
+                            color: rgba(167,139,250,0.72);
+                        }
+
+                        .seadub-empty-state {
+                            padding: 22px;
+                            text-align: center;
+                        }
+
+                        .seadub-empty-text {
+                            font-size: 11px;
+                            color: rgba(203, 213, 225, 0.52);
+                        }
+
+                        .seadub-footer {
+                            display: grid !important;
+                            grid-template-columns: 1.35fr 1fr;
+                            gap: 9px !important;
+                            margin-top: 12px;
+                        }
+
+                        .seadub-refresh {
+                            min-height: 48px;
+                            border-radius: 13px !important;
+                            font-weight: 800 !important;
+                            border: 1px solid rgba(167,139,250,0.72) !important;
+                            background: linear-gradient(135deg, rgba(109,40,217,0.8), rgba(79,70,229,0.72)) !important;
+                            box-shadow: 0 9px 26px rgba(76,29,149,0.22);
+                        }
+
+                        .seadub-secondary-action {
+                            min-height: 48px;
+                            border-radius: 13px !important;
+                        }
+
+                        .seadub-projection-note {
+                            margin-top: 9px;
+                            font-size: 9px;
+                            line-height: 1.45;
+                            color: rgba(203,213,225,0.42);
+                            text-align: center;
+                        }
+
+                        @media (max-width: 760px) {
+                            .seadub-stats {
+                                grid-template-columns: repeat(2, minmax(0, 1fr));
+                            }
+
+                            .seadub-mode-grid {
+                                grid-template-columns: repeat(2, minmax(0, 1fr));
+                            }
+
+                            .seadub-highlight-title {
+                                max-width: 150px;
+                            }
+                        }
+                    `),
+
+                    tray.div(
+                        [
+                            tray.div(
+                                [
+                                    tray.flex({
+                                        gap: 3,
+                                        items: [
+                                            tray.div(
+                                                [
+                                                    tray.text(
+                                                        "S",
+                                                        {
+                                                            className:
+                                                                "seadub-logo",
+                                                        },
+                                                    ),
+                                                ],
+                                                {
+                                                    className:
+                                                        "seadub-logo",
+                                                },
+                                            ),
+
+                                            tray.div(
+                                                [
+                                                    tray.text(
+                                                        "SeaDub",
+                                                        {
+                                                            className:
+                                                                "seadub-title",
+                                                        },
+                                                    ),
+
+                                                    tray.text(
+                                                        "Dub Calendar Control Center",
+                                                        {
+                                                            className:
+                                                                "seadub-subtitle",
+                                                        },
+                                                    ),
+                                                ],
+                                            ),
+                                        ],
+                                    }),
+                                ],
+                                {
+                                    className:
+                                        "seadub-brand",
+                                },
+                            ),
+
+                            tray.flex({
+                                gap: 2,
+                                items: [
+                                    tray.flex({
+                                        gap: 1,
+                                        items: [
+                                            tray.span(
+                                                "●",
+                                                {
+                                                    className:
+                                                        "seadub-sync-dot",
+                                                },
+                                            ),
+
+                                            tray.span(
+                                                "Synced",
+                                            ),
+                                        ],
+                                        className:
+                                            "seadub-sync-pill",
+                                    }),
+                                ],
+                                className:
+                                    "seadub-sync-pill",
+                            }),
+                        ],
+                        {
+                            className:
+                                "seadub-header seadub-header-grid",
+                        },
                     ),
 
-                    tray.flex({
-                        gap: 1,
-                        items: [
-                            tray.input({
-                                placeholder:
-                                    "Search anime...",
-                                value:
-                                    currentSearch,
-                                onChange:
-                                    ctx.eventHandler(
-                                        "seadub-search-change",
-                                        (event) =>
-                                            setSearch(
-                                                event?.value ||
-                                                    "",
+                    tray.div(
+                        [
+                            tray.flex({
+                                gap: 2,
+                                items: [
+                                    tray.input({
+                                        placeholder:
+                                            "Search anime titles...",
+                                        value:
+                                            currentSearch,
+                                        onChange:
+                                            ctx.eventHandler(
+                                                "seadub-search-change",
+                                                (
+                                                    event,
+                                                ) =>
+                                                    setSearch(
+                                                        event?.value ||
+                                                            "",
+                                                    ),
                                             ),
+                                        className:
+                                            "seadub-search-input",
+                                        style: {
+                                            width:
+                                                "100%",
+                                        },
+                                    }),
+
+                                    tray.button(
+                                        currentSearch
+                                            ? "Clear"
+                                            : "Search",
+                                        {
+                                            intent:
+                                                "gray-subtle",
+                                            disabled:
+                                                !currentSearch,
+                                            className:
+                                                "seadub-clear-search",
+                                            onClick:
+                                                "seadub-search-clear",
+                                        },
                                     ),
-                                style: {
-                                    width: "100%",
-                                },
+                                ],
+                            }),
+                        ],
+                        {
+                            className:
+                                "seadub-search-wrap",
+                        },
+                    ),
+
+                    tray.div(
+                        [
+                            statCard(
+                                "◫",
+                                "This Week",
+                                thisWeekCount,
+                                "",
+                            ),
+
+                            statCard(
+                                "✓",
+                                "Confirmed",
+                                confirmedCount,
+                                "seadub-tone-green",
+                            ),
+
+                            statCard(
+                                "◷",
+                                "Projected",
+                                projectedCount,
+                                "seadub-tone-amber",
+                            ),
+
+                            statCard(
+                                "★",
+                                "Matches",
+                                matchedDubItems.length,
+                                "seadub-tone-violet",
+                            ),
+                        ],
+                        {
+                            className:
+                                "seadub-stats",
+                        },
+                    ),
+
+                    tray.div(
+                        [
+                            tray.flex({
+                                gap: 2,
+                                items: [
+                                    tray.text(
+                                        "Schedule Mode",
+                                        {
+                                            className:
+                                                "seadub-section-title",
+                                        },
+                                    ),
+
+                                    tray.text(
+                                        normalizedSearch
+                                            ? `Filtering “${currentSearch}”`
+                                            : "Choose what appears in your calendar",
+                                        {
+                                            className:
+                                                "seadub-section-help",
+                                        },
+                                    ),
+                                ],
+                                className:
+                                    "seadub-section-header",
                             }),
 
+                            tray.div(
+                                [
+                                    modeButton(
+                                        "All",
+                                        "all",
+                                    ),
+
+                                    modeButton(
+                                        "★ Prefer Dubs",
+                                        "prefer-dub",
+                                    ),
+
+                                    modeButton(
+                                        "Dubs Only",
+                                        "dub",
+                                    ),
+
+                                    modeButton(
+                                        "Subs Only",
+                                        "sub",
+                                    ),
+                                ],
+                                {
+                                    className:
+                                        "seadub-mode-grid",
+                                },
+                            ),
+                        ],
+                        {
+                            className:
+                                "seadub-section",
+                        },
+                    ),
+
+                    tray.div(
+                        [
+                            tray.flex({
+                                gap: 2,
+                                items: [
+                                    tray.text(
+                                        "Dub Label Format",
+                                        {
+                                            className:
+                                                "seadub-section-title",
+                                        },
+                                    ),
+
+                                    tray.text(
+                                        "How dub releases are labeled",
+                                        {
+                                            className:
+                                                "seadub-section-help",
+                                        },
+                                    ),
+                                ],
+                                className:
+                                    "seadub-section-header",
+                            }),
+
+                            tray.div(
+                                [
+                                    formatButton(
+                                        "🎙 Dub",
+                                        "icon",
+                                        "seadub-format-icon",
+                                    ),
+
+                                    formatButton(
+                                        "🎙",
+                                        "icon-only",
+                                        "seadub-format-icon-only",
+                                    ),
+
+                                    formatButton(
+                                        "[DUB]",
+                                        "bracket",
+                                        "seadub-format-bracket",
+                                    ),
+                                ],
+                                {
+                                    className:
+                                        "seadub-format-grid",
+                                },
+                            ),
+                        ],
+                        {
+                            className:
+                                "seadub-section",
+                        },
+                    ),
+
+                    tray.div([], {
+                        className:
+                            "seadub-divider",
+                    }),
+
+                    tray.flex({
+                        gap: 2,
+                        items: [
+                            tray.text(
+                                "✦ Upcoming Highlights",
+                                {
+                                    className:
+                                        "seadub-highlights-label",
+                                },
+                            ),
+
+                            tray.text(
+                                `${futureItems.length} upcoming`,
+                                {
+                                    className:
+                                        "seadub-highlights-note",
+                                },
+                            ),
+                        ],
+                        className:
+                            "seadub-highlights-head",
+                    }),
+
+                    tray.div(
+                        highlightRows,
+                        {
+                            className:
+                                "seadub-highlights-list",
+                        },
+                    ),
+
+                    tray.div(
+                        [
                             tray.button(
-                                "Clear",
+                                "↻  Refresh Feed",
+                                {
+                                    intent:
+                                        "primary",
+                                    className:
+                                        "seadub-refresh",
+                                    onClick:
+                                        "seadub-refresh",
+                                },
+                            ),
+
+                            tray.button(
+                                currentSearch
+                                    ? "✕  Clear Search"
+                                    : "✓  Feed Synced",
                                 {
                                     intent:
                                         "gray-subtle",
                                     disabled:
                                         !currentSearch,
+                                    className:
+                                        "seadub-secondary-action",
                                     onClick:
                                         "seadub-search-clear",
                                 },
                             ),
                         ],
-                    }),
+                        {
+                            className:
+                                "seadub-footer",
+                        },
+                    ),
 
                     tray.text(
-                        currentSearch
-                            ? `Showing titles matching “${currentSearch}”`
-                            : "Search filters the calendar by anime title.",
+                        "Projected dates are weekly estimates until a confirmed SeaDub update replaces them.",
                         {
-                            style: {
-                                opacity: "0.65",
-                                fontSize: "12px",
-                            },
+                            className:
+                                "seadub-projection-note",
                         },
                     ),
 
-                    tray.button(
-                        "All (Subs & Dubs)",
-                        {
-                            intent:
-                                currentFilter ===
-                                "all"
-                                    ? "primary"
-                                    : "gray-subtle",
-                            onClick:
-                                "seadub-filter-all",
-                        },
-                    ),
-
-                    tray.button(
-                        "Prefer Dubs",
-                        {
-                            intent:
-                                currentFilter ===
-                                "prefer-dub"
-                                    ? "primary"
-                                    : "gray-subtle",
-                            onClick:
-                                "seadub-filter-prefer",
-                        },
-                    ),
-
-                    tray.button(
-                        "Dubs Only",
-                        {
-                            intent:
-                                currentFilter ===
-                                "dub"
-                                    ? "primary"
-                                    : "gray-subtle",
-                            onClick:
-                                "seadub-filter-dub",
-                        },
-                    ),
-
-                    tray.button(
-                        "Subs Only",
-                        {
-                            intent:
-                                currentFilter ===
-                                "sub"
-                                    ? "primary"
-                                    : "gray-subtle",
-                            onClick:
-                                "seadub-filter-sub",
-                        },
-                    ),
-
-                    tray.div([], {
-                        style: {
-                            height: "1px",
-                            backgroundColor:
-                                "rgba(255,255,255,0.1)",
-                            margin: "8px 0",
-                        },
-                    }),
-
-                    tray.text(
-                        "Dub Title Format",
-                    ),
-
-                    tray.flex({
-                        gap: 2,
-
-                        items: [
-                            tray.button(
-                                "🎙️Dub",
-                                {
-                                    intent:
-                                        currentFormat ===
-                                        "icon"
-                                            ? "primary"
-                                            : "gray-subtle",
-                                    onClick:
-                                        "seadub-format-icon",
-                                },
-                            ),
-
-                            tray.button(
-                                "🎙️",
-                                {
-                                    intent:
-                                        currentFormat ===
-                                        "icon-only"
-                                            ? "primary"
-                                            : "gray-subtle",
-                                    onClick:
-                                        "seadub-format-icon-only",
-                                },
-                            ),
-
-                            tray.button(
-                                "[DUB]",
-                                {
-                                    intent:
-                                        currentFormat ===
-                                        "bracket"
-                                            ? "primary"
-                                            : "gray-subtle",
-                                    onClick:
-                                        "seadub-format-bracket",
-                                },
-                            ),
-                        ],
-                    }),
-
-                    tray.text(
-                        "Later weeks can include projected weekly dub dates until a confirmed update replaces them.",
-                        {
-                            style: {
-                                opacity: "0.65",
-                                fontSize: "12px",
-                            },
-                        },
-                    ),
-
-                    tray.div([], {
-                        style: {
-                            height: "1px",
-                            backgroundColor:
-                                "rgba(255,255,255,0.1)",
-                            margin: "8px 0",
-                        },
-                    }),
-
-                    tray.button(
-                        "🔄 Refresh SeaDub",
-                        {
-                            intent:
-                                "gray-subtle",
-                            onClick:
-                                "seadub-refresh",
-                        },
-                    ),
                 ],
-            });
+                {
+                    className:
+                        "seadub-shell seadub-content",
+                },
+            );
         });
 
         // Cached rows are available immediately. Refresh the one-file feed in
