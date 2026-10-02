@@ -1,18 +1,5 @@
 [
   {
-    "mediaId": 206914,
-    "idMal": 63375,
-    "title": null,
-    "format": "ONA",
-    "duration": 26,
-    "episodeNumber": 1,
-    "episodeDate": "2026-04-05T12:00:00Z",
-    "addedAt": "2026-04-05T12:00:13Z",
-    "dateType": "historical",
-    "projected": false,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
     "mediaId": 195518,
     "idMal": 62000,
     "title": null,
@@ -15413,7 +15400,7 @@
     "idMal": 64340,
     "title": null,
     "format": "ONA",
-    "duration": 25,
+    "duration": 24,
     "episodeNumber": 1,
     "episodeDate": "2026-09-27T14:30:00Z",
     "addedAt": "2026-09-27T14:30:17Z",
