@@ -1,16 +1,4 @@
 function init() {
-    const SCHEDULE_QUERY_KEY = "ANIME-COLLECTION-get-anime-collection-schedule";
-    const SCHEDULE_URL = "https://raw.githubusercontent.com/DefnoJae/SeaDub/refs/heads/main/raw/dub-schedule.json";
-    const FEED_URL = "https://raw.githubusercontent.com/DefnoJae/SeaDub/refs/heads/main/raw/dub-episode-feed.json";
-
-    const invalidateSchedule = () => {
-        try {
-            $app.invalidateClientQuery([SCHEDULE_QUERY_KEY]);
-        } catch (error) {
-            console.error("SeaDub: failed to invalidate schedule query", error);
-        }
-    };
-
     // Inject SeaDub entries into Seanime's schedule response.
     $app.onAnimeScheduleItems((e) => {
         try {
@@ -84,6 +72,21 @@ function init() {
     });
 
     $ui.register(async (ctx) => {
+        // IMPORTANT: Seanime evaluates the UI callback in its own runtime.
+        // Values declared outside $ui.register are not captured reliably,
+        // so keep all UI-only constants/helpers inside this callback.
+        const SCHEDULE_QUERY_KEY = "ANIME-COLLECTION-get-anime-collection-schedule";
+        const SCHEDULE_URL = "https://raw.githubusercontent.com/DefnoJae/SeaDub/refs/heads/main/raw/dub-schedule.json";
+        const FEED_URL = "https://raw.githubusercontent.com/DefnoJae/SeaDub/refs/heads/main/raw/dub-episode-feed.json";
+
+        const invalidateSchedule = () => {
+            try {
+                $app.invalidateClientQuery([SCHEDULE_QUERY_KEY]);
+            } catch (error) {
+                console.error("SeaDub: failed to invalidate schedule query", error);
+            }
+        };
+
         const savedFilter = $storage.get("seadub-filter") || "all";
         const filterState = ctx.state(savedFilter);
         $store.set("seadub-filter", savedFilter);
