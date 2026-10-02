@@ -1,0 +1,42 @@
+name: Update SeaDub
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: seadub-update
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Update SeaDub data
+        run: npm run update
+
+      - name: Commit changes
+        run: |
+          git config user.name "SeaDub Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add raw/dub-schedule.json raw/dub-episode-feed.json raw/health.json
+          if git diff --cached --quiet; then
+            echo "No schedule changes."
+            exit 0
+          fi
+          git commit -m "chore: update dub schedule"
+          git push
