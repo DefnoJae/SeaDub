@@ -1,1 +1,13 @@
-
+{
+  "name": "SeaDub",
+  "version": 1,
+  "schemaVersion": 1,
+  "description": "A normalized English-dub anime schedule feed designed for Seanime.",
+  "endpoints": {
+    "schedule": "raw/dub-schedule.json",
+    "episodeFeed": "raw/dub-episode-feed.json",
+    "health": "raw/health.json"
+  },
+  "updateIntervalMinutes": 30,
+  "historyDays": 180
+}
