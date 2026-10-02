@@ -1,0 +1,13 @@
+{
+  "name": "seadub",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Normalized English dub schedule feed for Seanime",
+  "scripts": {
+    "update": "node src/update.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
