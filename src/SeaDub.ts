@@ -1141,6 +1141,14 @@ function init() {
                                 inset 0 1px 0 rgba(255,255,255,0.18);
                         }
 
+                        .seadub-logo-letter {
+                            font-size: 30px;
+                            line-height: 1;
+                            font-weight: 900;
+                            font-style: italic;
+                            color: white;
+                        }
+
                         .seadub-title {
                             font-size: 26px;
                             line-height: 1;
@@ -1461,88 +1469,74 @@ function init() {
                         }
                     `),
 
-                    tray.div(
-                        [
-                            tray.div(
-                                [
-                                    tray.flex({
-                                        gap: 3,
-                                        items: [
-                                            tray.div(
-                                                [
-                                                    tray.text(
-                                                        "S",
-                                                        {
-                                                            className:
-                                                                "seadub-logo",
-                                                        },
-                                                    ),
-                                                ],
+                    tray.flex({
+                        gap: 3,
+                        className:
+                            "seadub-header",
+                        items: [
+                            tray.flex({
+                                gap: 3,
+                                className:
+                                    "seadub-brand",
+                                items: [
+                                    tray.div(
+                                        [
+                                            tray.text(
+                                                "S",
                                                 {
                                                     className:
-                                                        "seadub-logo",
+                                                        "seadub-logo-letter",
+                                                },
+                                            ),
+                                        ],
+                                        {
+                                            className:
+                                                "seadub-logo",
+                                        },
+                                    ),
+
+                                    tray.div(
+                                        [
+                                            tray.text(
+                                                "SeaDub",
+                                                {
+                                                    className:
+                                                        "seadub-title",
                                                 },
                                             ),
 
-                                            tray.div(
-                                                [
-                                                    tray.text(
-                                                        "SeaDub",
-                                                        {
-                                                            className:
-                                                                "seadub-title",
-                                                        },
-                                                    ),
-
-                                                    tray.text(
-                                                        "Dub Calendar Control Center",
-                                                        {
-                                                            className:
-                                                                "seadub-subtitle",
-                                                        },
-                                                    ),
-                                                ],
+                                            tray.text(
+                                                "Dub Calendar Control Center",
+                                                {
+                                                    className:
+                                                        "seadub-subtitle",
+                                                },
                                             ),
                                         ],
-                                    }),
+                                    ),
                                 ],
-                                {
-                                    className:
-                                        "seadub-brand",
-                                },
-                            ),
+                            }),
 
                             tray.flex({
-                                gap: 2,
-                                items: [
-                                    tray.flex({
-                                        gap: 1,
-                                        items: [
-                                            tray.span(
-                                                "●",
-                                                {
-                                                    className:
-                                                        "seadub-sync-dot",
-                                                },
-                                            ),
-
-                                            tray.span(
-                                                "Synced",
-                                            ),
-                                        ],
-                                        className:
-                                            "seadub-sync-pill",
-                                    }),
-                                ],
+                                gap: 1,
                                 className:
                                     "seadub-sync-pill",
+                                items: [
+                                    tray.span(
+                                        "●",
+                                        {
+                                            className:
+                                                "seadub-sync-dot",
+                                        },
+                                    ),
+
+                                    tray.span(
+                                        "Synced",
+                                    ),
+                                ],
                             }),
                         ],
-                        {
-                            className:
-                                "seadub-header seadub-header-grid",
-                        },
-                    ),
+                    }),
 
                     tray.div(
                         [
