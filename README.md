@@ -1,52 +1,55 @@
 # SeaDub
 
-SeaDub is a small, stable English-dub anime schedule feed intended for Seanime extensions and other clients that only need clean AniList IDs, episode numbers, and release times.
+SeaDub is a stable English-dub anime schedule feed and Seanime plugin.
 
-## Endpoints
+## Seanime install
 
-- `raw/dub-schedule.json` — current/upcoming dubbed episodes
-- `raw/dub-episode-feed.json` — recent dubbed episode history (180 days)
-- `raw/health.json` — update status and item counts
-- `Manifest.json` — feed metadata and schema version
-
-Raw URLs:
+Use this manifest URL:
 
 ```text
-https://raw.githubusercontent.com/DefnoJae/SeaDub/main/raw/dub-schedule.json
-https://raw.githubusercontent.com/DefnoJae/SeaDub/main/raw/dub-episode-feed.json
-https://raw.githubusercontent.com/DefnoJae/SeaDub/main/raw/health.json
+https://raw.githubusercontent.com/DefnoJae/SeaDub/refs/heads/main/Manifest.json
 ```
 
-## Schedule schema
+## Feed endpoints
 
-```json
-{
-  "mediaId": 178789,
-  "idMal": 56789,
-  "title": "Example Anime",
-  "episodeNumber": 13,
-  "episodeDate": "2026-10-04T15:00:00Z",
-  "format": "TV",
-  "image": "https://...",
-  "delayed": false,
-  "delayedText": null,
-  "verified": true,
-  "source": "RockinChaos/AniSchedule"
-}
+- `raw/calendar.json` — optimized combined calendar feed used by the Seanime plugin
+- `raw/dub-schedule.json` — confirmed/current rows plus conservative future projections
+- `raw/dub-episode-feed.json` — recent dubbed episode history
+- `raw/health.json` — update status and item counts
+- `feed-manifest.json` — feed metadata/schema
+
+Raw calendar URL:
+
+```text
+https://raw.githubusercontent.com/DefnoJae/SeaDub/main/raw/calendar.json
 ```
+
+## Confirmed vs projected dates
+
+The upstream timetable normally exposes only the current/next dubbed episode for an active series. SeaDub keeps that row as `dateType: "confirmed"`.
+
+To keep later calendar weeks useful, SeaDub adds `dateType: "projected"` rows only when all of these are true:
+
+- the source entry is verified;
+- it is not indefinitely delayed;
+- the total episode count is known;
+- the series is still airing;
+- the anchor release is current/recent.
+
+Projected episodes use a seven-day cadence and stop at the known season finale or the 90-day future horizon. A confirmed or custom row always replaces a projection with the same `mediaId + episodeNumber`.
 
 ## Custom corrections
 
-Add manual entries to `custom/custom-dubs.json`. A custom entry replaces an automatically fetched entry when both use the same `mediaId` and `episodeNumber`.
+Add manual entries to `custom/custom-dubs.json`. A custom entry overrides automatic/projected data when both use the same `mediaId` and `episodeNumber`.
 
 ## Updating
 
 GitHub Actions runs `src/update.mjs` every 30 minutes and commits only when generated data changes.
 
-### Bootstrap source
+## Bootstrap source
 
-SeaDub v1 currently normalizes the maintained public JSON from `RockinChaos/AniSchedule`. The fetch layer is intentionally isolated in `src/update.mjs` so we can replace it later with our own independent collector without changing the SeaDub public endpoint/schema.
+SeaDub currently normalizes the maintained public dub data from `RockinChaos/AniSchedule`. The public SeaDub schema is isolated from that source so the collector can be replaced later without breaking Seanime clients.
 
-## Safety checks
+## Safety
 
-The updater refuses to overwrite healthy data if the source unexpectedly returns fewer than 5 schedule rows or 50 feed rows.
+The updater refuses to overwrite healthy data when the source unexpectedly returns too few schedule/feed rows.
