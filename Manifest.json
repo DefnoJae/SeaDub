@@ -1,7 +1,7 @@
 {
   "id": "SeaDub",
   "name": "SeaDub",
-  "version": "1.4.4",
+  "version": "1.5.0",
   "manifestURI": "https://raw.githubusercontent.com/DefnoJae/SeaDub/refs/heads/main/Manifest.json",
   "language": "typescript",
   "type": "plugin",

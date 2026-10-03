@@ -15,6 +15,11 @@ function init() {
             const matchesSearch = (item) => {
                 if (!searchQuery) return true;
 
+                const searchMediaId = $store.get("seadub-search-media-id");
+                if (searchMediaId != null) {
+                    return Number(item?.mediaId) === searchMediaId;
+                }
+
                 return String(item?.title || "")
                     .toLowerCase()
                     .includes(searchQuery);
@@ -193,6 +198,10 @@ function init() {
         // Seanime's input retains its own client value. A field reference
         // lets Clear reset that visible text, not just the search state.
         const searchField = ctx.fieldRef(savedSearch);
+        const searchMediaState = ctx.state(null);
+        const screenState = ctx.screen.state();
+        $store.set("seadub-search-media-id", null);
+        let detailSearchRequest = 0;
 
         $store.set(
             "seadub-search",
@@ -304,13 +313,17 @@ function init() {
             queueScheduleRebuild(false);
         };
 
-        const setSearch = (value) => {
+        const setSearch = (value, mediaId = undefined) => {
             const nextValue = String(value || "");
 
-            if (searchState.get() === nextValue) {
+            if (searchState.get() === nextValue &&
+                (mediaId === undefined || searchMediaState.get() === mediaId)) {
                 return;
             }
 
+            detailSearchRequest += 1;
+            searchMediaState.set(mediaId ?? null);
+            $store.set("seadub-search-media-id", mediaId ?? null);
             searchState.set(nextValue);
             $storage.set("seadub-search", nextValue);
             $store.set("seadub-search", nextValue);
@@ -319,6 +332,46 @@ function init() {
             // several characters does not rebuild the schedule each time.
             queueScheduleRebuild(false);
         };
+
+        const detailPageMediaId = () => {
+            const screen = screenState.get();
+            if (screen?.pathname !== "/entry" && screen?.pathname !== "/entry/") {
+                return null;
+            }
+            const mediaId = Number(screen?.searchParams?.id);
+            return Number.isInteger(mediaId) && mediaId !== 0 ? mediaId : null;
+        };
+
+        tray.onOpen(async () => {
+            const request = ++detailSearchRequest;
+            const mediaId = detailPageMediaId();
+            if (mediaId == null) return;
+
+            let title = "";
+            try {
+                const entry = await ctx.anime.getAnimeEntry(mediaId);
+                title = entry?.media?.title?.userPreferred ||
+                    entry?.media?.title?.english || entry?.media?.title?.romaji || "";
+            } catch (error) {
+                console.error("SeaDub: detail-page title unavailable", error);
+            }
+
+            if (!title) {
+                const items = $store.get("seadub-all-schedule-items") ||
+                    $store.get("seadub-items") || [];
+                title = items.find((item) => Number(item?.mediaId) === mediaId)?.title || "";
+            }
+
+            // A late lookup must not overwrite typing, Clear, a closed tray,
+            // or the search for another detail page.
+            if (request !== detailSearchRequest || detailPageMediaId() !== mediaId || !title) {
+                return;
+            }
+            setSearch(title, mediaId);
+            searchField.setValue(title);
+        });
+
+        tray.onClose(() => { detailSearchRequest += 1; });
 
         ctx.registerEventHandler(
             "seadub-filter-all",
@@ -358,6 +411,7 @@ function init() {
         ctx.registerEventHandler(
             "seadub-search-clear",
             () => {
+                detailSearchRequest += 1;
                 searchField.setValue("");
                 setSearch("");
             },
@@ -735,15 +789,12 @@ function init() {
                     .trim()
                     .toLowerCase();
 
-            const searchMatches = (item) =>
-                !normalizedSearch ||
-                String(
-                    item?.title || "",
-                )
-                    .toLowerCase()
-                    .includes(
-                        normalizedSearch,
-                    );
+            const searchMediaId = searchMediaState.get();
+            const searchMatches = (item) => {
+                if (!normalizedSearch) return true;
+                if (searchMediaId != null) return Number(item?.mediaId) === searchMediaId;
+                return String(item?.title || "").toLowerCase().includes(normalizedSearch);
+            };
 
             const matchedDubItems =
                 allDubItems.filter(
