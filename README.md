@@ -78,3 +78,5 @@ Run `npm test` to check daily highlights, complete upcoming search results, clea
 SeaDub 1.4.2 applies schedule modes to daily highlights and search results. The shared icon uses `assets/seadub-calendar.png` without a query suffix so Seanime accepts it on the extension page and collapsed tray.
 
 SeaDub 1.4.3 clears the search field's visible text through Seanime's field-reference API when either Clear button is used.
+
+SeaDub 1.4.4 marks known season finales with a “⚑ Final episode” badge in pop-out search results, for both sub and dub releases. The last available row is not marked unless it is the actual final episode. Projected finale dates retain their projected-release label.

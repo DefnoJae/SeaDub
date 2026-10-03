@@ -61,6 +61,31 @@ async function setup({ now = "2026-10-02T12:00:00Z", search = "", filter = "all"
 
 const episode = (title, dateTime, episodeNumber = 1) => ({ mediaId: title, title, dateTime, episodeNumber });
 
+test("search flags known final episodes for both sub and dub, following the selected mode", async () => {
+    const title = "The Elusive Samurai";
+    const app = await setup({ search: title,
+        subs: [{ ...episode(title, "2026-10-06T16:00:00Z", 12), isSeasonFinale: true }],
+        dubs: [episode(title, "2026-10-06T18:00:00Z", 5),
+            { ...episode(title, "2026-11-24T18:00:00Z", 12), isSeasonFinale: true, projected: true }],
+    });
+    const flaggedEpisodes = () => app.collect(app.render(), node => node.props?.className?.startsWith("seadub-highlight-row"))
+        .filter(row => app.collect(row, node => node.props?.className === "seadub-finale-badge").length)
+        .map(row => app.collect(row, node => node.props?.className === "seadub-highlight-episode")[0].children);
+    assert.deepEqual(flaggedEpisodes(), ["Ep. 12", "Ep. 12"]);
+    app.events.get("seadub-filter-dub")();
+    assert.deepEqual(flaggedEpisodes(), ["Ep. 12"]);
+    app.events.get("seadub-filter-sub")();
+    assert.deepEqual(flaggedEpisodes(), ["Ep. 12"]);
+});
+
+test("the last available search result is not treated as a finale without metadata", async () => {
+    const app = await setup({ search: "Samurai", dubs: [
+        episode("Samurai", "2026-10-06T18:00:00Z", 5),
+        { ...episode("Samurai Movie", "2026-10-07T18:00:00Z"), isMovie: true, isSeasonFinale: true },
+    ] });
+    assert.equal(app.collect(app.render(), node => node.props?.className === "seadub-finale-badge").length, 0);
+});
+
 test("both Clear buttons reset the visible field and stored search, including pending text", async () => {
     for (const className of ["seadub-clear-search", "seadub-secondary-action"]) {
         const app = await setup({ search: "Slime" });

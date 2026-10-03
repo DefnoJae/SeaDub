@@ -1143,6 +1143,13 @@ function init() {
                                                           },
                                                       ),
 
+                                                      normalizedSearch && item?.isSeasonFinale && !item?.isMovie
+                                                          ? tray.span(
+                                                                "⚑ Final episode",
+                                                                { className: "seadub-finale-badge" },
+                                                            )
+                                                          : [],
+
                                                       tray.text(
                                                           formatShortDate(
                                                               item?.dateTime,
@@ -1547,6 +1554,19 @@ function init() {
                             margin-top: 3px;
                             font-size: 10px;
                             color: rgba(226,232,240,0.66);
+                        }
+
+                        .seadub-finale-badge {
+                            display: inline-block;
+                            margin-top: 4px;
+                            padding: 3px 6px;
+                            border-radius: 6px;
+                            font-size: 9px;
+                            font-weight: 800;
+                            white-space: nowrap;
+                            color: #fcd34d;
+                            background: rgba(245, 158, 11, 0.12);
+                            border: 1px solid rgba(245, 158, 11, 0.25);
                         }
 
                         .seadub-highlight-time {
