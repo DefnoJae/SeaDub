@@ -15793,5 +15793,18 @@
     "dateType": "historical",
     "projected": false,
     "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 171110,
+    "idMal": 57466,
+    "title": null,
+    "format": "TV",
+    "duration": 24,
+    "episodeNumber": 22,
+    "episodeDate": "2026-10-03T09:30:00Z",
+    "addedAt": "2026-10-03T09:30:14Z",
+    "dateType": "historical",
+    "projected": false,
+    "source": "RockinChaos/AniSchedule"
   }
 ]
