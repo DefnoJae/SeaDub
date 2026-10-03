@@ -190,6 +190,10 @@ function init() {
         const searchState =
             ctx.state(savedSearch);
 
+        // Seanime's input retains its own client value. A field reference
+        // lets Clear reset that visible text, not just the search state.
+        const searchField = ctx.fieldRef(savedSearch);
+
         $store.set(
             "seadub-search",
             savedSearch,
@@ -353,7 +357,10 @@ function init() {
 
         ctx.registerEventHandler(
             "seadub-search-clear",
-            () => setSearch(""),
+            () => {
+                searchField.setValue("");
+                setSearch("");
+            },
         );
 
         let retryCount = 0;
@@ -1679,6 +1686,7 @@ function init() {
                                     "seadub-search-row",
                                 items: [
                                     tray.input({
+                                        fieldRef: searchField,
                                         placeholder:
                                             "Search anime titles...",
                                         value:

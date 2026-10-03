@@ -76,3 +76,5 @@ SeaDub 1.4.1 installs the supplied calendar artwork, refreshes its icon URL, and
 Run `npm test` to check daily highlights, complete upcoming search results, clearing search, and shared icon references.
 
 SeaDub 1.4.2 applies schedule modes to daily highlights and search results. The shared icon uses `assets/seadub-calendar.png` without a query suffix so Seanime accepts it on the extension page and collapsed tray.
+
+SeaDub 1.4.3 clears the search field's visible text through Seanime's field-reference API when either Clear button is used.

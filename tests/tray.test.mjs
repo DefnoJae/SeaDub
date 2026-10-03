@@ -11,6 +11,7 @@ async function setup({ now = "2026-10-02T12:00:00Z", search = "", filter = "all"
     const store = new Map([["seadub-items", dubs]]);
     const storage = new Map([["seadub-items", dubs], ["seadub-search", search], ["seadub-filter", filter]]);
     const events = new Map();
+    const fields = [];
     let hook, register, render, trayOptions;
     const node = (type, children, props = {}) => ({ type, children, props });
     const tray = new Proxy({}, {
@@ -31,6 +32,13 @@ async function setup({ now = "2026-10-02T12:00:00Z", search = "", filter = "all"
         $ui: { register: callback => { register = callback; } },
     });
     await register({
+        fieldRef: initial => {
+            const field = { current: initial, displayedValue: initial, updates: [],
+                setValue(value) { this.current = value; this.displayedValue = value; this.updates.push(value); },
+            };
+            fields.push(field);
+            return field;
+        },
         state: initial => { let value = initial; return { get: () => value, set: next => { value = next; } }; },
         newTray: options => { trayOptions = options; return tray; },
         registerEventHandler: (name, callback) => events.set(name, callback),
@@ -48,10 +56,31 @@ async function setup({ now = "2026-10-02T12:00:00Z", search = "", filter = "all"
     };
     const highlights = () => collect(render(), item => item.props?.className?.startsWith("seadub-highlight-row"));
     const titles = () => highlights().flatMap(row => collect(row, item => item.props?.className === "seadub-highlight-title").map(item => item.children));
-    return { store, events, render, collect, titles, event, nextCalls, trayOptions };
+    return { store, storage, fields, events, render, collect, titles, event, nextCalls, trayOptions };
 }
 
 const episode = (title, dateTime, episodeNumber = 1) => ({ mediaId: title, title, dateTime, episodeNumber });
+
+test("both Clear buttons reset the visible field and stored search, including pending text", async () => {
+    for (const className of ["seadub-clear-search", "seadub-secondary-action"]) {
+        const app = await setup({ search: "Slime" });
+        const tree = app.render();
+        const input = app.collect(tree, node => node.type === "input")[0];
+        const button = app.collect(tree, node => node.props?.className === className)[0];
+        assert.equal(input.props.fieldRef, app.fields[0]);
+        assert.equal(input.props.fieldRef.displayedValue, "Slime");
+        app.events.get(button.props.onClick)();
+        assert.equal(input.props.fieldRef.displayedValue, "");
+        assert.equal(app.store.get("seadub-search"), "");
+        assert.equal(app.storage.get("seadub-search"), "");
+        assert.equal(app.collect(app.render(), node => node.type === "input")[0].props.value, "");
+        // New text can still be local to the input before its debounce fires.
+        input.props.fieldRef.displayedValue = "Samurai";
+        app.events.get(button.props.onClick)();
+        assert.equal(input.props.fieldRef.displayedValue, "");
+        assert.deepEqual(input.props.fieldRef.updates, ["", ""]);
+    }
+});
 
 test("empty search includes every today's sub and dub, with no two-row limit", async () => {
     const app = await setup({
