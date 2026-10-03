@@ -680,23 +680,6 @@
     "source": "RockinChaos/AniSchedule"
   },
   {
-    "mediaId": 113417,
-    "idMal": 40746,
-    "title": "Overflow",
-    "episodeNumber": 7,
-    "episodeDate": "2026-10-03T23:00:00Z",
-    "totalEpisodes": 8,
-    "format": "ONA",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx113417-yofUQOwPXWuE.png",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
     "mediaId": 210031,
     "idMal": 63832,
     "title": "You and I Are Polar Opposites Season 2",
@@ -1196,7 +1179,7 @@
     "idMal": 40746,
     "title": "Overflow",
     "episodeNumber": 8,
-    "episodeDate": "2026-10-10T23:00:00.000Z",
+    "episodeDate": "2026-10-10T23:00:00Z",
     "totalEpisodes": 8,
     "format": "ONA",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx113417-yofUQOwPXWuE.png",
@@ -1204,11 +1187,9 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-10-03T23:00:00Z"
+    "dateType": "confirmed",
+    "projected": false,
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 210031,
