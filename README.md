@@ -81,4 +81,4 @@ SeaDub 1.4.3 clears the search field's visible text through Seanime's field-refe
 
 SeaDub 1.4.4 marks known season finales with a “⚑ Final episode” badge in pop-out search results, for both sub and dub releases. The last available row is not marked unless it is the actual final episode. Projected finale dates retain their projected-release label.
 
-SeaDub 1.5.0 automatically fills the search with the current anime's title when opened from its detail page. Upcoming results match that anime by ID and follow the selected sub/dub mode, even when release titles differ. You can edit or clear the search as usual. Opening SeaDub from other pages preserves your current search.
+SeaDub 1.5.1 removes automatic detail-page searching. Closing the pop-out clears both its visible search text and active search, so reopening returns to today's highlights in the selected schedule mode.

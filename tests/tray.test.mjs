@@ -7,7 +7,7 @@ process.env.TZ = "UTC";
 
 const source = readFileSync(new URL("../src/SeaDub.ts", import.meta.url), "utf8");
 
-async function setup({ now = "2026-10-02T12:00:00Z", search = "", filter = "all", subs = [], dubs = [], screen = { pathname: "/", searchParams: {} }, getEntry = async () => null } = {}) {
+async function setup({ now = "2026-10-02T12:00:00Z", search = "", filter = "all", subs = [], dubs = [] } = {}) {
     const store = new Map([["seadub-items", dubs]]);
     const storage = new Map([["seadub-items", dubs], ["seadub-search", search], ["seadub-filter", filter]]);
     const events = new Map();
@@ -34,8 +34,6 @@ async function setup({ now = "2026-10-02T12:00:00Z", search = "", filter = "all"
         $ui: { register: callback => { register = callback; } },
     });
     await register({
-        screen: { state: () => ({ get: () => screen }) },
-        anime: { getAnimeEntry: getEntry },
         fieldRef: initial => {
             const field = { current: initial, displayedValue: initial, updates: [],
                 setValue(value) { this.current = value; this.displayedValue = value; this.updates.push(value); },
@@ -61,85 +59,41 @@ async function setup({ now = "2026-10-02T12:00:00Z", search = "", filter = "all"
     const highlights = () => collect(render(), item => item.props?.className?.startsWith("seadub-highlight-row"));
     const titles = () => highlights().flatMap(row => collect(row, item => item.props?.className === "seadub-highlight-title").map(item => item.children));
     return { store, storage, fields, events, render, collect, titles, event, nextCalls, trayOptions,
-        open: () => onOpen(), close: () => onClose(), navigate: next => { screen = next; },
-        schedule: () => { const event = { items: [], next() { this.items = subs; } }; hook(event); return event.items; },
+        open: () => onOpen(), close: () => onClose(),
     };
 }
 
 const episode = (title, dateTime, episodeNumber = 1) => ({ mediaId: title, title, dateTime, episodeNumber });
 
-test("opening on an anime page fills the visible search and finds upcoming releases by ID", async () => {
-    const app = await setup({ search: "Previous search", filter: "dub",
-        screen: { pathname: "/entry", searchParams: { id: "123" } },
-        getEntry: async id => { assert.equal(id, 123); return { media: { title: { userPreferred: "The Elusive Samurai" } } }; },
-        subs: [{ ...episode("Nige Jouzu no Wakagimi", "2026-10-06T16:00:00Z", 12), mediaId: 123 }],
-        dubs: [{ ...episode("Elusive Samurai", "2026-10-06T18:00:00Z", 5), mediaId: 123 },
-            { ...episode("The Elusive Samurai 2", "2026-10-06T19:00:00Z"), mediaId: 456 }],
+test("closing clears visible and stored search, ignores late typing, and reopens to daily highlights", async () => {
+    const app = await setup({ search: "Slime", filter: "dub",
+        dubs: [episode("Slime", "2026-10-02T16:00:00Z"), episode("Other", "2026-10-02T18:00:00Z")],
     });
-    await app.open();
-    assert.equal(app.fields[0].displayedValue, "The Elusive Samurai");
-    assert.equal(app.store.get("seadub-search-media-id"), 123);
-    assert.deepEqual(app.titles(), ["Elusive Samurai"]);
-    assert.equal(app.schedule().length, 1);
-    // The client's field-ref echo must retain the automatic ID search.
-    app.events.get("seadub-search-change")({ value: "The Elusive Samurai" });
-    assert.equal(app.store.get("seadub-search-media-id"), 123);
-    app.events.get("seadub-filter-all")();
-    assert.deepEqual(app.titles(), ["Nige Jouzu no Wakagimi", "Elusive Samurai"]);
-    app.events.get("seadub-search-change")({ value: "Samurai 2" });
-    assert.equal(app.store.get("seadub-search-media-id"), null);
-    assert.deepEqual(app.titles(), ["The Elusive Samurai 2"]);
-    app.events.get("seadub-search-clear")();
+    app.open();
+    assert.deepEqual(app.titles(), ["Slime"]);
+    app.fields[0].displayedValue = "Still typing";
+    app.close();
     assert.equal(app.fields[0].displayedValue, "");
-    assert.equal(app.store.get("seadub-search-media-id"), null);
+    assert.equal(app.store.get("seadub-search"), "");
+    assert.equal(app.storage.get("seadub-search"), "");
+    app.events.get("seadub-search-change")({ value: "Still typing" });
+    assert.equal(app.store.get("seadub-search"), "");
+    app.open();
+    assert.equal(app.fields[0].displayedValue, "");
+    assert.deepEqual(app.titles(), ["Slime", "Other"]);
+    assert.equal(app.store.get("seadub-filter"), "dub");
+    app.events.get("seadub-search-change")({ value: "Other" });
+    assert.deepEqual(app.titles(), ["Other"]);
 });
 
-test("detail-page search shows the empty state when no future releases are available", async () => {
-    const app = await setup({ screen: { pathname: "/entry", searchParams: { id: "123" } },
-        getEntry: async () => ({ media: { title: { english: "Finished Anime" } } }),
-    });
-    await app.open();
-    assert.equal(app.fields[0].displayedValue, "Finished Anime");
-    assert.equal(app.collect(app.render(), node => node.props?.className === "seadub-empty-text")[0].children, "No upcoming episodes match this search.");
-});
-
-test("opening outside an anime detail page preserves manual search without a lookup", async () => {
-    for (const screen of [{ pathname: "/", searchParams: {} }, { pathname: "/manga/entry", searchParams: { id: "123" } }, { pathname: "/entry", searchParams: { id: "invalid" } }]) {
-        const app = await setup({ screen, search: "My search", getEntry: async () => { assert.fail("Unexpected anime lookup"); } });
-        await app.open();
-        assert.equal(app.fields[0].displayedValue, "My search");
-        assert.equal(app.store.get("seadub-search"), "My search");
-    }
-});
-
-test("cached release title is used if detail-page lookup fails", async () => {
-    const app = await setup({ screen: { pathname: "/entry", searchParams: { id: "123" } },
-        getEntry: async () => { throw new Error("Unavailable"); },
-        dubs: [{ ...episode("Cached Anime", "2026-10-06T18:00:00Z"), mediaId: 123 }],
-    });
-    await app.open();
-    assert.equal(app.fields[0].displayedValue, "Cached Anime");
-    assert.deepEqual(app.titles(), ["Cached Anime"]);
-});
-
-test("a late title lookup cannot replace edits, Clear, navigation, or a closed tray", async () => {
-    for (const action of ["type", "clear", "navigate", "close"]) {
-        let resolve;
-        const app = await setup({ screen: { pathname: "/entry", searchParams: { id: "123" } },
-            getEntry: () => new Promise(done => { resolve = done; }),
-        });
-        app.render();
-        const pending = app.open();
-        if (action === "type") app.events.get("seadub-search-change")({ value: "Manual" });
-        if (action === "clear") app.events.get("seadub-search-clear")();
-        if (action === "navigate") app.navigate({ pathname: "/entry", searchParams: { id: "456" } });
-        if (action === "close") app.close();
-        resolve({ media: { title: { userPreferred: "Late title" } } });
-        await pending;
-        assert.equal(app.store.get("seadub-search"), action === "type" ? "Manual" : "");
-        assert.equal(app.store.get("seadub-search-media-id"), null);
-        assert.ok(!app.fields[0].updates.includes("Late title"));
-    }
+test("closing resets pending input text even before an active search exists", async () => {
+    const app = await setup();
+    app.open();
+    app.fields[0].displayedValue = "Pending text";
+    app.close();
+    app.open();
+    assert.equal(app.fields[0].displayedValue, "");
+    assert.equal(app.store.get("seadub-search"), "");
 });
 
 test("search flags known final episodes for both sub and dub, following the selected mode", async () => {
