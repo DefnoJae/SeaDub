@@ -15902,23 +15902,6 @@
     "source": "RockinChaos/AniSchedule"
   },
   {
-    "mediaId": 153567,
-    "idMal": 52717,
-    "title": "Harem Camp!",
-    "episodeNumber": 3,
-    "episodeDate": "2026-10-03T01:00:00Z",
-    "totalEpisodes": 8,
-    "format": "ONA",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx153567-V6GcuDVPbKdW.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
     "mediaId": 183231,
     "idMal": 60153,
     "title": "RILAKKUMA",
@@ -15932,6 +15915,19 @@
     "delayedText": null,
     "verified": true,
     "dateType": "confirmed",
+    "projected": false,
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 153567,
+    "idMal": 52717,
+    "title": null,
+    "format": "ONA",
+    "duration": 7,
+    "episodeNumber": 3,
+    "episodeDate": "2026-10-03T01:00:00Z",
+    "addedAt": "2026-10-03T01:15:15Z",
+    "dateType": "historical",
     "projected": false,
     "source": "RockinChaos/AniSchedule"
   },
@@ -16516,7 +16512,7 @@
     "idMal": 52717,
     "title": "Harem Camp!",
     "episodeNumber": 4,
-    "episodeDate": "2026-10-10T01:00:00.000Z",
+    "episodeDate": "2026-10-10T01:00:00Z",
     "totalEpisodes": 8,
     "format": "ONA",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx153567-V6GcuDVPbKdW.jpg",
@@ -16524,11 +16520,9 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-10-03T01:00:00Z"
+    "dateType": "confirmed",
+    "projected": false,
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 171110,
@@ -16886,8 +16880,8 @@
     "dateType": "projected",
     "projected": true,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-10-03T01:00:00Z"
+    "projectionBaseEpisode": 4,
+    "projectionBaseDate": "2026-10-10T01:00:00Z"
   },
   {
     "mediaId": 171110,
@@ -17165,8 +17159,8 @@
     "dateType": "projected",
     "projected": true,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-10-03T01:00:00Z"
+    "projectionBaseEpisode": 4,
+    "projectionBaseDate": "2026-10-10T01:00:00Z"
   },
   {
     "mediaId": 185874,
@@ -17372,8 +17366,8 @@
     "dateType": "projected",
     "projected": true,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-10-03T01:00:00Z"
+    "projectionBaseEpisode": 4,
+    "projectionBaseDate": "2026-10-10T01:00:00Z"
   },
   {
     "mediaId": 185874,
@@ -17543,8 +17537,8 @@
     "dateType": "projected",
     "projected": true,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-10-03T01:00:00Z"
+    "projectionBaseEpisode": 4,
+    "projectionBaseDate": "2026-10-10T01:00:00Z"
   },
   {
     "mediaId": 135865,
