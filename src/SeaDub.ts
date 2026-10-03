@@ -144,7 +144,7 @@ function init() {
             "ANIME-COLLECTION-get-anime-collection-schedule";
 
         const ICON_URL =
-            "https://raw.githubusercontent.com/DefnoJae/SeaDub/refs/heads/main/assets/seadub.png";
+            "https://raw.githubusercontent.com/DefnoJae/SeaDub/refs/heads/main/assets/seadub.png?v=1.4.1";
 
         const CALENDAR_URL =
             "https://raw.githubusercontent.com/DefnoJae/SeaDub/refs/heads/main/raw/calendar.json";
@@ -771,10 +771,11 @@ function init() {
             );
 
             const tomorrowStart =
-                new Date(
-                    todayStart.getTime() +
-                        24 * 60 * 60 * 1000,
-                );
+                new Date(todayStart);
+
+            tomorrowStart.setDate(
+                tomorrowStart.getDate() + 1,
+            );
 
             const weekStart =
                 new Date(now);
@@ -1265,17 +1266,20 @@ function init() {
                         }
 
                         .seadub-search-row {
+                            display: grid !important;
+                            grid-template-columns: minmax(0, 1fr) 62px;
                             width: 100%;
-                            align-items: center;
+                            align-items: center !important;
                         }
 
                         .seadub-search-input {
-                            flex: 1;
                             min-width: 0;
+                            margin: 0 !important;
                         }
 
                         .seadub-search-wrap input {
-                            min-height: 36px;
+                            height: 36px;
+                            min-height: 36px !important;
                             border: 0 !important;
                             background: transparent !important;
                             box-shadow: none !important;
@@ -1283,10 +1287,15 @@ function init() {
                         }
 
                         .seadub-clear-search {
+                            display: inline-flex !important;
+                            align-items: center !important;
+                            justify-content: center !important;
                             width: 62px;
                             min-width: 62px;
-                            height: 34px;
-                            min-height: 34px !important;
+                            height: 36px !important;
+                            min-height: 36px !important;
+                            padding: 0 !important;
+                            line-height: 1 !important;
                             align-self: center;
                             margin: 0 !important;
                             border-radius: 10px !important;
@@ -1542,6 +1551,10 @@ function init() {
                         .seadub-secondary-action {
                             min-height: 42px;
                             border-radius: 11px !important;
+                            display: inline-flex !important;
+                            align-items: center !important;
+                            justify-content: center !important;
+                            margin: 0 !important;
                         }
 
                         .seadub-projection-note {
