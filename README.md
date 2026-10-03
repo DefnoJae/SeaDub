@@ -67,10 +67,12 @@ SeaDub 1.3 introduces a redesigned tray control center with a wider glass-style 
 
 ## Daily highlights
 
-With an empty search box, the SeaDub tray shows every scheduled episode for the current day from Seanime's combined schedule, including both sub and dub entries. When a title search is active, Highlights switches to the complete upcoming episode list matching that anime.
+With an empty search box, the SeaDub tray shows every scheduled episode for the current day. When a title search is active, Highlights switches to the complete upcoming episode list matching that anime. Both lists follow the selected schedule mode: Dubs Only shows dubs, Subs Only shows subs, All keeps both, and Prefer Dubs replaces sub rows only when a dub of the same anime and episode exists in the list. A newer sub episode and an earlier dub episode remain separate, with their own badges and release dates.
 
 SeaDub 1.4 also uses the calendar artwork in `assets/seadub.png` for the collapsed tray, pop-out header, and extension icon.
 
 SeaDub 1.4.1 installs the supplied calendar artwork, refreshes its icon URL, and aligns the search and footer Clear buttons. Daily highlights use local calendar-day boundaries, including daylight-saving transitions.
 
 Run `npm test` to check daily highlights, complete upcoming search results, clearing search, and shared icon references.
+
+SeaDub 1.4.2 applies schedule modes to daily highlights and search results. The shared icon uses `assets/seadub-calendar.png` without a query suffix so Seanime accepts it on the extension page and collapsed tray.

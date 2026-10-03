@@ -51,17 +51,17 @@ async function setup({ now = "2026-10-02T12:00:00Z", search = "", filter = "all"
     return { store, events, render, collect, titles, event, nextCalls, trayOptions };
 }
 
-const episode = (title, dateTime, episodeNumber = 1) => ({ mediaId: title === "Slime Isekai" ? 1 : 2, title, dateTime, episodeNumber });
+const episode = (title, dateTime, episodeNumber = 1) => ({ mediaId: title, title, dateTime, episodeNumber });
 
 test("empty search includes every today's sub and dub, with no two-row limit", async () => {
     const app = await setup({
         subs: [episode("Morning sub", "2026-10-02T08:00:00Z"), episode("Evening sub", "2026-10-02T20:00:00Z"), episode("Tomorrow", "2026-10-03T00:00:00Z")],
         dubs: [episode("Slime Isekai", "2026-10-02T16:00:00Z"), episode("Other dub", "2026-10-02T18:00:00Z"), episode("Yesterday", "2026-10-01T23:59:00Z")],
-        filter: "dub",
+        filter: "all",
     });
     assert.deepEqual(app.titles(), ["Morning sub", "Slime Isekai", "Other dub", "Evening sub"]);
     assert.equal(app.nextCalls, 1);
-    assert.equal(app.event.items.length, 3); // Calendar mode still controls calendar rows.
+    assert.equal(app.event.items.length, 6);
 });
 
 test("search shows all future matching sub and dub episodes in chronological order", async () => {
@@ -88,6 +88,34 @@ test("manifest, collapsed tray and header share the replacement icon", async () 
     const manifest = JSON.parse(readFileSync(new URL("../Manifest.json", import.meta.url)));
     assert.equal(app.trayOptions.iconUrl, manifest.icon);
     assert.equal(app.collect(app.render(), item => item.props?.className === "seadub-logo")[0].props.src, manifest.icon);
+    // Seanime's SeaImage rejects external URLs with a query suffix.
+    assert.ok(manifest.icon.endsWith(".png"));
+    const iconPath = manifest.icon.split("/main/")[1];
+    assert.deepEqual(readFileSync(new URL(`../${iconPath}`, import.meta.url)), readFileSync(new URL("../assets/seadub.png", import.meta.url)));
+});
+
+test("daily and searched highlights update immediately for every schedule mode", async () => {
+    for (const search of ["", "The Elusive Samurai"]) {
+        const app = await setup({ search,
+            subs: [episode("The Elusive Samurai", "2026-10-02T16:00:00Z", 12), episode("The Elusive Samurai", "2026-10-02T18:00:00Z", 5)],
+            dubs: [episode("The Elusive Samurai", "2026-10-02T18:00:00Z", 5)],
+        });
+        const rows = () => app.collect(app.render(), item => item.props?.className?.startsWith("seadub-highlight-row"));
+        const releases = () => rows().map(row => {
+            const badge = app.collect(row, item => /seadub-(sub|dub)-badge/.test(item.props?.className))[0];
+            const ep = app.collect(row, item => item.props?.className === "seadub-highlight-episode")[0];
+            return [badge.children, ep.children];
+        });
+        assert.deepEqual(releases(), [["Sub", "Ep. 12"], ["Sub", "Ep. 5"], ["🎙  Dub", "Ep. 5"]]);
+        app.events.get("seadub-filter-dub")();
+        assert.deepEqual(releases(), [["🎙  Dub", "Ep. 5"]]);
+        app.events.get("seadub-filter-sub")();
+        assert.deepEqual(releases(), [["Sub", "Ep. 12"], ["Sub", "Ep. 5"]]);
+        app.events.get("seadub-filter-prefer")();
+        assert.deepEqual(releases(), [["Sub", "Ep. 12"], ["🎙  Dub", "Ep. 5"]]);
+        app.events.get("seadub-filter-all")();
+        assert.equal(releases().length, 3);
+    }
 });
 
 test("today follows local calendar boundaries on a daylight saving transition", async () => {

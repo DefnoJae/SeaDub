@@ -144,7 +144,7 @@ function init() {
             "ANIME-COLLECTION-get-anime-collection-schedule";
 
         const ICON_URL =
-            "https://raw.githubusercontent.com/DefnoJae/SeaDub/refs/heads/main/assets/seadub.png?v=1.4.1";
+            "https://raw.githubusercontent.com/DefnoJae/SeaDub/refs/heads/main/assets/seadub-calendar.png";
 
         const CALENDAR_URL =
             "https://raw.githubusercontent.com/DefnoJae/SeaDub/refs/heads/main/raw/calendar.json";
@@ -888,12 +888,37 @@ function init() {
                             ).getTime(),
                     );
 
+            // Apply the selected mode to tray rows as well as the calendar.
+            // Prefer Dubs replaces only the same anime/episode, so a newer
+            // sub episode remains visible alongside an earlier dub episode.
+            const applyHighlightMode = (items) => {
+                if (currentFilter === "dub") {
+                    return items.filter((item) => item.isDub);
+                }
+                if (currentFilter === "sub") {
+                    return items.filter((item) => !item.isDub);
+                }
+                if (currentFilter === "prefer-dub") {
+                    const dubEpisodes = new Set(
+                        items.filter((item) => item.isDub).map(
+                            (item) => `${item.mediaId}-${item.episodeNumber}`,
+                        ),
+                    );
+                    return items.filter((item) =>
+                        item.isDub || !dubEpisodes.has(
+                            `${item.mediaId}-${item.episodeNumber}`,
+                        ),
+                    );
+                }
+                return items;
+            };
+
             // Empty search: every release on the current day.
             // Active search: the complete future episode list for that title.
             const upcomingHighlights =
-                normalizedSearch
+                applyHighlightMode(normalizedSearch
                     ? searchedUpcomingHighlights
-                    : todayHighlights;
+                    : todayHighlights);
 
             const formatShortDate =
                 (value) => {
