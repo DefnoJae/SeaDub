@@ -1,18 +1,5 @@
 [
   {
-    "mediaId": 187942,
-    "idMal": 61211,
-    "title": null,
-    "format": "TV",
-    "duration": 24,
-    "episodeNumber": 12,
-    "episodeDate": "2026-04-07T14:00:00Z",
-    "addedAt": "2026-04-07T14:00:05Z",
-    "dateType": "historical",
-    "projected": false,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
     "mediaId": 192261,
     "idMal": 61637,
     "title": null,
@@ -16137,7 +16124,7 @@
     "episodeNumber": 1,
     "episodeDate": "2026-10-04T16:05:00Z",
     "totalEpisodes": null,
-    "format": "TV",
+    "format": "ONA",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212667-8g5ktyrx34Yl.jpg",
     "delayed": false,
     "delayedIndefinitely": false,
