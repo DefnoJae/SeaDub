@@ -1105,12 +1105,16 @@ function init() {
                                                       tray.flex({
                                                           gap: 2,
                                                           items: [
-                                                              tray.text(
+                                                              tray.anchor(
                                                                   item?.title ||
                                                                       "Unknown",
                                                                   {
+                                                                      href:
+                                                                          `/entry?id=${item?.mediaId}`,
+                                                                      target:
+                                                                          "_self",
                                                                       className:
-                                                                          "seadub-highlight-title",
+                                                                          "seadub-highlight-title seadub-highlight-link",
                                                                   },
                                                               ),
 
@@ -1522,6 +1526,20 @@ function init() {
                             font-size: 13px;
                             font-weight: 750;
                             color: #f8fafc;
+                        }
+
+                        .seadub-highlight-link {
+                            text-decoration: none;
+                            cursor: pointer;
+                            transition:
+                                color 120ms ease,
+                                text-decoration-color 120ms ease;
+                        }
+
+                        .seadub-highlight-link:hover {
+                            color: #c4b5fd;
+                            text-decoration: underline;
+                            text-underline-offset: 3px;
                         }
 
                         .seadub-dub-badge,
