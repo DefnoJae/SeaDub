@@ -1085,7 +1085,11 @@
     "verified": false,
     "dateType": "confirmed",
     "projected": false,
-    "source": "RockinChaos/AniSchedule"
+    "source": "RockinChaos/AniSchedule",
+    "batchRelease": true,
+    "batchStartEpisode": 1,
+    "batchEndEpisode": 10,
+    "episodeRangeLabel": "1–10"
   },
   {
     "mediaId": 21,
