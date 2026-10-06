@@ -63,6 +63,10 @@ function normalizeSchedule(item) {
     verified: item?.verified !== false,
     dateType: "confirmed",
     projected: false,
+    batchRelease: false,
+    batchStartEpisode: null,
+    batchEndEpisode: null,
+    episodeRangeLabel: null,
     source: "RockinChaos/AniSchedule"
   };
 }
@@ -101,6 +105,10 @@ function normalizeCustom(item) {
     verified: item.verified !== false,
     dateType: item.dateType || "confirmed",
     projected: item.dateType === "projected" || Boolean(item.projected),
+    batchRelease: Boolean(item.batchRelease),
+    batchStartEpisode: item.batchStartEpisode == null ? null : Number(item.batchStartEpisode),
+    batchEndEpisode: item.batchEndEpisode == null ? null : Number(item.batchEndEpisode),
+    episodeRangeLabel: item.episodeRangeLabel || null,
     source: "SeaDub/custom"
   };
 }
@@ -156,6 +164,29 @@ async function main() {
   const confirmedRows = sourceSchedule
     .map(normalizeSchedule)
     .filter(isValidScheduleItem);
+
+  const historicalMediaIds = new Set(
+    sourceFeed
+      .map(normalizeFeed)
+      .filter((row) => Number.isFinite(row.mediaId))
+      .map((row) => row.mediaId)
+  );
+
+  for (const row of confirmedRows) {
+    const isLikelyFullBatch =
+      row.format === "ONA" &&
+      row.totalEpisodes &&
+      row.totalEpisodes > 1 &&
+      row.episodeNumber === row.totalEpisodes &&
+      !historicalMediaIds.has(row.mediaId);
+
+    if (isLikelyFullBatch) {
+      row.batchRelease = true;
+      row.batchStartEpisode = 1;
+      row.batchEndEpisode = row.totalEpisodes;
+      row.episodeRangeLabel = `1–${row.totalEpisodes}`;
+    }
+  }
 
   const scheduleMap = new Map();
 
@@ -242,6 +273,10 @@ async function main() {
         addedAt: null,
         dateType: "historical",
         projected: false,
+        batchRelease: Boolean(row.batchRelease),
+        batchStartEpisode: row.batchStartEpisode ?? null,
+        batchEndEpisode: row.batchEndEpisode ?? null,
+        episodeRangeLabel: row.episodeRangeLabel || null,
         source: "SeaDub/custom"
       });
     }
