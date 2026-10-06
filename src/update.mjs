@@ -162,6 +162,36 @@ async function readExistingJson(file) {
   }
 }
 
+function expandBatchRows(rows) {
+  const expanded = [];
+
+  for (const row of rows) {
+    const start = Number(row?.batchStartEpisode);
+    const end = Number(row?.batchEndEpisode);
+
+    if (
+      row?.batchRelease &&
+      Number.isFinite(start) &&
+      Number.isFinite(end) &&
+      start > 0 &&
+      end >= start
+    ) {
+      for (let episode = start; episode <= end; episode++) {
+        expanded.push({
+          ...row,
+          episodeNumber: episode,
+          batchMember: true
+        });
+      }
+      continue;
+    }
+
+    expanded.push(row);
+  }
+
+  return expanded;
+}
+
 async function main() {
   await mkdir(RAW_DIR, { recursive: true });
 
@@ -212,8 +242,9 @@ async function main() {
   }
 
   const scheduleMap = new Map();
+  const expandedConfirmedRows = expandBatchRows(confirmedRows);
 
-  for (const row of confirmedRows) {
+  for (const row of expandedConfirmedRows) {
     scheduleMap.set(itemKey(row), row);
   }
 
