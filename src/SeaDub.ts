@@ -79,7 +79,7 @@ function init() {
                     title:
                         item?.batchRelease &&
                         item?.episodeRangeLabel
-                            ? `${dubPrefix}[${item.episodeRangeLabel}] ${item.title}`
+                            ? `${dubPrefix}[Ep. ${item.episodeRangeLabel}] ${item.title}`
                             : `${dubPrefix}${item.title}`,
                 }));
 
@@ -203,6 +203,41 @@ function init() {
             "seadub-search",
             savedSearch,
         );
+
+        const CACHE_SCHEMA =
+            "seadub-cache-v1.3.4-batch-ranges";
+
+        const previousCacheSchema =
+            $storage.get("seadub-cache-schema");
+
+        if (
+            previousCacheSchema !==
+            CACHE_SCHEMA
+        ) {
+            $storage.set(
+                "seadub-items",
+                [],
+            );
+
+            $store.set(
+                "seadub-items",
+                [],
+            );
+
+            $storage.set(
+                "seadub-cache-schema",
+                CACHE_SCHEMA,
+            );
+
+            try {
+                ctx.anime.clearScheduleCache();
+            } catch (error) {
+                console.error(
+                    "SeaDub: failed to clear old schedule cache",
+                    error,
+                );
+            }
+        }
 
         const cachedItems =
             $storage.get("seadub-items") || [];
@@ -388,18 +423,21 @@ function init() {
                 return "0";
             }
 
-            const first = items[0];
-            const last = items[items.length - 1];
-
-            return [
-                items.length,
-                first?.mediaId,
-                first?.episodeNumber,
-                first?.dateTime,
-                last?.mediaId,
-                last?.episodeNumber,
-                last?.dateTime,
-            ].join("|");
+            return items
+                .map((item) =>
+                    [
+                        item?.mediaId,
+                        item?.episodeNumber,
+                        item?.dateTime,
+                        item?.title,
+                        item?.projected ? 1 : 0,
+                        item?.batchRelease ? 1 : 0,
+                        item?.batchStartEpisode || "",
+                        item?.batchEndEpisode || "",
+                        item?.episodeRangeLabel || "",
+                    ].join("~"),
+                )
+                .join("||");
         };
 
         const loadSeaDub =
