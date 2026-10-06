@@ -76,7 +76,11 @@ function init() {
                 .filter(matchesSearch)
                 .map((item) => ({
                     ...item,
-                    title: `${dubPrefix}${item.title}`,
+                    title:
+                        item?.batchRelease &&
+                        item?.episodeRangeLabel
+                            ? `${dubPrefix}[${item.episodeRangeLabel}] ${item.title}`
+                            : `${dubPrefix}${item.title}`,
                 }));
 
             if (filter === "dub") {
@@ -621,6 +625,23 @@ function init() {
                                         row?.dateType ===
                                             "projected",
                                     ),
+
+                                batchRelease:
+                                    Boolean(
+                                        row?.batchRelease,
+                                    ),
+
+                                batchStartEpisode:
+                                    row?.batchStartEpisode ||
+                                    null,
+
+                                batchEndEpisode:
+                                    row?.batchEndEpisode ||
+                                    null,
+
+                                episodeRangeLabel:
+                                    row?.episodeRangeLabel ||
+                                    null,
                             },
                         );
                     }
@@ -1134,9 +1155,11 @@ function init() {
 
                                                       tray.text(
                                                           item?.isDub
-                                                              ? item?.projected
-                                                                  ? "Projected dub release"
-                                                                  : "Dub release"
+                                                              ? item?.batchRelease
+                                                                  ? "Full batch dub release"
+                                                                  : item?.projected
+                                                                    ? "Projected dub release"
+                                                                    : "Dub release"
                                                               : "Sub release",
                                                           {
                                                               className:
@@ -1153,7 +1176,10 @@ function init() {
                                               tray.div(
                                                   [
                                                       tray.text(
-                                                          `Ep. ${item?.episodeNumber || 1}`,
+                                                          item?.batchRelease &&
+                                                          item?.episodeRangeLabel
+                                                              ? `Ep. ${item.episodeRangeLabel}`
+                                                              : `Ep. ${item?.episodeNumber || 1}`,
                                                           {
                                                               className:
                                                                   "seadub-highlight-episode",
