@@ -43,6 +43,26 @@ function normalizeSchedule(item) {
   const media = item?.media?.media || {};
   const total = Number(item?.episodes || media?.episodes || 0);
 
+  const releaseTime = item?.episodeDate;
+  const sameTimeEpisodes = (media?.airingSchedule?.nodes || [])
+    .filter((node) => node?.airingAt === releaseTime)
+    .map((node) => Number(node?.episode))
+    .filter((episode) => Number.isFinite(episode) && episode > 0)
+    .sort((a, b) => a - b);
+
+  const uniqueEpisodes = [...new Set(sameTimeEpisodes)];
+  const hasConsecutiveBatch =
+    uniqueEpisodes.length > 1 &&
+    uniqueEpisodes.every(
+      (episode, index) =>
+        index === 0 || episode === uniqueEpisodes[index - 1] + 1
+    );
+
+  const batchStartEpisode =
+    hasConsecutiveBatch ? uniqueEpisodes[0] : null;
+  const batchEndEpisode =
+    hasConsecutiveBatch ? uniqueEpisodes[uniqueEpisodes.length - 1] : null;
+
   return {
     mediaId: Number(media.id),
     idMal: media.idMal == null ? null : Number(media.idMal),
@@ -63,10 +83,13 @@ function normalizeSchedule(item) {
     verified: item?.verified !== false,
     dateType: "confirmed",
     projected: false,
-    batchRelease: false,
-    batchStartEpisode: null,
-    batchEndEpisode: null,
-    episodeRangeLabel: null,
+    batchRelease: hasConsecutiveBatch,
+    batchStartEpisode,
+    batchEndEpisode,
+    episodeRangeLabel:
+      hasConsecutiveBatch
+        ? `${batchStartEpisode}–${batchEndEpisode}`
+        : null,
     source: "RockinChaos/AniSchedule"
   };
 }
@@ -180,7 +203,7 @@ async function main() {
       row.episodeNumber === row.totalEpisodes &&
       !historicalMediaIds.has(row.mediaId);
 
-    if (isLikelyFullBatch) {
+    if (isLikelyFullBatch && !row.batchRelease) {
       row.batchRelease = true;
       row.batchStartEpisode = 1;
       row.batchEndEpisode = row.totalEpisodes;
