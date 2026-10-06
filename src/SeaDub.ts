@@ -77,10 +77,7 @@ function init() {
                 .map((item) => ({
                     ...item,
                     title:
-                        item?.batchRelease &&
-                        item?.episodeRangeLabel
-                            ? `${dubPrefix}[Ep. ${item.episodeRangeLabel}] ${item.title}`
-                            : `${dubPrefix}${item.title}`,
+                        `${dubPrefix}${item.title}`,
                 }));
 
             if (filter === "dub") {
@@ -205,7 +202,7 @@ function init() {
         );
 
         const CACHE_SCHEMA =
-            "seadub-cache-v1.3.4-batch-ranges";
+            "seadub-cache-v1.3.5-batch-list";
 
         const previousCacheSchema =
             $storage.get("seadub-cache-schema");
@@ -1193,11 +1190,9 @@ function init() {
 
                                                       tray.text(
                                                           item?.isDub
-                                                              ? item?.batchRelease
-                                                                  ? "Full batch dub release"
-                                                                  : item?.projected
-                                                                    ? "Projected dub release"
-                                                                    : "Dub release"
+                                                              ? item?.projected
+                                                                  ? "Projected dub release"
+                                                                  : "Dub release"
                                                               : "Sub release",
                                                           {
                                                               className:
@@ -1214,10 +1209,7 @@ function init() {
                                               tray.div(
                                                   [
                                                       tray.text(
-                                                          item?.batchRelease &&
-                                                          item?.episodeRangeLabel
-                                                              ? `Ep. ${item.episodeRangeLabel}`
-                                                              : `Ep. ${item?.episodeNumber || 1}`,
+                                                          `Ep. ${item?.episodeNumber || 1}`,
                                                           {
                                                               className:
                                                                   "seadub-highlight-episode",
