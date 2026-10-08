@@ -357,27 +357,6 @@
     "source": "RockinChaos/AniSchedule"
   },
   {
-    "mediaId": 140842,
-    "idMal": 50250,
-    "title": "Chiikawa",
-    "episodeNumber": 4,
-    "episodeDate": "2026-10-08T16:00:00Z",
-    "totalEpisodes": null,
-    "format": "TV_SHORT",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx140842-T0geOCa3zS0A.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": false,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
     "mediaId": 207141,
     "idMal": 63403,
     "title": "Chainsmoker Cat",
@@ -403,7 +382,7 @@
     "idMal": 59741,
     "title": "The Exiled Heavy Knight Knows How to Game the System",
     "episodeNumber": 13,
-    "episodeDate": "2026-10-08T16:05:00Z",
+    "episodeDate": "2026-10-08T16:30:00Z",
     "totalEpisodes": 26,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
@@ -861,12 +840,33 @@
     "source": "RockinChaos/AniSchedule"
   },
   {
+    "mediaId": 140842,
+    "idMal": 50250,
+    "title": "Chiikawa",
+    "episodeNumber": 5,
+    "episodeDate": "2026-10-11T16:00:00Z",
+    "totalEpisodes": null,
+    "format": "TV_SHORT",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx140842-T0geOCa3zS0A.jpg",
+    "delayed": false,
+    "delayedIndefinitely": false,
+    "delayedText": null,
+    "verified": false,
+    "dateType": "confirmed",
+    "projected": false,
+    "batchRelease": false,
+    "batchStartEpisode": null,
+    "batchEndEpisode": null,
+    "episodeRangeLabel": null,
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
     "mediaId": 206774,
     "idMal": 63381,
     "title": "Now That I Can Control Reality With A Mouse Cursor, I'm Gonna Click Away On The Girls!",
     "episodeNumber": 2,
     "episodeDate": "2026-10-11T16:00:00Z",
-    "totalEpisodes": null,
+    "totalEpisodes": 8,
     "format": "TV_SHORT",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206774-gXVdrySlLY6y.jpg",
     "delayed": false,
@@ -1135,7 +1135,7 @@
     "idMal": 59741,
     "title": "The Exiled Heavy Knight Knows How to Game the System",
     "episodeNumber": 14,
-    "episodeDate": "2026-10-15T16:05:00.000Z",
+    "episodeDate": "2026-10-15T16:30:00.000Z",
     "totalEpisodes": 26,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
@@ -1151,7 +1151,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 13,
-    "projectionBaseDate": "2026-10-08T16:05:00Z"
+    "projectionBaseDate": "2026-10-08T16:30:00Z"
   },
   {
     "mediaId": 202523,
@@ -1696,7 +1696,7 @@
     "idMal": 59741,
     "title": "The Exiled Heavy Knight Knows How to Game the System",
     "episodeNumber": 15,
-    "episodeDate": "2026-10-22T16:05:00.000Z",
+    "episodeDate": "2026-10-22T16:30:00.000Z",
     "totalEpisodes": 26,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
@@ -1712,7 +1712,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 13,
-    "projectionBaseDate": "2026-10-08T16:05:00Z"
+    "projectionBaseDate": "2026-10-08T16:30:00Z"
   },
   {
     "mediaId": 202523,
@@ -2015,7 +2015,7 @@
     "idMal": 59741,
     "title": "The Exiled Heavy Knight Knows How to Game the System",
     "episodeNumber": 16,
-    "episodeDate": "2026-10-29T16:05:00.000Z",
+    "episodeDate": "2026-10-29T16:30:00.000Z",
     "totalEpisodes": 26,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
@@ -2031,7 +2031,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 13,
-    "projectionBaseDate": "2026-10-08T16:05:00Z"
+    "projectionBaseDate": "2026-10-08T16:30:00Z"
   },
   {
     "mediaId": 191832,
@@ -2243,7 +2243,7 @@
     "idMal": 59741,
     "title": "The Exiled Heavy Knight Knows How to Game the System",
     "episodeNumber": 17,
-    "episodeDate": "2026-11-05T16:05:00.000Z",
+    "episodeDate": "2026-11-05T16:30:00.000Z",
     "totalEpisodes": 26,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
@@ -2259,7 +2259,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 13,
-    "projectionBaseDate": "2026-10-08T16:05:00Z"
+    "projectionBaseDate": "2026-10-08T16:30:00Z"
   },
   {
     "mediaId": 191832,
@@ -2404,7 +2404,7 @@
     "idMal": 59741,
     "title": "The Exiled Heavy Knight Knows How to Game the System",
     "episodeNumber": 18,
-    "episodeDate": "2026-11-12T16:05:00.000Z",
+    "episodeDate": "2026-11-12T16:30:00.000Z",
     "totalEpisodes": 26,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
@@ -2420,7 +2420,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 13,
-    "projectionBaseDate": "2026-10-08T16:05:00Z"
+    "projectionBaseDate": "2026-10-08T16:30:00Z"
   },
   {
     "mediaId": 191832,
@@ -2519,7 +2519,7 @@
     "idMal": 59741,
     "title": "The Exiled Heavy Knight Knows How to Game the System",
     "episodeNumber": 19,
-    "episodeDate": "2026-11-19T16:05:00.000Z",
+    "episodeDate": "2026-11-19T16:30:00.000Z",
     "totalEpisodes": 26,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
@@ -2535,7 +2535,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 13,
-    "projectionBaseDate": "2026-10-08T16:05:00Z"
+    "projectionBaseDate": "2026-10-08T16:30:00Z"
   },
   {
     "mediaId": 191832,
@@ -2611,7 +2611,7 @@
     "idMal": 59741,
     "title": "The Exiled Heavy Knight Knows How to Game the System",
     "episodeNumber": 20,
-    "episodeDate": "2026-11-26T16:05:00.000Z",
+    "episodeDate": "2026-11-26T16:30:00.000Z",
     "totalEpisodes": 26,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
@@ -2627,7 +2627,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 13,
-    "projectionBaseDate": "2026-10-08T16:05:00Z"
+    "projectionBaseDate": "2026-10-08T16:30:00Z"
   },
   {
     "mediaId": 191832,
@@ -2680,7 +2680,7 @@
     "idMal": 59741,
     "title": "The Exiled Heavy Knight Knows How to Game the System",
     "episodeNumber": 21,
-    "episodeDate": "2026-12-03T16:05:00.000Z",
+    "episodeDate": "2026-12-03T16:30:00.000Z",
     "totalEpisodes": 26,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
@@ -2696,7 +2696,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 13,
-    "projectionBaseDate": "2026-10-08T16:05:00Z"
+    "projectionBaseDate": "2026-10-08T16:30:00Z"
   },
   {
     "mediaId": 191832,
@@ -2726,7 +2726,7 @@
     "idMal": 59741,
     "title": "The Exiled Heavy Knight Knows How to Game the System",
     "episodeNumber": 22,
-    "episodeDate": "2026-12-10T16:05:00.000Z",
+    "episodeDate": "2026-12-10T16:30:00.000Z",
     "totalEpisodes": 26,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
@@ -2742,7 +2742,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 13,
-    "projectionBaseDate": "2026-10-08T16:05:00Z"
+    "projectionBaseDate": "2026-10-08T16:30:00Z"
   },
   {
     "mediaId": 191832,
@@ -2772,7 +2772,7 @@
     "idMal": 59741,
     "title": "The Exiled Heavy Knight Knows How to Game the System",
     "episodeNumber": 23,
-    "episodeDate": "2026-12-17T16:05:00.000Z",
+    "episodeDate": "2026-12-17T16:30:00.000Z",
     "totalEpisodes": 26,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
@@ -2788,7 +2788,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 13,
-    "projectionBaseDate": "2026-10-08T16:05:00Z"
+    "projectionBaseDate": "2026-10-08T16:30:00Z"
   },
   {
     "mediaId": 191832,
@@ -2818,7 +2818,7 @@
     "idMal": 59741,
     "title": "The Exiled Heavy Knight Knows How to Game the System",
     "episodeNumber": 24,
-    "episodeDate": "2026-12-24T16:05:00.000Z",
+    "episodeDate": "2026-12-24T16:30:00.000Z",
     "totalEpisodes": 26,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
@@ -2834,7 +2834,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 13,
-    "projectionBaseDate": "2026-10-08T16:05:00Z"
+    "projectionBaseDate": "2026-10-08T16:30:00Z"
   },
   {
     "mediaId": 191832,
@@ -2864,7 +2864,7 @@
     "idMal": 59741,
     "title": "The Exiled Heavy Knight Knows How to Game the System",
     "episodeNumber": 25,
-    "episodeDate": "2026-12-31T16:05:00.000Z",
+    "episodeDate": "2026-12-31T16:30:00.000Z",
     "totalEpisodes": 26,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
@@ -2880,7 +2880,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 13,
-    "projectionBaseDate": "2026-10-08T16:05:00Z"
+    "projectionBaseDate": "2026-10-08T16:30:00Z"
   },
   {
     "mediaId": 191832,
