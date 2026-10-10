@@ -1,18 +1,5 @@
 [
   {
-    "mediaId": 189275,
-    "idMal": 61335,
-    "title": null,
-    "format": "TV",
-    "duration": 23,
-    "episodeNumber": 8,
-    "episodeDate": "2026-04-13T07:00:00Z",
-    "addedAt": "2026-04-14T21:42:29Z",
-    "dateType": "historical",
-    "projected": false,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
     "mediaId": 195322,
     "idMal": 61942,
     "title": null,
@@ -15444,19 +15431,6 @@
     "source": "RockinChaos/AniSchedule"
   },
   {
-    "mediaId": 140842,
-    "idMal": 50250,
-    "title": null,
-    "format": "TV_SHORT",
-    "duration": 2,
-    "episodeNumber": 2,
-    "episodeDate": "2026-10-04T16:00:00Z",
-    "addedAt": "2026-10-05T06:45:30Z",
-    "dateType": "historical",
-    "projected": false,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
     "mediaId": 206774,
     "idMal": 63381,
     "title": null,
@@ -15491,6 +15465,19 @@
     "episodeNumber": 8,
     "episodeDate": "2026-10-04T17:00:00Z",
     "addedAt": "2026-10-04T17:00:03Z",
+    "dateType": "historical",
+    "projected": false,
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 140842,
+    "idMal": 50250,
+    "title": null,
+    "format": "TV_SHORT",
+    "duration": 2,
+    "episodeNumber": 2,
+    "episodeDate": "2026-10-04T21:00:00Z",
+    "addedAt": "2026-10-05T06:45:30Z",
     "dateType": "historical",
     "projected": false,
     "source": "RockinChaos/AniSchedule"
@@ -15544,7 +15531,7 @@
     "format": "TV_SHORT",
     "duration": 2,
     "episodeNumber": 3,
-    "episodeDate": "2026-10-06T16:00:00Z",
+    "episodeDate": "2026-10-06T21:00:00Z",
     "addedAt": "2026-10-07T06:30:40Z",
     "dateType": "historical",
     "projected": false,
@@ -15971,19 +15958,6 @@
     "source": "RockinChaos/AniSchedule"
   },
   {
-    "mediaId": 140842,
-    "idMal": 50250,
-    "title": null,
-    "format": "TV_SHORT",
-    "duration": 2,
-    "episodeNumber": 4,
-    "episodeDate": "2026-10-09T16:00:00Z",
-    "addedAt": "2026-10-09T16:00:10Z",
-    "dateType": "historical",
-    "projected": false,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
     "mediaId": 182616,
     "idMal": 60059,
     "title": "The Elusive Samurai Season 2",
@@ -16002,6 +15976,19 @@
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 140842,
+    "idMal": 50250,
+    "title": null,
+    "format": "TV_SHORT",
+    "duration": 2,
+    "episodeNumber": 4,
+    "episodeDate": "2026-10-09T21:00:00Z",
+    "addedAt": "2026-10-09T16:00:10Z",
+    "dateType": "historical",
+    "projected": false,
     "source": "RockinChaos/AniSchedule"
   },
   {
@@ -16354,27 +16341,6 @@
     "source": "RockinChaos/AniSchedule"
   },
   {
-    "mediaId": 140842,
-    "idMal": 50250,
-    "title": "Chiikawa",
-    "episodeNumber": 5,
-    "episodeDate": "2026-10-11T16:00:00Z",
-    "totalEpisodes": null,
-    "format": "TV_SHORT",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx140842-T0geOCa3zS0A.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": false,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
     "mediaId": 206774,
     "idMal": 63381,
     "title": "Now That I Can Control Reality With A Mouse Cursor, I'm Gonna Click Away On The Girls!",
@@ -16404,6 +16370,27 @@
     "totalEpisodes": null,
     "format": "ONA",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212667-8g5ktyrx34Yl.jpg",
+    "delayed": false,
+    "delayedIndefinitely": false,
+    "delayedText": null,
+    "verified": false,
+    "dateType": "confirmed",
+    "projected": false,
+    "batchRelease": false,
+    "batchStartEpisode": null,
+    "batchEndEpisode": null,
+    "episodeRangeLabel": null,
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 140842,
+    "idMal": 50250,
+    "title": "Chiikawa",
+    "episodeNumber": 5,
+    "episodeDate": "2026-10-11T21:00:00Z",
+    "totalEpisodes": null,
+    "format": "TV_SHORT",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx140842-T0geOCa3zS0A.jpg",
     "delayed": false,
     "delayedIndefinitely": false,
     "delayedText": null,
@@ -18623,5 +18610,28 @@
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 13,
     "projectionBaseDate": "2026-10-08T16:30:00Z"
+  },
+  {
+    "mediaId": 191832,
+    "idMal": 61607,
+    "title": "Link Click Season 3",
+    "episodeNumber": 20,
+    "episodeDate": "2027-01-08T03:00:00.000Z",
+    "totalEpisodes": 24,
+    "format": "ONA",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191832-bsnCaLNVjzEw.png",
+    "delayed": false,
+    "delayedIndefinitely": false,
+    "delayedText": null,
+    "verified": true,
+    "dateType": "projected",
+    "projected": true,
+    "batchRelease": false,
+    "batchStartEpisode": null,
+    "batchEndEpisode": null,
+    "episodeRangeLabel": null,
+    "source": "SeaDub/projection",
+    "projectionBaseEpisode": 7,
+    "projectionBaseDate": "2026-10-09T03:00:00Z"
   }
 ]
