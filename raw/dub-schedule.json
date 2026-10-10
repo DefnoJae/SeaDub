@@ -483,27 +483,6 @@
     "source": "RockinChaos/AniSchedule"
   },
   {
-    "mediaId": 153567,
-    "idMal": 52717,
-    "title": "Harem Camp!",
-    "episodeNumber": 4,
-    "episodeDate": "2026-10-10T01:00:00Z",
-    "totalEpisodes": 8,
-    "format": "ONA",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx153567-V6GcuDVPbKdW.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
     "mediaId": 183231,
     "idMal": 60153,
     "title": "RILAKKUMA",
@@ -1250,7 +1229,7 @@
     "idMal": 52717,
     "title": "Harem Camp!",
     "episodeNumber": 5,
-    "episodeDate": "2026-10-17T01:00:00.000Z",
+    "episodeDate": "2026-10-17T01:00:00Z",
     "totalEpisodes": 8,
     "format": "ONA",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx153567-V6GcuDVPbKdW.jpg",
@@ -1258,15 +1237,13 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
+    "dateType": "confirmed",
+    "projected": false,
     "batchRelease": false,
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-10-10T01:00:00Z"
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 171110,
@@ -1849,8 +1826,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-10-10T01:00:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-10-17T01:00:00Z"
   },
   {
     "mediaId": 185874,
@@ -2168,8 +2145,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-10-10T01:00:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-10-17T01:00:00Z"
   },
   {
     "mediaId": 185874,
@@ -2419,8 +2396,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-10-10T01:00:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-10-17T01:00:00Z"
   },
   {
     "mediaId": 135865,
