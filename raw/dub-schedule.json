@@ -672,27 +672,6 @@
     "source": "RockinChaos/AniSchedule"
   },
   {
-    "mediaId": 113417,
-    "idMal": 40746,
-    "title": "Overflow",
-    "episodeNumber": 8,
-    "episodeDate": "2026-10-10T23:00:00Z",
-    "totalEpisodes": 8,
-    "format": "ONA",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx113417-yofUQOwPXWuE.png",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
     "mediaId": 189123,
     "idMal": 61323,
     "title": "Blue Box Season 2",
