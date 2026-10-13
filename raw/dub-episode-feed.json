@@ -16133,6 +16133,19 @@
     "source": "RockinChaos/AniSchedule"
   },
   {
+    "mediaId": 100878,
+    "idMal": 37055,
+    "title": null,
+    "format": "MOVIE",
+    "duration": 98,
+    "episodeNumber": 1,
+    "episodeDate": "2026-10-12T15:00:00Z",
+    "addedAt": "2026-10-12T21:30:26Z",
+    "dateType": "historical",
+    "projected": false,
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
     "mediaId": 197754,
     "idMal": 62331,
     "title": null,
