@@ -389,7 +389,7 @@
     "delayed": false,
     "delayedIndefinitely": false,
     "delayedText": null,
-    "verified": false,
+    "verified": true,
     "dateType": "confirmed",
     "projected": false,
     "batchRelease": false,
