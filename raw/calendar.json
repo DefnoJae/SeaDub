@@ -16388,27 +16388,6 @@
     "source": "RockinChaos/AniSchedule"
   },
   {
-    "mediaId": 153567,
-    "idMal": 52717,
-    "title": "Harem Camp!",
-    "episodeNumber": 5,
-    "episodeDate": "2026-10-17T01:00:00Z",
-    "totalEpisodes": 8,
-    "format": "ONA",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx153567-V6GcuDVPbKdW.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
     "mediaId": 183231,
     "idMal": 60153,
     "title": "RILAKKUMA",
@@ -16427,6 +16406,19 @@
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 153567,
+    "idMal": 52717,
+    "title": null,
+    "format": "ONA",
+    "duration": 7,
+    "episodeNumber": 5,
+    "episodeDate": "2026-10-17T01:00:00Z",
+    "addedAt": "2026-10-17T01:00:17Z",
+    "dateType": "historical",
+    "projected": false,
     "source": "RockinChaos/AniSchedule"
   },
   {
@@ -17350,7 +17342,7 @@
     "idMal": 52717,
     "title": "Harem Camp!",
     "episodeNumber": 6,
-    "episodeDate": "2026-10-24T01:00:00.000Z",
+    "episodeDate": "2026-10-24T01:00:00Z",
     "totalEpisodes": 8,
     "format": "ONA",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx153567-V6GcuDVPbKdW.jpg",
@@ -17358,15 +17350,13 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
+    "dateType": "confirmed",
+    "projected": false,
     "batchRelease": false,
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-10-17T01:00:00Z"
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 185874,
@@ -17753,8 +17743,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-10-17T01:00:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-10-24T01:00:00Z"
   },
   {
     "mediaId": 185874,
@@ -18073,8 +18063,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-10-17T01:00:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-10-24T01:00:00Z"
   },
   {
     "mediaId": 212888,
@@ -19209,6 +19199,29 @@
     "title": "Link Click Season 3",
     "episodeNumber": 20,
     "episodeDate": "2027-01-08T03:00:00.000Z",
+    "totalEpisodes": 24,
+    "format": "ONA",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191832-bsnCaLNVjzEw.png",
+    "delayed": false,
+    "delayedIndefinitely": false,
+    "delayedText": null,
+    "verified": true,
+    "dateType": "projected",
+    "projected": true,
+    "batchRelease": false,
+    "batchStartEpisode": null,
+    "batchEndEpisode": null,
+    "episodeRangeLabel": null,
+    "source": "SeaDub/projection",
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-10-16T03:00:00Z"
+  },
+  {
+    "mediaId": 191832,
+    "idMal": 61607,
+    "title": "Link Click Season 3",
+    "episodeNumber": 21,
+    "episodeDate": "2027-01-15T03:00:00.000Z",
     "totalEpisodes": 24,
     "format": "ONA",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191832-bsnCaLNVjzEw.png",
