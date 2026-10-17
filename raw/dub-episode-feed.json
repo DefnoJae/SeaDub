@@ -16183,5 +16183,31 @@
     "dateType": "historical",
     "projected": false,
     "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 169581,
+    "idMal": 56733,
+    "title": null,
+    "format": "ONA",
+    "duration": 24,
+    "episodeNumber": 4,
+    "episodeDate": "2026-10-17T16:30:00Z",
+    "addedAt": "2026-10-17T16:30:07Z",
+    "dateType": "historical",
+    "projected": false,
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 209872,
+    "idMal": 63801,
+    "title": null,
+    "format": "TV",
+    "duration": 24,
+    "episodeNumber": 3,
+    "episodeDate": "2026-10-17T17:00:00Z",
+    "addedAt": "2026-10-17T17:00:10Z",
+    "dateType": "historical",
+    "projected": false,
+    "source": "RockinChaos/AniSchedule"
   }
 ]
