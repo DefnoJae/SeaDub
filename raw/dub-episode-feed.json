@@ -16302,19 +16302,6 @@
     "source": "RockinChaos/AniSchedule"
   },
   {
-    "mediaId": 140842,
-    "idMal": 50250,
-    "title": null,
-    "format": "TV_SHORT",
-    "duration": 2,
-    "episodeNumber": 9,
-    "episodeDate": "2026-10-20T16:00:00Z",
-    "addedAt": "2026-10-20T16:00:07Z",
-    "dateType": "historical",
-    "projected": false,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
     "mediaId": 21,
     "idMal": 21,
     "title": null,
@@ -16322,6 +16309,19 @@
     "duration": 24,
     "episodeNumber": 1156,
     "episodeDate": "2026-10-20T16:00:00Z",
+    "addedAt": "2026-10-20T16:00:07Z",
+    "dateType": "historical",
+    "projected": false,
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 140842,
+    "idMal": 50250,
+    "title": null,
+    "format": "TV_SHORT",
+    "duration": 2,
+    "episodeNumber": 9,
+    "episodeDate": "2026-10-20T21:00:00Z",
     "addedAt": "2026-10-20T16:00:07Z",
     "dateType": "historical",
     "projected": false,
