@@ -16648,7 +16648,7 @@
   {
     "mediaId": 191832,
     "idMal": 61607,
-    "title": "Link Click Season 3",
+    "title": "Link Click Season 3 Part 1",
     "episodeNumber": 9,
     "episodeDate": "2026-10-23T03:00:00Z",
     "totalEpisodes": 12,
@@ -16829,27 +16829,6 @@
     "source": "RockinChaos/AniSchedule"
   },
   {
-    "mediaId": 153567,
-    "idMal": 52717,
-    "title": "Harem Camp!",
-    "episodeNumber": 6,
-    "episodeDate": "2026-10-24T01:00:00Z",
-    "totalEpisodes": 8,
-    "format": "ONA",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx153567-V6GcuDVPbKdW.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
     "mediaId": 183231,
     "idMal": 60153,
     "title": "RILAKKUMA",
@@ -16868,6 +16847,19 @@
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 153567,
+    "idMal": 52717,
+    "title": null,
+    "format": "ONA",
+    "duration": 7,
+    "episodeNumber": 6,
+    "episodeDate": "2026-10-24T01:00:00Z",
+    "addedAt": "2026-10-24T01:00:14Z",
+    "dateType": "historical",
+    "projected": false,
     "source": "RockinChaos/AniSchedule"
   },
   {
@@ -17588,7 +17580,7 @@
   {
     "mediaId": 191832,
     "idMal": 61607,
-    "title": "Link Click Season 3",
+    "title": "Link Click Season 3 Part 1",
     "episodeNumber": 10,
     "episodeDate": "2026-10-30T03:00:00.000Z",
     "totalEpisodes": 12,
@@ -17682,7 +17674,7 @@
     "idMal": 52717,
     "title": "Harem Camp!",
     "episodeNumber": 7,
-    "episodeDate": "2026-10-31T01:00:00.000Z",
+    "episodeDate": "2026-10-31T01:00:00Z",
     "totalEpisodes": 8,
     "format": "ONA",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx153567-V6GcuDVPbKdW.jpg",
@@ -17690,15 +17682,13 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
+    "dateType": "confirmed",
+    "projected": false,
     "batchRelease": false,
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-10-24T01:00:00Z"
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 185874,
@@ -18046,7 +18036,7 @@
   {
     "mediaId": 191832,
     "idMal": 61607,
-    "title": "Link Click Season 3",
+    "title": "Link Click Season 3 Part 1",
     "episodeNumber": 11,
     "episodeDate": "2026-11-06T03:00:00.000Z",
     "totalEpisodes": 12,
@@ -18199,8 +18189,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-10-24T01:00:00Z"
+    "projectionBaseEpisode": 7,
+    "projectionBaseDate": "2026-10-31T01:00:00Z"
   },
   {
     "mediaId": 199007,
@@ -18481,7 +18471,7 @@
   {
     "mediaId": 191832,
     "idMal": 61607,
-    "title": "Link Click Season 3",
+    "title": "Link Click Season 3 Part 1",
     "episodeNumber": 12,
     "episodeDate": "2026-11-13T03:00:00.000Z",
     "totalEpisodes": 12,
