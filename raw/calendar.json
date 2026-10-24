@@ -1,18 +1,5 @@
 [
   {
-    "mediaId": 197754,
-    "idMal": 62331,
-    "title": null,
-    "format": "TV",
-    "duration": 24,
-    "episodeNumber": 2,
-    "episodeDate": "2026-04-27T16:00:00Z",
-    "addedAt": "2026-04-27T16:00:15Z",
-    "dateType": "historical",
-    "projected": false,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
     "mediaId": 183661,
     "idMal": 60226,
     "title": null,
@@ -17062,7 +17049,7 @@
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx169581-UlAviVH36Hxi.png",
     "delayed": false,
     "delayedIndefinitely": false,
-    "delayedText": null,
+    "delayedText": "Delayed",
     "verified": true,
     "dateType": "confirmed",
     "projected": false,
