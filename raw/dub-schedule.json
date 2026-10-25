@@ -4177,5 +4177,28 @@
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 4,
     "projectionBaseDate": "2026-10-24T15:00:00Z"
+  },
+  {
+    "mediaId": 212799,
+    "idMal": 64326,
+    "title": "The Seven Knights of the Marronnier Kingdom",
+    "episodeNumber": 17,
+    "episodeDate": "2027-01-23T15:00:00.000Z",
+    "totalEpisodes": 20,
+    "format": "TV",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212799-n7WDdic7IL1z.png",
+    "delayed": false,
+    "delayedIndefinitely": false,
+    "delayedText": null,
+    "verified": true,
+    "dateType": "projected",
+    "projected": true,
+    "batchRelease": false,
+    "batchStartEpisode": null,
+    "batchEndEpisode": null,
+    "episodeRangeLabel": null,
+    "source": "SeaDub/projection",
+    "projectionBaseEpisode": 4,
+    "projectionBaseDate": "2026-10-24T15:00:00Z"
   }
 ]
