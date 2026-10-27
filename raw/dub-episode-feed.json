@@ -1,18 +1,5 @@
 [
   {
-    "mediaId": 182483,
-    "idMal": 60028,
-    "title": null,
-    "format": "TV",
-    "duration": 24,
-    "episodeNumber": 2,
-    "episodeDate": "2026-04-30T12:30:00Z",
-    "addedAt": "2026-04-30T12:30:13Z",
-    "dateType": "historical",
-    "projected": false,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
     "mediaId": 199221,
     "idMal": 62568,
     "title": null,
