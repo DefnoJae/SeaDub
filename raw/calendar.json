@@ -16308,19 +16308,6 @@
     "source": "RockinChaos/AniSchedule"
   },
   {
-    "mediaId": 140842,
-    "idMal": 50250,
-    "title": null,
-    "format": "TV_SHORT",
-    "duration": 2,
-    "episodeNumber": 12,
-    "episodeDate": "2026-10-27T16:00:00Z",
-    "addedAt": "2026-10-27T16:00:25Z",
-    "dateType": "historical",
-    "projected": false,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
     "mediaId": 21,
     "idMal": 21,
     "title": "ONE PIECE",
@@ -16339,6 +16326,19 @@
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 140842,
+    "idMal": 50250,
+    "title": null,
+    "format": "TV_SHORT",
+    "duration": 2,
+    "episodeNumber": 12,
+    "episodeDate": "2026-10-27T21:00:00Z",
+    "addedAt": "2026-10-27T16:00:25Z",
+    "dateType": "historical",
+    "projected": false,
     "source": "RockinChaos/AniSchedule"
   },
   {
@@ -16848,19 +16848,6 @@
     "source": "RockinChaos/AniSchedule"
   },
   {
-    "mediaId": 140842,
-    "idMal": 50250,
-    "title": null,
-    "format": "TV_SHORT",
-    "duration": 2,
-    "episodeNumber": 13,
-    "episodeDate": "2026-10-30T16:00:00Z",
-    "addedAt": "2026-10-30T16:00:23Z",
-    "dateType": "historical",
-    "projected": false,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
     "mediaId": 178083,
     "idMal": 59088,
     "title": "Tokyo Revengers: War of the Three Titans Arc",
@@ -16879,6 +16866,19 @@
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 140842,
+    "idMal": 50250,
+    "title": null,
+    "format": "TV_SHORT",
+    "duration": 2,
+    "episodeNumber": 13,
+    "episodeDate": "2026-10-30T21:00:00Z",
+    "addedAt": "2026-10-30T16:00:23Z",
+    "dateType": "historical",
+    "projected": false,
     "source": "RockinChaos/AniSchedule"
   },
   {
@@ -17151,7 +17151,7 @@
     "idMal": 61603,
     "title": "Aoashi Season 2",
     "episodeNumber": 3,
-    "episodeDate": "2026-11-01T09:00:00Z",
+    "episodeDate": "2026-11-01T10:00:00Z",
     "totalEpisodes": 24,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191788-XC6F24LdX6a4.jpg",
@@ -17235,7 +17235,7 @@
     "idMal": 63292,
     "title": "Full Clearing Another World under a Goddess with Zero Believers",
     "episodeNumber": 2,
-    "episodeDate": "2026-11-01T14:30:00Z",
+    "episodeDate": "2026-11-01T15:30:00Z",
     "totalEpisodes": null,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205896-ElrV8oVAsuax.jpg",
@@ -17243,27 +17243,6 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": false,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 185756,
-    "idMal": 60601,
-    "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 3",
-    "episodeNumber": 4,
-    "episodeDate": "2026-11-01T15:00:00Z",
-    "totalEpisodes": null,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185756-xPCl0RyQ7fXD.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
     "dateType": "confirmed",
     "projected": false,
     "batchRelease": false,
@@ -17294,14 +17273,14 @@
     "source": "RockinChaos/AniSchedule"
   },
   {
-    "mediaId": 140842,
-    "idMal": 50250,
-    "title": "Chiikawa",
-    "episodeNumber": 14,
+    "mediaId": 185756,
+    "idMal": 60601,
+    "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 3",
+    "episodeNumber": 4,
     "episodeDate": "2026-11-01T16:00:00Z",
     "totalEpisodes": null,
-    "format": "TV_SHORT",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx140842-T0geOCa3zS0A.jpg",
+    "format": "TV",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185756-xPCl0RyQ7fXD.jpg",
     "delayed": false,
     "delayedIndefinitely": false,
     "delayedText": null,
@@ -17323,6 +17302,27 @@
     "totalEpisodes": null,
     "format": "ONA",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212667-8g5ktyrx34Yl.jpg",
+    "delayed": false,
+    "delayedIndefinitely": false,
+    "delayedText": "Delayed",
+    "verified": true,
+    "dateType": "confirmed",
+    "projected": false,
+    "batchRelease": false,
+    "batchStartEpisode": null,
+    "batchEndEpisode": null,
+    "episodeRangeLabel": null,
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 140842,
+    "idMal": 50250,
+    "title": "Chiikawa",
+    "episodeNumber": 14,
+    "episodeDate": "2026-11-01T17:00:00Z",
+    "totalEpisodes": null,
+    "format": "TV_SHORT",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx140842-T0geOCa3zS0A.jpg",
     "delayed": false,
     "delayedIndefinitely": false,
     "delayedText": null,
@@ -17796,7 +17796,7 @@
     "idMal": 61603,
     "title": "Aoashi Season 2",
     "episodeNumber": 4,
-    "episodeDate": "2026-11-08T09:00:00.000Z",
+    "episodeDate": "2026-11-08T10:00:00.000Z",
     "totalEpisodes": 24,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191788-XC6F24LdX6a4.jpg",
@@ -17812,7 +17812,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-11-01T09:00:00Z"
+    "projectionBaseDate": "2026-11-01T10:00:00Z"
   },
   {
     "mediaId": 186541,
@@ -18210,7 +18210,7 @@
     "idMal": 61603,
     "title": "Aoashi Season 2",
     "episodeNumber": 5,
-    "episodeDate": "2026-11-15T09:00:00.000Z",
+    "episodeDate": "2026-11-15T10:00:00.000Z",
     "totalEpisodes": 24,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191788-XC6F24LdX6a4.jpg",
@@ -18226,7 +18226,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-11-01T09:00:00Z"
+    "projectionBaseDate": "2026-11-01T10:00:00Z"
   },
   {
     "mediaId": 186541,
@@ -18622,7 +18622,7 @@
     "idMal": 61603,
     "title": "Aoashi Season 2",
     "episodeNumber": 6,
-    "episodeDate": "2026-11-22T09:00:00.000Z",
+    "episodeDate": "2026-11-22T10:00:00.000Z",
     "totalEpisodes": 24,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191788-XC6F24LdX6a4.jpg",
@@ -18638,7 +18638,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-11-01T09:00:00Z"
+    "projectionBaseDate": "2026-11-01T10:00:00Z"
   },
   {
     "mediaId": 186541,
@@ -18990,7 +18990,7 @@
     "idMal": 61603,
     "title": "Aoashi Season 2",
     "episodeNumber": 7,
-    "episodeDate": "2026-11-29T09:00:00.000Z",
+    "episodeDate": "2026-11-29T10:00:00.000Z",
     "totalEpisodes": 24,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191788-XC6F24LdX6a4.jpg",
@@ -19006,7 +19006,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-11-01T09:00:00Z"
+    "projectionBaseDate": "2026-11-01T10:00:00Z"
   },
   {
     "mediaId": 186541,
@@ -19312,7 +19312,7 @@
     "idMal": 61603,
     "title": "Aoashi Season 2",
     "episodeNumber": 8,
-    "episodeDate": "2026-12-06T09:00:00.000Z",
+    "episodeDate": "2026-12-06T10:00:00.000Z",
     "totalEpisodes": 24,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191788-XC6F24LdX6a4.jpg",
@@ -19328,7 +19328,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-11-01T09:00:00Z"
+    "projectionBaseDate": "2026-11-01T10:00:00Z"
   },
   {
     "mediaId": 186541,
@@ -19588,7 +19588,7 @@
     "idMal": 61603,
     "title": "Aoashi Season 2",
     "episodeNumber": 9,
-    "episodeDate": "2026-12-13T09:00:00.000Z",
+    "episodeDate": "2026-12-13T10:00:00.000Z",
     "totalEpisodes": 24,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191788-XC6F24LdX6a4.jpg",
@@ -19604,7 +19604,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-11-01T09:00:00Z"
+    "projectionBaseDate": "2026-11-01T10:00:00Z"
   },
   {
     "mediaId": 186541,
@@ -19864,7 +19864,7 @@
     "idMal": 61603,
     "title": "Aoashi Season 2",
     "episodeNumber": 10,
-    "episodeDate": "2026-12-20T09:00:00.000Z",
+    "episodeDate": "2026-12-20T10:00:00.000Z",
     "totalEpisodes": 24,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191788-XC6F24LdX6a4.jpg",
@@ -19880,7 +19880,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-11-01T09:00:00Z"
+    "projectionBaseDate": "2026-11-01T10:00:00Z"
   },
   {
     "mediaId": 186541,
@@ -20048,7 +20048,7 @@
     "idMal": 61603,
     "title": "Aoashi Season 2",
     "episodeNumber": 11,
-    "episodeDate": "2026-12-27T09:00:00.000Z",
+    "episodeDate": "2026-12-27T10:00:00.000Z",
     "totalEpisodes": 24,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191788-XC6F24LdX6a4.jpg",
@@ -20064,7 +20064,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-11-01T09:00:00Z"
+    "projectionBaseDate": "2026-11-01T10:00:00Z"
   },
   {
     "mediaId": 186541,
@@ -20186,7 +20186,7 @@
     "idMal": 61603,
     "title": "Aoashi Season 2",
     "episodeNumber": 12,
-    "episodeDate": "2027-01-03T09:00:00.000Z",
+    "episodeDate": "2027-01-03T10:00:00.000Z",
     "totalEpisodes": 24,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191788-XC6F24LdX6a4.jpg",
@@ -20202,7 +20202,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-11-01T09:00:00Z"
+    "projectionBaseDate": "2026-11-01T10:00:00Z"
   },
   {
     "mediaId": 199068,
@@ -20278,7 +20278,7 @@
     "idMal": 61603,
     "title": "Aoashi Season 2",
     "episodeNumber": 13,
-    "episodeDate": "2027-01-10T09:00:00.000Z",
+    "episodeDate": "2027-01-10T10:00:00.000Z",
     "totalEpisodes": 24,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191788-XC6F24LdX6a4.jpg",
@@ -20294,7 +20294,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-11-01T09:00:00Z"
+    "projectionBaseDate": "2026-11-01T10:00:00Z"
   },
   {
     "mediaId": 212799,
@@ -20324,7 +20324,7 @@
     "idMal": 61603,
     "title": "Aoashi Season 2",
     "episodeNumber": 14,
-    "episodeDate": "2027-01-17T09:00:00.000Z",
+    "episodeDate": "2027-01-17T10:00:00.000Z",
     "totalEpisodes": 24,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191788-XC6F24LdX6a4.jpg",
@@ -20340,7 +20340,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-11-01T09:00:00Z"
+    "projectionBaseDate": "2026-11-01T10:00:00Z"
   },
   {
     "mediaId": 212799,
@@ -20370,7 +20370,7 @@
     "idMal": 61603,
     "title": "Aoashi Season 2",
     "episodeNumber": 15,
-    "episodeDate": "2027-01-24T09:00:00.000Z",
+    "episodeDate": "2027-01-24T10:00:00.000Z",
     "totalEpisodes": 24,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191788-XC6F24LdX6a4.jpg",
@@ -20386,7 +20386,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-11-01T09:00:00Z"
+    "projectionBaseDate": "2026-11-01T10:00:00Z"
   },
   {
     "mediaId": 212799,
