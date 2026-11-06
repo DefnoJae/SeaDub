@@ -1,44 +1,5 @@
 [
   {
-    "mediaId": 195384,
-    "idMal": 61964,
-    "title": null,
-    "format": "MOVIE",
-    "duration": 125,
-    "episodeNumber": 1,
-    "episodeDate": "2026-05-10T04:00:00Z",
-    "addedAt": "2026-05-10T04:00:00Z",
-    "dateType": "historical",
-    "projected": false,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 179813,
-    "idMal": 59393,
-    "title": null,
-    "format": "TV",
-    "duration": 23,
-    "episodeNumber": 9,
-    "episodeDate": "2026-05-10T04:00:00Z",
-    "addedAt": "2026-05-10T04:00:00Z",
-    "dateType": "historical",
-    "projected": false,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 182300,
-    "idMal": 59983,
-    "title": null,
-    "format": "TV",
-    "duration": 24,
-    "episodeNumber": 3,
-    "episodeDate": "2026-05-10T08:30:00Z",
-    "addedAt": "2026-05-10T08:30:14Z",
-    "dateType": "historical",
-    "projected": false,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
     "mediaId": 206914,
     "idMal": 63375,
     "title": null,
@@ -16921,7 +16882,7 @@
     "idMal": 61607,
     "title": "Link Click Season 3 Part 1",
     "episodeNumber": 11,
-    "episodeDate": "2026-11-06T03:00:00Z",
+    "episodeDate": "2026-11-06T04:00:00Z",
     "totalEpisodes": 12,
     "format": "ONA",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191832-bsnCaLNVjzEw.png",
@@ -17825,7 +17786,7 @@
     "idMal": 61607,
     "title": "Link Click Season 3 Part 1",
     "episodeNumber": 12,
-    "episodeDate": "2026-11-13T03:00:00.000Z",
+    "episodeDate": "2026-11-13T04:00:00.000Z",
     "totalEpisodes": 12,
     "format": "ONA",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191832-bsnCaLNVjzEw.png",
@@ -17841,7 +17802,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 11,
-    "projectionBaseDate": "2026-11-06T03:00:00Z"
+    "projectionBaseDate": "2026-11-06T04:00:00Z"
   },
   {
     "mediaId": 210482,
