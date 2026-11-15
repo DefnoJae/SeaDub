@@ -1,57 +1,5 @@
 [
   {
-    "mediaId": 183661,
-    "idMal": 60226,
-    "title": null,
-    "format": "TV",
-    "duration": 25,
-    "episodeNumber": 4,
-    "episodeDate": "2026-05-19T13:30:00Z",
-    "addedAt": "2026-05-19T13:30:08Z",
-    "dateType": "historical",
-    "projected": false,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 199547,
-    "idMal": 62601,
-    "title": null,
-    "format": "TV",
-    "duration": 24,
-    "episodeNumber": 5,
-    "episodeDate": "2026-05-19T14:30:00Z",
-    "addedAt": "2026-05-19T14:30:20Z",
-    "dateType": "historical",
-    "projected": false,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 194393,
-    "idMal": 61839,
-    "title": null,
-    "format": "TV",
-    "duration": 24,
-    "episodeNumber": 4,
-    "episodeDate": "2026-05-19T14:30:00Z",
-    "addedAt": "2026-05-19T14:30:20Z",
-    "dateType": "historical",
-    "projected": false,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 186559,
-    "idMal": 60946,
-    "title": null,
-    "format": "ONA",
-    "duration": 14,
-    "episodeNumber": 1,
-    "episodeDate": "2026-05-19T15:00:00Z",
-    "addedAt": "2026-05-20T23:08:20Z",
-    "dateType": "historical",
-    "projected": false,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
     "mediaId": 180745,
     "idMal": 59708,
     "title": null,
@@ -21333,5 +21281,28 @@
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
     "projectionBaseDate": "2026-11-15T10:00:00Z"
+  },
+  {
+    "mediaId": 212799,
+    "idMal": 64326,
+    "title": "The Seven Knights of the Marronnier Kingdom",
+    "episodeNumber": 20,
+    "episodeDate": "2027-02-13T15:00:00.000Z",
+    "totalEpisodes": 20,
+    "format": "TV",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212799-n7WDdic7IL1z.png",
+    "delayed": false,
+    "delayedIndefinitely": false,
+    "delayedText": null,
+    "verified": true,
+    "dateType": "projected",
+    "projected": true,
+    "batchRelease": false,
+    "batchStartEpisode": null,
+    "batchEndEpisode": null,
+    "episodeRangeLabel": null,
+    "source": "SeaDub/projection",
+    "projectionBaseEpisode": 7,
+    "projectionBaseDate": "2026-11-14T15:00:00Z"
   }
 ]
