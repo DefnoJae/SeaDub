@@ -3,14 +3,14 @@
     "mediaId": 204011,
     "idMal": 63098,
     "title": "PSYREN",
-    "episodeNumber": 4,
-    "episodeDate": "2026-11-09T15:30:00Z",
+    "episodeNumber": 5,
+    "episodeDate": "2026-11-16T15:30:00Z",
     "totalEpisodes": null,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx204011-j45RZoqYbdZK.jpg",
     "delayed": false,
     "delayedIndefinitely": false,
-    "delayedText": null,
+    "delayedText": "Delayed",
     "verified": true,
     "dateType": "confirmed",
     "projected": false,
@@ -25,7 +25,7 @@
     "idMal": 60636,
     "title": "BLEACH: Thousand-Year Blood War - The Calamity",
     "episodeNumber": 9,
-    "episodeDate": "2026-11-09T16:30:00Z",
+    "episodeDate": "2026-11-16T16:30:00Z",
     "totalEpisodes": 10,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185874-aU3e6tBT6wwA.jpg",
@@ -45,8 +45,8 @@
     "mediaId": 207329,
     "idMal": 63431,
     "title": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
-    "episodeNumber": 6,
-    "episodeDate": "2026-11-10T15:30:00Z",
+    "episodeNumber": 7,
+    "episodeDate": "2026-11-17T15:30:00Z",
     "totalEpisodes": null,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b207329-6VPeZIDfF4Sr.png",
@@ -63,11 +63,32 @@
     "source": "RockinChaos/AniSchedule"
   },
   {
+    "mediaId": 140842,
+    "idMal": 50250,
+    "title": "Chiikawa",
+    "episodeNumber": 21,
+    "episodeDate": "2026-11-17T17:00:00Z",
+    "totalEpisodes": null,
+    "format": "TV_SHORT",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx140842-T0geOCa3zS0A.jpg",
+    "delayed": false,
+    "delayedIndefinitely": false,
+    "delayedText": null,
+    "verified": true,
+    "dateType": "confirmed",
+    "projected": false,
+    "batchRelease": false,
+    "batchStartEpisode": null,
+    "batchEndEpisode": null,
+    "episodeRangeLabel": null,
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
     "mediaId": 21,
     "idMal": 21,
     "title": "ONE PIECE",
-    "episodeNumber": 1159,
-    "episodeDate": "2026-11-10T17:00:00Z",
+    "episodeNumber": 1160,
+    "episodeDate": "2026-11-17T17:00:00Z",
     "totalEpisodes": null,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21-ELSYx3yMPcKM.jpg",
@@ -87,8 +108,8 @@
     "mediaId": 176314,
     "idMal": 58518,
     "title": "Sasaki and Peeps Season 2",
-    "episodeNumber": 4,
-    "episodeDate": "2026-11-11T14:00:00Z",
+    "episodeNumber": 5,
+    "episodeDate": "2026-11-18T14:00:00Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx176314-lpvca6vjmkeO.jpg",
@@ -108,8 +129,8 @@
     "mediaId": 211778,
     "idMal": 64084,
     "title": "The World's Strongest Witch",
-    "episodeNumber": 4,
-    "episodeDate": "2026-11-11T14:00:00Z",
+    "episodeNumber": 5,
+    "episodeDate": "2026-11-18T14:00:00Z",
     "totalEpisodes": null,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx211778-0MXK5HqVFBYH.jpg",
@@ -129,8 +150,8 @@
     "mediaId": 152677,
     "idMal": 52480,
     "title": "The Detective Is Already Dead Season 2",
-    "episodeNumber": 4,
-    "episodeDate": "2026-11-11T14:30:00Z",
+    "episodeNumber": 5,
+    "episodeDate": "2026-11-18T14:30:00Z",
     "totalEpisodes": 13,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx152677-gtJbgjE94lCN.png",
@@ -150,8 +171,8 @@
     "mediaId": 135865,
     "idMal": 49233,
     "title": "Saga of Tanya the Evil Season 2",
-    "episodeNumber": 10,
-    "episodeDate": "2026-11-11T14:30:00Z",
+    "episodeNumber": 11,
+    "episodeDate": "2026-11-18T14:30:00Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx135865-T7XIPMAbqcxN.png",
@@ -171,8 +192,8 @@
     "mediaId": 178868,
     "idMal": 59204,
     "title": "Magic Knight Rayearth (2026)",
-    "episodeNumber": 4,
-    "episodeDate": "2026-11-11T16:30:00Z",
+    "episodeNumber": 5,
+    "episodeDate": "2026-11-18T16:30:00Z",
     "totalEpisodes": null,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178868-mfp0HIHNJNAm.jpg",
@@ -187,854 +208,6 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 199068,
-    "idMal": 62534,
-    "title": "The Prince of Tennis II U-17 WORLD CUP: Final Member Selection Match",
-    "episodeNumber": 5,
-    "episodeDate": "2026-11-11T17:00:00Z",
-    "totalEpisodes": 13,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199068-2afNaytl50Ko.png",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 159042,
-    "idMal": 53913,
-    "title": "Reincarnated as a Sword Season 2",
-    "episodeNumber": 4,
-    "episodeDate": "2026-11-11T17:00:00Z",
-    "totalEpisodes": 12,
-    "format": "ONA",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx159042-GGFwlDskc5vR.png",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 206521,
-    "idMal": 63347,
-    "title": "The World Is Dancing",
-    "episodeNumber": 12,
-    "episodeDate": "2026-11-11T17:00:00Z",
-    "totalEpisodes": 13,
-    "format": "ONA",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206521-ecJuDgjth84C.png",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 172192,
-    "idMal": 57612,
-    "title": "A Returner's Magic Should be Special Season 2",
-    "episodeNumber": 6,
-    "episodeDate": "2026-11-11T17:15:00Z",
-    "totalEpisodes": null,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx172192-W7P5xEUaxF3y.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 207674,
-    "idMal": 63468,
-    "title": "KAMUI ---He's behind you",
-    "episodeNumber": 9,
-    "episodeDate": "2026-11-12T02:30:00Z",
-    "totalEpisodes": 12,
-    "format": "TV_SHORT",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx207674-BT8lFAwH1WrL.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 206166,
-    "idMal": 63310,
-    "title": "Ingoku Danchi:Deviant's Apartment Complex",
-    "episodeNumber": 1,
-    "episodeDate": "2026-11-12T04:00:00Z",
-    "totalEpisodes": 12,
-    "format": "TV_SHORT",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206166-xTJ9h6RmMCKR.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": false,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 206401,
-    "idMal": 63337,
-    "title": "FX Fighter Kurumi-chan",
-    "episodeNumber": 7,
-    "episodeDate": "2026-11-12T12:30:00Z",
-    "totalEpisodes": 12,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206401-8cAebkI0i8BA.png",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 213805,
-    "idMal": 64534,
-    "title": "The Ramparts of Ice Season 2",
-    "episodeNumber": 7,
-    "episodeDate": "2026-11-12T15:30:00Z",
-    "totalEpisodes": null,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx213805-Nokui3uWlIlw.png",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 206814,
-    "idMal": 63367,
-    "title": "Dragon Ball Super: Beerus",
-    "episodeNumber": 1,
-    "episodeDate": "2026-11-12T16:00:00Z",
-    "totalEpisodes": null,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206814-PVVzRbf1IQpe.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": false,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 180136,
-    "idMal": 59741,
-    "title": "The Exiled Heavy Knight Knows How to Game the System",
-    "episodeNumber": 18,
-    "episodeDate": "2026-11-12T17:00:00Z",
-    "totalEpisodes": 26,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 212503,
-    "idMal": 64254,
-    "title": "The Iceblade Sorcerer Shall Rule the World II",
-    "episodeNumber": 4,
-    "episodeDate": "2026-11-12T18:00:00Z",
-    "totalEpisodes": null,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212503-sXBpRZr96c4e.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 216895,
-    "idMal": 65009,
-    "title": "Welsh & Shedar",
-    "episodeNumber": 3,
-    "episodeDate": "2026-11-12T19:00:00Z",
-    "totalEpisodes": 12,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx216895-Ofx4FSKFa4CQ.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": false,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 191832,
-    "idMal": 61607,
-    "title": "Link Click Season 3 Part 1",
-    "episodeNumber": 12,
-    "episodeDate": "2026-11-13T04:00:00Z",
-    "totalEpisodes": 12,
-    "format": "ONA",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191832-bsnCaLNVjzEw.png",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 210482,
-    "idMal": 61469,
-    "title": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
-    "episodeNumber": 8,
-    "episodeDate": "2026-11-13T08:00:00Z",
-    "totalEpisodes": 11,
-    "format": "ONA",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx210482-P1VNKbqdJ6Zj.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 203275,
-    "idMal": 63045,
-    "title": "Devils' Crest",
-    "episodeNumber": 3,
-    "episodeDate": "2026-11-13T12:00:00Z",
-    "totalEpisodes": null,
-    "format": "ONA",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b203275-YyNHygkzIjMC.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": false,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 195516,
-    "idMal": 61987,
-    "title": "The Apothecary Diaries Season 3",
-    "episodeNumber": 5,
-    "episodeDate": "2026-11-13T16:40:00Z",
-    "totalEpisodes": 12,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195516-MJpUZlOberqH.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 205909,
-    "idMal": 63293,
-    "title": "Firefly Wedding",
-    "episodeNumber": 4,
-    "episodeDate": "2026-11-13T17:00:00Z",
-    "totalEpisodes": 12,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205909-DM0fAzNQulod.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 178083,
-    "idMal": 59088,
-    "title": "Tokyo Revengers: War of the Three Titans Arc",
-    "episodeNumber": 7,
-    "episodeDate": "2026-11-13T17:00:00Z",
-    "totalEpisodes": 13,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178083-bg7pg6TCHwtG.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 183231,
-    "idMal": 60153,
-    "title": "RILAKKUMA",
-    "episodeNumber": 32,
-    "episodeDate": "2026-11-14T02:00:00Z",
-    "totalEpisodes": null,
-    "format": "TV_SHORT",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b183231-z7SgjmXZBcoX.png",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 199007,
-    "idMal": 62524,
-    "title": "#I'm Looking For a Zombie",
-    "episodeNumber": 6,
-    "episodeDate": "2026-11-14T15:00:00Z",
-    "totalEpisodes": 12,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199007-8R1HsnflnHJE.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 212799,
-    "idMal": 64326,
-    "title": "The Seven Knights of the Marronnier Kingdom",
-    "episodeNumber": 7,
-    "episodeDate": "2026-11-14T15:00:00Z",
-    "totalEpisodes": 20,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212799-n7WDdic7IL1z.png",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 195604,
-    "idMal": 61967,
-    "title": "Black Clover Season 2",
-    "episodeNumber": 5,
-    "episodeDate": "2026-11-14T16:00:00Z",
-    "totalEpisodes": null,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195604-tSZcfKbVqSEG.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 169581,
-    "idMal": 56733,
-    "title": "Magical Explorer",
-    "episodeNumber": 8,
-    "episodeDate": "2026-11-14T16:30:00Z",
-    "totalEpisodes": 13,
-    "format": "ONA",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx169581-UlAviVH36Hxi.png",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 209872,
-    "idMal": 63801,
-    "title": "Ranma1/2 (2024) Season 3",
-    "episodeNumber": 7,
-    "episodeDate": "2026-11-14T17:00:00Z",
-    "totalEpisodes": null,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209872-RBeVPqwejHFp.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 191656,
-    "idMal": 61578,
-    "title": "Even the Student Council Has Its Holes!",
-    "episodeNumber": 3,
-    "episodeDate": "2026-11-14T18:00:00Z",
-    "totalEpisodes": 12,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191656-xFHtxM8SUTdU.png",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 203473,
-    "idMal": 63053,
-    "title": "HORROR COLLECTOR",
-    "episodeNumber": 4,
-    "episodeDate": "2026-11-14T18:15:00Z",
-    "totalEpisodes": 12,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b203473-pzyaqV432Qko.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 189123,
-    "idMal": 61323,
-    "title": "Blue Box Season 2",
-    "episodeNumber": 6,
-    "episodeDate": "2026-11-15T08:00:00Z",
-    "totalEpisodes": 12,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189123-0secXELIhkIW.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 191788,
-    "idMal": 61603,
-    "title": "Aoashi Season 2",
-    "episodeNumber": 5,
-    "episodeDate": "2026-11-15T10:00:00Z",
-    "totalEpisodes": 24,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191788-XC6F24LdX6a4.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 186541,
-    "idMal": 60948,
-    "title": "Reborn as a Space Mercenary: I Woke Up Piloting the Strongest Starship!",
-    "episodeNumber": 7,
-    "episodeDate": "2026-11-15T14:00:00Z",
-    "totalEpisodes": 13,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx186541-caYpLsLmbCh7.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 212888,
-    "idMal": 64340,
-    "title": "Overgeared",
-    "episodeNumber": 8,
-    "episodeDate": "2026-11-15T14:30:00Z",
-    "totalEpisodes": 12,
-    "format": "ONA",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212888-NhyvqPt5aIuJ.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 209499,
-    "idMal": 63751,
-    "title": "TANK CHAIR",
-    "episodeNumber": 7,
-    "episodeDate": "2026-11-15T14:30:00Z",
-    "totalEpisodes": null,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209499-S0sWFrCpft85.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 205896,
-    "idMal": 63292,
-    "title": "Full Clearing Another World under a Goddess with Zero Believers",
-    "episodeNumber": 4,
-    "episodeDate": "2026-11-15T15:30:00Z",
-    "totalEpisodes": null,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205896-ElrV8oVAsuax.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 206774,
-    "idMal": 63381,
-    "title": "Now That I Can Control Reality With A Mouse Cursor, I'm Gonna Click Away On The Girls!",
-    "episodeNumber": 6,
-    "episodeDate": "2026-11-15T16:00:00Z",
-    "totalEpisodes": 8,
-    "format": "TV_SHORT",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206774-gXVdrySlLY6y.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 185756,
-    "idMal": 60601,
-    "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 3",
-    "episodeNumber": 6,
-    "episodeDate": "2026-11-15T16:00:00Z",
-    "totalEpisodes": 12,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185756-xPCl0RyQ7fXD.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 212667,
-    "idMal": 64298,
-    "title": "The Lonely Snow Widow and the Cursed Ring",
-    "episodeNumber": 6,
-    "episodeDate": "2026-11-15T16:05:00Z",
-    "totalEpisodes": 8,
-    "format": "ONA",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212667-8g5ktyrx34Yl.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 140842,
-    "idMal": 50250,
-    "title": "Chiikawa",
-    "episodeNumber": 20,
-    "episodeDate": "2026-11-15T17:00:00Z",
-    "totalEpisodes": null,
-    "format": "TV_SHORT",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx140842-T0geOCa3zS0A.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 185874,
-    "idMal": 60636,
-    "title": "BLEACH: Thousand-Year Blood War - The Calamity",
-    "episodeNumber": 10,
-    "episodeDate": "2026-11-16T16:30:00.000Z",
-    "totalEpisodes": 10,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185874-aU3e6tBT6wwA.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "projected",
-    "projected": true,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 9,
-    "projectionBaseDate": "2026-11-09T16:30:00Z"
-  },
-  {
-    "mediaId": 176314,
-    "idMal": 58518,
-    "title": "Sasaki and Peeps Season 2",
-    "episodeNumber": 5,
-    "episodeDate": "2026-11-18T14:00:00.000Z",
-    "totalEpisodes": 12,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx176314-lpvca6vjmkeO.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "projected",
-    "projected": true,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-11T14:00:00Z"
-  },
-  {
-    "mediaId": 152677,
-    "idMal": 52480,
-    "title": "The Detective Is Already Dead Season 2",
-    "episodeNumber": 5,
-    "episodeDate": "2026-11-18T14:30:00.000Z",
-    "totalEpisodes": 13,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx152677-gtJbgjE94lCN.png",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "projected",
-    "projected": true,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-11T14:30:00Z"
-  },
-  {
-    "mediaId": 135865,
-    "idMal": 49233,
-    "title": "Saga of Tanya the Evil Season 2",
-    "episodeNumber": 11,
-    "episodeDate": "2026-11-18T14:30:00.000Z",
-    "totalEpisodes": 12,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx135865-T7XIPMAbqcxN.png",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "projected",
-    "projected": true,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 10,
-    "projectionBaseDate": "2026-11-11T14:30:00Z"
   },
   {
     "mediaId": 206949,
@@ -1062,7 +235,7 @@
     "idMal": 62534,
     "title": "The Prince of Tennis II U-17 WORLD CUP: Final Member Selection Match",
     "episodeNumber": 6,
-    "episodeDate": "2026-11-18T17:00:00.000Z",
+    "episodeDate": "2026-11-18T17:00:00Z",
     "totalEpisodes": 13,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199068-2afNaytl50Ko.png",
@@ -1070,22 +243,20 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
+    "dateType": "confirmed",
+    "projected": false,
     "batchRelease": false,
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-11T17:00:00Z"
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 159042,
     "idMal": 53913,
     "title": "Reincarnated as a Sword Season 2",
     "episodeNumber": 5,
-    "episodeDate": "2026-11-18T17:00:00.000Z",
+    "episodeDate": "2026-11-18T17:00:00Z",
     "totalEpisodes": 12,
     "format": "ONA",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx159042-GGFwlDskc5vR.png",
@@ -1093,22 +264,20 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
+    "dateType": "confirmed",
+    "projected": false,
     "batchRelease": false,
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-11T17:00:00Z"
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 206521,
     "idMal": 63347,
     "title": "The World Is Dancing",
     "episodeNumber": 13,
-    "episodeDate": "2026-11-18T17:00:00.000Z",
+    "episodeDate": "2026-11-18T17:00:00Z",
     "totalEpisodes": 13,
     "format": "ONA",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206521-ecJuDgjth84C.png",
@@ -1116,22 +285,41 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
+    "dateType": "confirmed",
+    "projected": false,
     "batchRelease": false,
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 12,
-    "projectionBaseDate": "2026-11-11T17:00:00Z"
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 172192,
+    "idMal": 57612,
+    "title": "A Returner's Magic Should be Special Season 2",
+    "episodeNumber": 7,
+    "episodeDate": "2026-11-18T17:15:00Z",
+    "totalEpisodes": null,
+    "format": "TV",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx172192-W7P5xEUaxF3y.jpg",
+    "delayed": false,
+    "delayedIndefinitely": false,
+    "delayedText": null,
+    "verified": true,
+    "dateType": "confirmed",
+    "projected": false,
+    "batchRelease": false,
+    "batchStartEpisode": null,
+    "batchEndEpisode": null,
+    "episodeRangeLabel": null,
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 207674,
     "idMal": 63468,
     "title": "KAMUI ---He's behind you",
     "episodeNumber": 10,
-    "episodeDate": "2026-11-19T02:30:00.000Z",
+    "episodeDate": "2026-11-19T02:30:00Z",
     "totalEpisodes": 12,
     "format": "TV_SHORT",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx207674-BT8lFAwH1WrL.jpg",
@@ -1139,22 +327,41 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
+    "dateType": "confirmed",
+    "projected": false,
     "batchRelease": false,
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 9,
-    "projectionBaseDate": "2026-11-12T02:30:00Z"
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 206166,
+    "idMal": 63310,
+    "title": "Ingoku Danchi:Deviant's Apartment Complex",
+    "episodeNumber": 2,
+    "episodeDate": "2026-11-19T04:00:00Z",
+    "totalEpisodes": 12,
+    "format": "TV_SHORT",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206166-xTJ9h6RmMCKR.jpg",
+    "delayed": false,
+    "delayedIndefinitely": false,
+    "delayedText": null,
+    "verified": false,
+    "dateType": "confirmed",
+    "projected": false,
+    "batchRelease": false,
+    "batchStartEpisode": null,
+    "batchEndEpisode": null,
+    "episodeRangeLabel": null,
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 206401,
     "idMal": 63337,
     "title": "FX Fighter Kurumi-chan",
     "episodeNumber": 8,
-    "episodeDate": "2026-11-19T12:30:00.000Z",
+    "episodeDate": "2026-11-19T12:30:00Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206401-8cAebkI0i8BA.png",
@@ -1162,22 +369,62 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
+    "dateType": "confirmed",
+    "projected": false,
     "batchRelease": false,
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-12T12:30:00Z"
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 213805,
+    "idMal": 64534,
+    "title": "The Ramparts of Ice Season 2",
+    "episodeNumber": 8,
+    "episodeDate": "2026-11-19T15:30:00Z",
+    "totalEpisodes": null,
+    "format": "TV",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx213805-Nokui3uWlIlw.png",
+    "delayed": false,
+    "delayedIndefinitely": false,
+    "delayedText": null,
+    "verified": true,
+    "dateType": "confirmed",
+    "projected": false,
+    "batchRelease": false,
+    "batchStartEpisode": null,
+    "batchEndEpisode": null,
+    "episodeRangeLabel": null,
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 206814,
+    "idMal": 63367,
+    "title": "Dragon Ball Super: Beerus",
+    "episodeNumber": 2,
+    "episodeDate": "2026-11-19T16:00:00Z",
+    "totalEpisodes": null,
+    "format": "TV",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206814-PVVzRbf1IQpe.jpg",
+    "delayed": false,
+    "delayedIndefinitely": false,
+    "delayedText": null,
+    "verified": false,
+    "dateType": "confirmed",
+    "projected": false,
+    "batchRelease": false,
+    "batchStartEpisode": null,
+    "batchEndEpisode": null,
+    "episodeRangeLabel": null,
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 180136,
     "idMal": 59741,
     "title": "The Exiled Heavy Knight Knows How to Game the System",
     "episodeNumber": 19,
-    "episodeDate": "2026-11-19T17:00:00.000Z",
+    "episodeDate": "2026-11-19T17:00:00Z",
     "totalEpisodes": 26,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
@@ -1185,22 +432,62 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
+    "dateType": "confirmed",
+    "projected": false,
     "batchRelease": false,
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 18,
-    "projectionBaseDate": "2026-11-12T17:00:00Z"
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 212503,
+    "idMal": 64254,
+    "title": "The Iceblade Sorcerer Shall Rule the World II",
+    "episodeNumber": 5,
+    "episodeDate": "2026-11-19T18:00:00Z",
+    "totalEpisodes": null,
+    "format": "TV",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212503-sXBpRZr96c4e.jpg",
+    "delayed": false,
+    "delayedIndefinitely": false,
+    "delayedText": null,
+    "verified": true,
+    "dateType": "confirmed",
+    "projected": false,
+    "batchRelease": false,
+    "batchStartEpisode": null,
+    "batchEndEpisode": null,
+    "episodeRangeLabel": null,
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 216895,
+    "idMal": 65009,
+    "title": "Welsh & Shedar",
+    "episodeNumber": 4,
+    "episodeDate": "2026-11-19T19:00:00Z",
+    "totalEpisodes": 12,
+    "format": "TV",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx216895-Ofx4FSKFa4CQ.jpg",
+    "delayed": false,
+    "delayedIndefinitely": false,
+    "delayedText": null,
+    "verified": false,
+    "dateType": "confirmed",
+    "projected": false,
+    "batchRelease": false,
+    "batchStartEpisode": null,
+    "batchEndEpisode": null,
+    "episodeRangeLabel": null,
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 210482,
     "idMal": 61469,
     "title": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
     "episodeNumber": 9,
-    "episodeDate": "2026-11-20T08:00:00.000Z",
+    "episodeDate": "2026-11-20T08:00:00Z",
     "totalEpisodes": 11,
     "format": "ONA",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx210482-P1VNKbqdJ6Zj.jpg",
@@ -1208,22 +495,41 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
+    "dateType": "confirmed",
+    "projected": false,
     "batchRelease": false,
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 8,
-    "projectionBaseDate": "2026-11-13T08:00:00Z"
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 203275,
+    "idMal": 63045,
+    "title": "Devils' Crest",
+    "episodeNumber": 4,
+    "episodeDate": "2026-11-20T12:00:00Z",
+    "totalEpisodes": null,
+    "format": "ONA",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b203275-YyNHygkzIjMC.jpg",
+    "delayed": false,
+    "delayedIndefinitely": false,
+    "delayedText": null,
+    "verified": false,
+    "dateType": "confirmed",
+    "projected": false,
+    "batchRelease": false,
+    "batchStartEpisode": null,
+    "batchEndEpisode": null,
+    "episodeRangeLabel": null,
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 195516,
     "idMal": 61987,
     "title": "The Apothecary Diaries Season 3",
     "episodeNumber": 6,
-    "episodeDate": "2026-11-20T16:40:00.000Z",
+    "episodeDate": "2026-11-20T16:00:00Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195516-MJpUZlOberqH.jpg",
@@ -1231,22 +537,20 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
+    "dateType": "confirmed",
+    "projected": false,
     "batchRelease": false,
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-13T16:40:00Z"
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 205909,
     "idMal": 63293,
     "title": "Firefly Wedding",
     "episodeNumber": 5,
-    "episodeDate": "2026-11-20T17:00:00.000Z",
+    "episodeDate": "2026-11-20T17:00:00Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205909-DM0fAzNQulod.jpg",
@@ -1254,22 +558,20 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
+    "dateType": "confirmed",
+    "projected": false,
     "batchRelease": false,
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-13T17:00:00Z"
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 178083,
     "idMal": 59088,
     "title": "Tokyo Revengers: War of the Three Titans Arc",
     "episodeNumber": 8,
-    "episodeDate": "2026-11-20T17:00:00.000Z",
+    "episodeDate": "2026-11-20T17:00:00Z",
     "totalEpisodes": 13,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178083-bg7pg6TCHwtG.jpg",
@@ -1277,22 +579,41 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
+    "dateType": "confirmed",
+    "projected": false,
     "batchRelease": false,
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-13T17:00:00Z"
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 183231,
+    "idMal": 60153,
+    "title": "RILAKKUMA",
+    "episodeNumber": 33,
+    "episodeDate": "2026-11-21T02:00:00Z",
+    "totalEpisodes": null,
+    "format": "TV_SHORT",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b183231-z7SgjmXZBcoX.png",
+    "delayed": false,
+    "delayedIndefinitely": false,
+    "delayedText": null,
+    "verified": true,
+    "dateType": "confirmed",
+    "projected": false,
+    "batchRelease": false,
+    "batchStartEpisode": null,
+    "batchEndEpisode": null,
+    "episodeRangeLabel": null,
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 199007,
     "idMal": 62524,
     "title": "#I'm Looking For a Zombie",
     "episodeNumber": 7,
-    "episodeDate": "2026-11-21T15:00:00.000Z",
+    "episodeDate": "2026-11-21T15:00:00Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199007-8R1HsnflnHJE.jpg",
@@ -1300,22 +621,20 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
+    "dateType": "confirmed",
+    "projected": false,
     "batchRelease": false,
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-14T15:00:00Z"
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 212799,
     "idMal": 64326,
     "title": "The Seven Knights of the Marronnier Kingdom",
     "episodeNumber": 8,
-    "episodeDate": "2026-11-21T15:00:00.000Z",
+    "episodeDate": "2026-11-21T15:00:00Z",
     "totalEpisodes": 20,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212799-n7WDdic7IL1z.png",
@@ -1323,22 +642,41 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
+    "dateType": "confirmed",
+    "projected": false,
     "batchRelease": false,
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-14T15:00:00Z"
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 195604,
+    "idMal": 61967,
+    "title": "Black Clover Season 2",
+    "episodeNumber": 6,
+    "episodeDate": "2026-11-21T16:00:00Z",
+    "totalEpisodes": null,
+    "format": "TV",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195604-tSZcfKbVqSEG.jpg",
+    "delayed": false,
+    "delayedIndefinitely": false,
+    "delayedText": null,
+    "verified": true,
+    "dateType": "confirmed",
+    "projected": false,
+    "batchRelease": false,
+    "batchStartEpisode": null,
+    "batchEndEpisode": null,
+    "episodeRangeLabel": null,
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 169581,
     "idMal": 56733,
     "title": "Magical Explorer",
     "episodeNumber": 9,
-    "episodeDate": "2026-11-21T16:30:00.000Z",
+    "episodeDate": "2026-11-21T16:30:00Z",
     "totalEpisodes": 13,
     "format": "ONA",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx169581-UlAviVH36Hxi.png",
@@ -1346,22 +684,41 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
+    "dateType": "confirmed",
+    "projected": false,
     "batchRelease": false,
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 8,
-    "projectionBaseDate": "2026-11-14T16:30:00Z"
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 209872,
+    "idMal": 63801,
+    "title": "Ranma1/2 (2024) Season 3",
+    "episodeNumber": 8,
+    "episodeDate": "2026-11-21T17:00:00Z",
+    "totalEpisodes": null,
+    "format": "TV",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209872-RBeVPqwejHFp.jpg",
+    "delayed": false,
+    "delayedIndefinitely": false,
+    "delayedText": null,
+    "verified": true,
+    "dateType": "confirmed",
+    "projected": false,
+    "batchRelease": false,
+    "batchStartEpisode": null,
+    "batchEndEpisode": null,
+    "episodeRangeLabel": null,
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 191656,
     "idMal": 61578,
     "title": "Even the Student Council Has Its Holes!",
     "episodeNumber": 4,
-    "episodeDate": "2026-11-21T18:00:00.000Z",
+    "episodeDate": "2026-11-21T18:00:00Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191656-xFHtxM8SUTdU.png",
@@ -1369,22 +726,20 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
+    "dateType": "confirmed",
+    "projected": false,
     "batchRelease": false,
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-11-14T18:00:00Z"
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 203473,
     "idMal": 63053,
     "title": "HORROR COLLECTOR",
     "episodeNumber": 5,
-    "episodeDate": "2026-11-21T18:15:00.000Z",
+    "episodeDate": "2026-11-21T18:15:00Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b203473-pzyaqV432Qko.jpg",
@@ -1392,22 +747,20 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
+    "dateType": "confirmed",
+    "projected": false,
     "batchRelease": false,
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-14T18:15:00Z"
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 189123,
     "idMal": 61323,
     "title": "Blue Box Season 2",
     "episodeNumber": 7,
-    "episodeDate": "2026-11-22T08:00:00.000Z",
+    "episodeDate": "2026-11-22T08:00:00Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189123-0secXELIhkIW.jpg",
@@ -1415,22 +768,20 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
+    "dateType": "confirmed",
+    "projected": false,
     "batchRelease": false,
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-15T08:00:00Z"
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 191788,
     "idMal": 61603,
     "title": "Aoashi Season 2",
     "episodeNumber": 6,
-    "episodeDate": "2026-11-22T10:00:00.000Z",
+    "episodeDate": "2026-11-22T10:00:00Z",
     "totalEpisodes": 24,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191788-XC6F24LdX6a4.jpg",
@@ -1438,22 +789,20 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
+    "dateType": "confirmed",
+    "projected": false,
     "batchRelease": false,
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-15T10:00:00Z"
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 186541,
     "idMal": 60948,
     "title": "Reborn as a Space Mercenary: I Woke Up Piloting the Strongest Starship!",
     "episodeNumber": 8,
-    "episodeDate": "2026-11-22T14:00:00.000Z",
+    "episodeDate": "2026-11-22T14:00:00Z",
     "totalEpisodes": 13,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx186541-caYpLsLmbCh7.jpg",
@@ -1461,22 +810,20 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
+    "dateType": "confirmed",
+    "projected": false,
     "batchRelease": false,
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-15T14:00:00Z"
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 212888,
     "idMal": 64340,
     "title": "Overgeared",
     "episodeNumber": 9,
-    "episodeDate": "2026-11-22T14:30:00.000Z",
+    "episodeDate": "2026-11-22T14:30:00Z",
     "totalEpisodes": 12,
     "format": "ONA",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212888-NhyvqPt5aIuJ.jpg",
@@ -1484,45 +831,62 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
+    "dateType": "confirmed",
+    "projected": false,
     "batchRelease": false,
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 8,
-    "projectionBaseDate": "2026-11-15T14:30:00Z"
+    "source": "RockinChaos/AniSchedule"
   },
   {
-    "mediaId": 206774,
-    "idMal": 63381,
-    "title": "Now That I Can Control Reality With A Mouse Cursor, I'm Gonna Click Away On The Girls!",
-    "episodeNumber": 7,
-    "episodeDate": "2026-11-22T16:00:00.000Z",
-    "totalEpisodes": 8,
-    "format": "TV_SHORT",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206774-gXVdrySlLY6y.jpg",
+    "mediaId": 205896,
+    "idMal": 63292,
+    "title": "Full Clearing Another World under a Goddess with Zero Believers",
+    "episodeNumber": 5,
+    "episodeDate": "2026-11-22T14:30:00Z",
+    "totalEpisodes": null,
+    "format": "TV",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205896-ElrV8oVAsuax.jpg",
     "delayed": false,
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
+    "dateType": "confirmed",
+    "projected": false,
     "batchRelease": false,
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-15T16:00:00Z"
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 209499,
+    "idMal": 63751,
+    "title": "TANK CHAIR",
+    "episodeNumber": 8,
+    "episodeDate": "2026-11-22T14:30:00Z",
+    "totalEpisodes": null,
+    "format": "TV",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209499-S0sWFrCpft85.jpg",
+    "delayed": false,
+    "delayedIndefinitely": false,
+    "delayedText": null,
+    "verified": true,
+    "dateType": "confirmed",
+    "projected": false,
+    "batchRelease": false,
+    "batchStartEpisode": null,
+    "batchEndEpisode": null,
+    "episodeRangeLabel": null,
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 185756,
     "idMal": 60601,
     "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 3",
     "episodeNumber": 7,
-    "episodeDate": "2026-11-22T16:00:00.000Z",
+    "episodeDate": "2026-11-22T15:00:00Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185756-xPCl0RyQ7fXD.jpg",
@@ -1530,22 +894,41 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
+    "dateType": "confirmed",
+    "projected": false,
     "batchRelease": false,
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-15T16:00:00Z"
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 206774,
+    "idMal": 63381,
+    "title": "Now That I Can Control Reality With A Mouse Cursor, I'm Gonna Click Away On The Girls!",
+    "episodeNumber": 7,
+    "episodeDate": "2026-11-22T16:00:00Z",
+    "totalEpisodes": 8,
+    "format": "TV_SHORT",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206774-gXVdrySlLY6y.jpg",
+    "delayed": false,
+    "delayedIndefinitely": false,
+    "delayedText": null,
+    "verified": true,
+    "dateType": "confirmed",
+    "projected": false,
+    "batchRelease": false,
+    "batchStartEpisode": null,
+    "batchEndEpisode": null,
+    "episodeRangeLabel": null,
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 212667,
     "idMal": 64298,
     "title": "The Lonely Snow Widow and the Cursed Ring",
     "episodeNumber": 7,
-    "episodeDate": "2026-11-22T16:05:00.000Z",
+    "episodeDate": "2026-11-22T16:05:00Z",
     "totalEpisodes": 8,
     "format": "ONA",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212667-8g5ktyrx34Yl.jpg",
@@ -1553,15 +936,13 @@
     "delayedIndefinitely": false,
     "delayedText": null,
     "verified": true,
-    "dateType": "projected",
-    "projected": true,
+    "dateType": "confirmed",
+    "projected": false,
     "batchRelease": false,
     "batchStartEpisode": null,
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-15T16:05:00Z"
+    "source": "RockinChaos/AniSchedule"
   },
   {
     "mediaId": 196012,
@@ -1575,7 +956,7 @@
     "delayed": false,
     "delayedIndefinitely": false,
     "delayedText": null,
-    "verified": false,
+    "verified": true,
     "dateType": "confirmed",
     "projected": false,
     "batchRelease": true,
@@ -1597,7 +978,7 @@
     "delayed": false,
     "delayedIndefinitely": false,
     "delayedText": null,
-    "verified": false,
+    "verified": true,
     "dateType": "confirmed",
     "projected": false,
     "batchRelease": true,
@@ -1619,7 +1000,7 @@
     "delayed": false,
     "delayedIndefinitely": false,
     "delayedText": null,
-    "verified": false,
+    "verified": true,
     "dateType": "confirmed",
     "projected": false,
     "batchRelease": true,
@@ -1641,7 +1022,7 @@
     "delayed": false,
     "delayedIndefinitely": false,
     "delayedText": null,
-    "verified": false,
+    "verified": true,
     "dateType": "confirmed",
     "projected": false,
     "batchRelease": true,
@@ -1663,7 +1044,7 @@
     "delayed": false,
     "delayedIndefinitely": false,
     "delayedText": null,
-    "verified": false,
+    "verified": true,
     "dateType": "confirmed",
     "projected": false,
     "batchRelease": true,
@@ -1685,7 +1066,7 @@
     "delayed": false,
     "delayedIndefinitely": false,
     "delayedText": null,
-    "verified": false,
+    "verified": true,
     "dateType": "confirmed",
     "projected": false,
     "batchRelease": true,
@@ -1707,7 +1088,7 @@
     "delayed": false,
     "delayedIndefinitely": false,
     "delayedText": null,
-    "verified": false,
+    "verified": true,
     "dateType": "confirmed",
     "projected": false,
     "batchRelease": true,
@@ -1729,7 +1110,7 @@
     "delayed": false,
     "delayedIndefinitely": false,
     "delayedText": null,
-    "verified": false,
+    "verified": true,
     "dateType": "confirmed",
     "projected": false,
     "batchRelease": true,
@@ -1751,7 +1132,7 @@
     "delayed": false,
     "delayedIndefinitely": false,
     "delayedText": null,
-    "verified": false,
+    "verified": true,
     "dateType": "confirmed",
     "projected": false,
     "batchRelease": true,
@@ -1773,7 +1154,7 @@
     "delayed": false,
     "delayedIndefinitely": false,
     "delayedText": null,
-    "verified": false,
+    "verified": true,
     "dateType": "confirmed",
     "projected": false,
     "batchRelease": true,
@@ -1795,7 +1176,7 @@
     "delayed": false,
     "delayedIndefinitely": false,
     "delayedText": null,
-    "verified": false,
+    "verified": true,
     "dateType": "confirmed",
     "projected": false,
     "batchRelease": true,
@@ -1817,7 +1198,7 @@
     "delayed": false,
     "delayedIndefinitely": false,
     "delayedText": null,
-    "verified": false,
+    "verified": true,
     "dateType": "confirmed",
     "projected": false,
     "batchRelease": true,
@@ -1839,7 +1220,7 @@
     "delayed": false,
     "delayedIndefinitely": false,
     "delayedText": null,
-    "verified": false,
+    "verified": true,
     "dateType": "confirmed",
     "projected": false,
     "batchRelease": true,
@@ -1848,6 +1229,29 @@
     "episodeRangeLabel": "14–26",
     "source": "RockinChaos/AniSchedule",
     "batchMember": true
+  },
+  {
+    "mediaId": 185874,
+    "idMal": 60636,
+    "title": "BLEACH: Thousand-Year Blood War - The Calamity",
+    "episodeNumber": 10,
+    "episodeDate": "2026-11-23T16:30:00.000Z",
+    "totalEpisodes": 10,
+    "format": "TV",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185874-aU3e6tBT6wwA.jpg",
+    "delayed": false,
+    "delayedIndefinitely": false,
+    "delayedText": null,
+    "verified": true,
+    "dateType": "projected",
+    "projected": true,
+    "batchRelease": false,
+    "batchStartEpisode": null,
+    "batchEndEpisode": null,
+    "episodeRangeLabel": null,
+    "source": "SeaDub/projection",
+    "projectionBaseEpisode": 9,
+    "projectionBaseDate": "2026-11-16T16:30:00Z"
   },
   {
     "mediaId": 176314,
@@ -1869,8 +1273,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-11T14:00:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-18T14:00:00Z"
   },
   {
     "mediaId": 152677,
@@ -1892,8 +1296,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-11T14:30:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-18T14:30:00Z"
   },
   {
     "mediaId": 135865,
@@ -1915,8 +1319,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 10,
-    "projectionBaseDate": "2026-11-11T14:30:00Z"
+    "projectionBaseEpisode": 11,
+    "projectionBaseDate": "2026-11-18T14:30:00Z"
   },
   {
     "mediaId": 199068,
@@ -1938,8 +1342,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-11T17:00:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-11-18T17:00:00Z"
   },
   {
     "mediaId": 159042,
@@ -1961,8 +1365,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-11T17:00:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-18T17:00:00Z"
   },
   {
     "mediaId": 207674,
@@ -1984,8 +1388,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 9,
-    "projectionBaseDate": "2026-11-12T02:30:00Z"
+    "projectionBaseEpisode": 10,
+    "projectionBaseDate": "2026-11-19T02:30:00Z"
   },
   {
     "mediaId": 213457,
@@ -2028,8 +1432,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-12T12:30:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-19T12:30:00Z"
   },
   {
     "mediaId": 180136,
@@ -2051,8 +1455,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 18,
-    "projectionBaseDate": "2026-11-12T17:00:00Z"
+    "projectionBaseEpisode": 19,
+    "projectionBaseDate": "2026-11-19T17:00:00Z"
   },
   {
     "mediaId": 210482,
@@ -2074,15 +1478,15 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 8,
-    "projectionBaseDate": "2026-11-13T08:00:00Z"
+    "projectionBaseEpisode": 9,
+    "projectionBaseDate": "2026-11-20T08:00:00Z"
   },
   {
     "mediaId": 195516,
     "idMal": 61987,
     "title": "The Apothecary Diaries Season 3",
     "episodeNumber": 7,
-    "episodeDate": "2026-11-27T16:40:00.000Z",
+    "episodeDate": "2026-11-27T16:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195516-MJpUZlOberqH.jpg",
@@ -2097,8 +1501,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-13T16:40:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-11-20T16:00:00Z"
   },
   {
     "mediaId": 205909,
@@ -2120,8 +1524,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-13T17:00:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-20T17:00:00Z"
   },
   {
     "mediaId": 178083,
@@ -2143,8 +1547,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-13T17:00:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-20T17:00:00Z"
   },
   {
     "mediaId": 199007,
@@ -2166,8 +1570,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-14T15:00:00Z"
+    "projectionBaseEpisode": 7,
+    "projectionBaseDate": "2026-11-21T15:00:00Z"
   },
   {
     "mediaId": 212799,
@@ -2189,8 +1593,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-14T15:00:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-21T15:00:00Z"
   },
   {
     "mediaId": 169581,
@@ -2212,8 +1616,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 8,
-    "projectionBaseDate": "2026-11-14T16:30:00Z"
+    "projectionBaseEpisode": 9,
+    "projectionBaseDate": "2026-11-21T16:30:00Z"
   },
   {
     "mediaId": 191656,
@@ -2235,8 +1639,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-11-14T18:00:00Z"
+    "projectionBaseEpisode": 4,
+    "projectionBaseDate": "2026-11-21T18:00:00Z"
   },
   {
     "mediaId": 203473,
@@ -2258,8 +1662,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-14T18:15:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-21T18:15:00Z"
   },
   {
     "mediaId": 189123,
@@ -2281,8 +1685,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-15T08:00:00Z"
+    "projectionBaseEpisode": 7,
+    "projectionBaseDate": "2026-11-22T08:00:00Z"
   },
   {
     "mediaId": 191788,
@@ -2304,8 +1708,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-15T10:00:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-11-22T10:00:00Z"
   },
   {
     "mediaId": 186541,
@@ -2327,8 +1731,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-15T14:00:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-22T14:00:00Z"
   },
   {
     "mediaId": 212888,
@@ -2350,8 +1754,31 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 8,
-    "projectionBaseDate": "2026-11-15T14:30:00Z"
+    "projectionBaseEpisode": 9,
+    "projectionBaseDate": "2026-11-22T14:30:00Z"
+  },
+  {
+    "mediaId": 185756,
+    "idMal": 60601,
+    "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 3",
+    "episodeNumber": 8,
+    "episodeDate": "2026-11-29T15:00:00.000Z",
+    "totalEpisodes": 12,
+    "format": "TV",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185756-xPCl0RyQ7fXD.jpg",
+    "delayed": false,
+    "delayedIndefinitely": false,
+    "delayedText": null,
+    "verified": true,
+    "dateType": "projected",
+    "projected": true,
+    "batchRelease": false,
+    "batchStartEpisode": null,
+    "batchEndEpisode": null,
+    "episodeRangeLabel": null,
+    "source": "SeaDub/projection",
+    "projectionBaseEpisode": 7,
+    "projectionBaseDate": "2026-11-22T15:00:00Z"
   },
   {
     "mediaId": 206774,
@@ -2373,31 +1800,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-15T16:00:00Z"
-  },
-  {
-    "mediaId": 185756,
-    "idMal": 60601,
-    "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 3",
-    "episodeNumber": 8,
-    "episodeDate": "2026-11-29T16:00:00.000Z",
-    "totalEpisodes": 12,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185756-xPCl0RyQ7fXD.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "projected",
-    "projected": true,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "SeaDub/projection",
-    "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-15T16:00:00Z"
+    "projectionBaseEpisode": 7,
+    "projectionBaseDate": "2026-11-22T16:00:00Z"
   },
   {
     "mediaId": 212667,
@@ -2419,8 +1823,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-15T16:05:00Z"
+    "projectionBaseEpisode": 7,
+    "projectionBaseDate": "2026-11-22T16:05:00Z"
   },
   {
     "mediaId": 176314,
@@ -2442,8 +1846,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-11T14:00:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-18T14:00:00Z"
   },
   {
     "mediaId": 152677,
@@ -2465,8 +1869,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-11T14:30:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-18T14:30:00Z"
   },
   {
     "mediaId": 199068,
@@ -2488,8 +1892,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-11T17:00:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-11-18T17:00:00Z"
   },
   {
     "mediaId": 159042,
@@ -2511,8 +1915,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-11T17:00:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-18T17:00:00Z"
   },
   {
     "mediaId": 207674,
@@ -2534,8 +1938,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 9,
-    "projectionBaseDate": "2026-11-12T02:30:00Z"
+    "projectionBaseEpisode": 10,
+    "projectionBaseDate": "2026-11-19T02:30:00Z"
   },
   {
     "mediaId": 206401,
@@ -2557,8 +1961,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-12T12:30:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-19T12:30:00Z"
   },
   {
     "mediaId": 180136,
@@ -2580,8 +1984,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 18,
-    "projectionBaseDate": "2026-11-12T17:00:00Z"
+    "projectionBaseEpisode": 19,
+    "projectionBaseDate": "2026-11-19T17:00:00Z"
   },
   {
     "mediaId": 210482,
@@ -2603,15 +2007,15 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 8,
-    "projectionBaseDate": "2026-11-13T08:00:00Z"
+    "projectionBaseEpisode": 9,
+    "projectionBaseDate": "2026-11-20T08:00:00Z"
   },
   {
     "mediaId": 195516,
     "idMal": 61987,
     "title": "The Apothecary Diaries Season 3",
     "episodeNumber": 8,
-    "episodeDate": "2026-12-04T16:40:00.000Z",
+    "episodeDate": "2026-12-04T16:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195516-MJpUZlOberqH.jpg",
@@ -2626,8 +2030,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-13T16:40:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-11-20T16:00:00Z"
   },
   {
     "mediaId": 205909,
@@ -2649,8 +2053,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-13T17:00:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-20T17:00:00Z"
   },
   {
     "mediaId": 178083,
@@ -2672,8 +2076,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-13T17:00:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-20T17:00:00Z"
   },
   {
     "mediaId": 199007,
@@ -2695,8 +2099,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-14T15:00:00Z"
+    "projectionBaseEpisode": 7,
+    "projectionBaseDate": "2026-11-21T15:00:00Z"
   },
   {
     "mediaId": 212799,
@@ -2718,8 +2122,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-14T15:00:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-21T15:00:00Z"
   },
   {
     "mediaId": 169581,
@@ -2741,8 +2145,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 8,
-    "projectionBaseDate": "2026-11-14T16:30:00Z"
+    "projectionBaseEpisode": 9,
+    "projectionBaseDate": "2026-11-21T16:30:00Z"
   },
   {
     "mediaId": 191656,
@@ -2764,8 +2168,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-11-14T18:00:00Z"
+    "projectionBaseEpisode": 4,
+    "projectionBaseDate": "2026-11-21T18:00:00Z"
   },
   {
     "mediaId": 203473,
@@ -2787,8 +2191,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-14T18:15:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-21T18:15:00Z"
   },
   {
     "mediaId": 189123,
@@ -2810,8 +2214,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-15T08:00:00Z"
+    "projectionBaseEpisode": 7,
+    "projectionBaseDate": "2026-11-22T08:00:00Z"
   },
   {
     "mediaId": 191788,
@@ -2833,8 +2237,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-15T10:00:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-11-22T10:00:00Z"
   },
   {
     "mediaId": 186541,
@@ -2856,8 +2260,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-15T14:00:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-22T14:00:00Z"
   },
   {
     "mediaId": 212888,
@@ -2879,15 +2283,15 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 8,
-    "projectionBaseDate": "2026-11-15T14:30:00Z"
+    "projectionBaseEpisode": 9,
+    "projectionBaseDate": "2026-11-22T14:30:00Z"
   },
   {
     "mediaId": 185756,
     "idMal": 60601,
     "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 3",
     "episodeNumber": 9,
-    "episodeDate": "2026-12-06T16:00:00.000Z",
+    "episodeDate": "2026-12-06T15:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185756-xPCl0RyQ7fXD.jpg",
@@ -2902,8 +2306,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-15T16:00:00Z"
+    "projectionBaseEpisode": 7,
+    "projectionBaseDate": "2026-11-22T15:00:00Z"
   },
   {
     "mediaId": 176314,
@@ -2925,8 +2329,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-11T14:00:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-18T14:00:00Z"
   },
   {
     "mediaId": 152677,
@@ -2948,8 +2352,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-11T14:30:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-18T14:30:00Z"
   },
   {
     "mediaId": 199068,
@@ -2971,8 +2375,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-11T17:00:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-11-18T17:00:00Z"
   },
   {
     "mediaId": 159042,
@@ -2994,8 +2398,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-11T17:00:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-18T17:00:00Z"
   },
   {
     "mediaId": 206401,
@@ -3017,8 +2421,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-12T12:30:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-19T12:30:00Z"
   },
   {
     "mediaId": 180136,
@@ -3040,15 +2444,15 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 18,
-    "projectionBaseDate": "2026-11-12T17:00:00Z"
+    "projectionBaseEpisode": 19,
+    "projectionBaseDate": "2026-11-19T17:00:00Z"
   },
   {
     "mediaId": 195516,
     "idMal": 61987,
     "title": "The Apothecary Diaries Season 3",
     "episodeNumber": 9,
-    "episodeDate": "2026-12-11T16:40:00.000Z",
+    "episodeDate": "2026-12-11T16:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195516-MJpUZlOberqH.jpg",
@@ -3063,8 +2467,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-13T16:40:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-11-20T16:00:00Z"
   },
   {
     "mediaId": 205909,
@@ -3086,8 +2490,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-13T17:00:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-20T17:00:00Z"
   },
   {
     "mediaId": 178083,
@@ -3109,8 +2513,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-13T17:00:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-20T17:00:00Z"
   },
   {
     "mediaId": 199007,
@@ -3132,8 +2536,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-14T15:00:00Z"
+    "projectionBaseEpisode": 7,
+    "projectionBaseDate": "2026-11-21T15:00:00Z"
   },
   {
     "mediaId": 212799,
@@ -3155,8 +2559,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-14T15:00:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-21T15:00:00Z"
   },
   {
     "mediaId": 169581,
@@ -3178,8 +2582,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 8,
-    "projectionBaseDate": "2026-11-14T16:30:00Z"
+    "projectionBaseEpisode": 9,
+    "projectionBaseDate": "2026-11-21T16:30:00Z"
   },
   {
     "mediaId": 191656,
@@ -3201,8 +2605,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-11-14T18:00:00Z"
+    "projectionBaseEpisode": 4,
+    "projectionBaseDate": "2026-11-21T18:00:00Z"
   },
   {
     "mediaId": 203473,
@@ -3224,8 +2628,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-14T18:15:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-21T18:15:00Z"
   },
   {
     "mediaId": 189123,
@@ -3247,8 +2651,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-15T08:00:00Z"
+    "projectionBaseEpisode": 7,
+    "projectionBaseDate": "2026-11-22T08:00:00Z"
   },
   {
     "mediaId": 191788,
@@ -3270,8 +2674,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-15T10:00:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-11-22T10:00:00Z"
   },
   {
     "mediaId": 186541,
@@ -3293,8 +2697,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-15T14:00:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-22T14:00:00Z"
   },
   {
     "mediaId": 212888,
@@ -3316,15 +2720,15 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 8,
-    "projectionBaseDate": "2026-11-15T14:30:00Z"
+    "projectionBaseEpisode": 9,
+    "projectionBaseDate": "2026-11-22T14:30:00Z"
   },
   {
     "mediaId": 185756,
     "idMal": 60601,
     "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 3",
     "episodeNumber": 10,
-    "episodeDate": "2026-12-13T16:00:00.000Z",
+    "episodeDate": "2026-12-13T15:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185756-xPCl0RyQ7fXD.jpg",
@@ -3339,8 +2743,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-15T16:00:00Z"
+    "projectionBaseEpisode": 7,
+    "projectionBaseDate": "2026-11-22T15:00:00Z"
   },
   {
     "mediaId": 176314,
@@ -3362,8 +2766,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-11T14:00:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-18T14:00:00Z"
   },
   {
     "mediaId": 152677,
@@ -3385,8 +2789,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-11T14:30:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-18T14:30:00Z"
   },
   {
     "mediaId": 199068,
@@ -3408,8 +2812,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-11T17:00:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-11-18T17:00:00Z"
   },
   {
     "mediaId": 159042,
@@ -3431,8 +2835,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-11T17:00:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-18T17:00:00Z"
   },
   {
     "mediaId": 206401,
@@ -3454,8 +2858,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-12T12:30:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-19T12:30:00Z"
   },
   {
     "mediaId": 180136,
@@ -3477,15 +2881,15 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 18,
-    "projectionBaseDate": "2026-11-12T17:00:00Z"
+    "projectionBaseEpisode": 19,
+    "projectionBaseDate": "2026-11-19T17:00:00Z"
   },
   {
     "mediaId": 195516,
     "idMal": 61987,
     "title": "The Apothecary Diaries Season 3",
     "episodeNumber": 10,
-    "episodeDate": "2026-12-18T16:40:00.000Z",
+    "episodeDate": "2026-12-18T16:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195516-MJpUZlOberqH.jpg",
@@ -3500,8 +2904,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-13T16:40:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-11-20T16:00:00Z"
   },
   {
     "mediaId": 205909,
@@ -3523,8 +2927,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-13T17:00:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-20T17:00:00Z"
   },
   {
     "mediaId": 178083,
@@ -3546,8 +2950,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-13T17:00:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-20T17:00:00Z"
   },
   {
     "mediaId": 199007,
@@ -3569,8 +2973,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-14T15:00:00Z"
+    "projectionBaseEpisode": 7,
+    "projectionBaseDate": "2026-11-21T15:00:00Z"
   },
   {
     "mediaId": 212799,
@@ -3592,8 +2996,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-14T15:00:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-21T15:00:00Z"
   },
   {
     "mediaId": 169581,
@@ -3615,8 +3019,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 8,
-    "projectionBaseDate": "2026-11-14T16:30:00Z"
+    "projectionBaseEpisode": 9,
+    "projectionBaseDate": "2026-11-21T16:30:00Z"
   },
   {
     "mediaId": 191656,
@@ -3638,8 +3042,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-11-14T18:00:00Z"
+    "projectionBaseEpisode": 4,
+    "projectionBaseDate": "2026-11-21T18:00:00Z"
   },
   {
     "mediaId": 203473,
@@ -3661,8 +3065,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-14T18:15:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-21T18:15:00Z"
   },
   {
     "mediaId": 189123,
@@ -3684,8 +3088,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-15T08:00:00Z"
+    "projectionBaseEpisode": 7,
+    "projectionBaseDate": "2026-11-22T08:00:00Z"
   },
   {
     "mediaId": 191788,
@@ -3707,8 +3111,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-15T10:00:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-11-22T10:00:00Z"
   },
   {
     "mediaId": 186541,
@@ -3730,15 +3134,15 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-15T14:00:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-22T14:00:00Z"
   },
   {
     "mediaId": 185756,
     "idMal": 60601,
     "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 3",
     "episodeNumber": 11,
-    "episodeDate": "2026-12-20T16:00:00.000Z",
+    "episodeDate": "2026-12-20T15:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185756-xPCl0RyQ7fXD.jpg",
@@ -3753,8 +3157,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-15T16:00:00Z"
+    "projectionBaseEpisode": 7,
+    "projectionBaseDate": "2026-11-22T15:00:00Z"
   },
   {
     "mediaId": 176314,
@@ -3776,8 +3180,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-11T14:00:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-18T14:00:00Z"
   },
   {
     "mediaId": 152677,
@@ -3799,8 +3203,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-11T14:30:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-18T14:30:00Z"
   },
   {
     "mediaId": 199068,
@@ -3822,8 +3226,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-11T17:00:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-11-18T17:00:00Z"
   },
   {
     "mediaId": 159042,
@@ -3845,8 +3249,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-11T17:00:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-18T17:00:00Z"
   },
   {
     "mediaId": 180136,
@@ -3868,15 +3272,15 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 18,
-    "projectionBaseDate": "2026-11-12T17:00:00Z"
+    "projectionBaseEpisode": 19,
+    "projectionBaseDate": "2026-11-19T17:00:00Z"
   },
   {
     "mediaId": 195516,
     "idMal": 61987,
     "title": "The Apothecary Diaries Season 3",
     "episodeNumber": 11,
-    "episodeDate": "2026-12-25T16:40:00.000Z",
+    "episodeDate": "2026-12-25T16:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195516-MJpUZlOberqH.jpg",
@@ -3891,8 +3295,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-13T16:40:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-11-20T16:00:00Z"
   },
   {
     "mediaId": 205909,
@@ -3914,8 +3318,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-13T17:00:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-20T17:00:00Z"
   },
   {
     "mediaId": 178083,
@@ -3937,8 +3341,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-13T17:00:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-20T17:00:00Z"
   },
   {
     "mediaId": 199007,
@@ -3960,8 +3364,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-14T15:00:00Z"
+    "projectionBaseEpisode": 7,
+    "projectionBaseDate": "2026-11-21T15:00:00Z"
   },
   {
     "mediaId": 212799,
@@ -3983,8 +3387,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-14T15:00:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-21T15:00:00Z"
   },
   {
     "mediaId": 191656,
@@ -4006,8 +3410,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-11-14T18:00:00Z"
+    "projectionBaseEpisode": 4,
+    "projectionBaseDate": "2026-11-21T18:00:00Z"
   },
   {
     "mediaId": 203473,
@@ -4029,8 +3433,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-14T18:15:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-21T18:15:00Z"
   },
   {
     "mediaId": 189123,
@@ -4052,8 +3456,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-15T08:00:00Z"
+    "projectionBaseEpisode": 7,
+    "projectionBaseDate": "2026-11-22T08:00:00Z"
   },
   {
     "mediaId": 191788,
@@ -4075,8 +3479,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-15T10:00:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-11-22T10:00:00Z"
   },
   {
     "mediaId": 186541,
@@ -4098,15 +3502,15 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-15T14:00:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-22T14:00:00Z"
   },
   {
     "mediaId": 185756,
     "idMal": 60601,
     "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 3",
     "episodeNumber": 12,
-    "episodeDate": "2026-12-27T16:00:00.000Z",
+    "episodeDate": "2026-12-27T15:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185756-xPCl0RyQ7fXD.jpg",
@@ -4121,8 +3525,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-15T16:00:00Z"
+    "projectionBaseEpisode": 7,
+    "projectionBaseDate": "2026-11-22T15:00:00Z"
   },
   {
     "mediaId": 176314,
@@ -4144,8 +3548,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-11T14:00:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-18T14:00:00Z"
   },
   {
     "mediaId": 152677,
@@ -4167,8 +3571,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-11T14:30:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-18T14:30:00Z"
   },
   {
     "mediaId": 199068,
@@ -4190,8 +3594,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-11T17:00:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-11-18T17:00:00Z"
   },
   {
     "mediaId": 159042,
@@ -4213,8 +3617,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-11T17:00:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-18T17:00:00Z"
   },
   {
     "mediaId": 180136,
@@ -4236,15 +3640,15 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 18,
-    "projectionBaseDate": "2026-11-12T17:00:00Z"
+    "projectionBaseEpisode": 19,
+    "projectionBaseDate": "2026-11-19T17:00:00Z"
   },
   {
     "mediaId": 195516,
     "idMal": 61987,
     "title": "The Apothecary Diaries Season 3",
     "episodeNumber": 12,
-    "episodeDate": "2027-01-01T16:40:00.000Z",
+    "episodeDate": "2027-01-01T16:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195516-MJpUZlOberqH.jpg",
@@ -4259,8 +3663,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-13T16:40:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-11-20T16:00:00Z"
   },
   {
     "mediaId": 205909,
@@ -4282,8 +3686,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-13T17:00:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-20T17:00:00Z"
   },
   {
     "mediaId": 212799,
@@ -4305,8 +3709,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-14T15:00:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-21T15:00:00Z"
   },
   {
     "mediaId": 191656,
@@ -4328,8 +3732,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-11-14T18:00:00Z"
+    "projectionBaseEpisode": 4,
+    "projectionBaseDate": "2026-11-21T18:00:00Z"
   },
   {
     "mediaId": 203473,
@@ -4351,8 +3755,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-14T18:15:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-21T18:15:00Z"
   },
   {
     "mediaId": 191788,
@@ -4374,8 +3778,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-15T10:00:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-11-22T10:00:00Z"
   },
   {
     "mediaId": 176314,
@@ -4397,8 +3801,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-11T14:00:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-18T14:00:00Z"
   },
   {
     "mediaId": 152677,
@@ -4420,8 +3824,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-11T14:30:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-18T14:30:00Z"
   },
   {
     "mediaId": 199068,
@@ -4443,8 +3847,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-11T17:00:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-11-18T17:00:00Z"
   },
   {
     "mediaId": 159042,
@@ -4466,8 +3870,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-11T17:00:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-18T17:00:00Z"
   },
   {
     "mediaId": 180136,
@@ -4489,8 +3893,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 18,
-    "projectionBaseDate": "2026-11-12T17:00:00Z"
+    "projectionBaseEpisode": 19,
+    "projectionBaseDate": "2026-11-19T17:00:00Z"
   },
   {
     "mediaId": 205909,
@@ -4512,8 +3916,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-13T17:00:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-20T17:00:00Z"
   },
   {
     "mediaId": 212799,
@@ -4535,8 +3939,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-14T15:00:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-21T15:00:00Z"
   },
   {
     "mediaId": 191656,
@@ -4558,8 +3962,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-11-14T18:00:00Z"
+    "projectionBaseEpisode": 4,
+    "projectionBaseDate": "2026-11-21T18:00:00Z"
   },
   {
     "mediaId": 203473,
@@ -4581,8 +3985,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-14T18:15:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-21T18:15:00Z"
   },
   {
     "mediaId": 191788,
@@ -4604,8 +4008,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-15T10:00:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-11-22T10:00:00Z"
   },
   {
     "mediaId": 152677,
@@ -4627,8 +4031,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 4,
-    "projectionBaseDate": "2026-11-11T14:30:00Z"
+    "projectionBaseEpisode": 5,
+    "projectionBaseDate": "2026-11-18T14:30:00Z"
   },
   {
     "mediaId": 212799,
@@ -4650,8 +4054,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-14T15:00:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-21T15:00:00Z"
   },
   {
     "mediaId": 191656,
@@ -4673,8 +4077,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 3,
-    "projectionBaseDate": "2026-11-14T18:00:00Z"
+    "projectionBaseEpisode": 4,
+    "projectionBaseDate": "2026-11-21T18:00:00Z"
   },
   {
     "mediaId": 191788,
@@ -4696,8 +4100,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-15T10:00:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-11-22T10:00:00Z"
   },
   {
     "mediaId": 212799,
@@ -4719,8 +4123,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-14T15:00:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-21T15:00:00Z"
   },
   {
     "mediaId": 191788,
@@ -4742,8 +4146,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-15T10:00:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-11-22T10:00:00Z"
   },
   {
     "mediaId": 212799,
@@ -4765,8 +4169,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-14T15:00:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-21T15:00:00Z"
   },
   {
     "mediaId": 191788,
@@ -4788,8 +4192,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-15T10:00:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-11-22T10:00:00Z"
   },
   {
     "mediaId": 212799,
@@ -4811,8 +4215,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-14T15:00:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-21T15:00:00Z"
   },
   {
     "mediaId": 191788,
@@ -4834,8 +4238,8 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-15T10:00:00Z"
+    "projectionBaseEpisode": 6,
+    "projectionBaseDate": "2026-11-22T10:00:00Z"
   },
   {
     "mediaId": 212799,
@@ -4857,7 +4261,7 @@
     "batchEndEpisode": null,
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
-    "projectionBaseEpisode": 7,
-    "projectionBaseDate": "2026-11-14T15:00:00Z"
+    "projectionBaseEpisode": 8,
+    "projectionBaseDate": "2026-11-21T15:00:00Z"
   }
 ]
