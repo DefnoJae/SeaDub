@@ -1,18 +1,5 @@
 [
   {
-    "mediaId": 183231,
-    "idMal": 60153,
-    "title": null,
-    "format": "TV_SHORT",
-    "duration": 1,
-    "episodeNumber": 8,
-    "episodeDate": "2026-05-23T01:00:00Z",
-    "addedAt": "2026-05-23T01:00:06Z",
-    "dateType": "historical",
-    "projected": false,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
     "mediaId": 171110,
     "idMal": 57466,
     "title": null,
@@ -16827,7 +16814,7 @@
     "idMal": 64084,
     "title": "The World's Strongest Witch",
     "episodeNumber": 5,
-    "episodeDate": "2026-11-18T14:00:00Z",
+    "episodeDate": "2026-11-18T13:00:00Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx211778-0MXK5HqVFBYH.jpg",
@@ -16848,7 +16835,7 @@
     "idMal": 58518,
     "title": "Sasaki and Peeps Season 2",
     "episodeNumber": 5,
-    "episodeDate": "2026-11-18T14:00:00Z",
+    "episodeDate": "2026-11-18T13:00:00Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx176314-lpvca6vjmkeO.jpg",
@@ -16869,7 +16856,7 @@
     "idMal": 52480,
     "title": "The Detective Is Already Dead Season 2",
     "episodeNumber": 5,
-    "episodeDate": "2026-11-18T14:30:00Z",
+    "episodeDate": "2026-11-18T13:30:00Z",
     "totalEpisodes": 13,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx152677-gtJbgjE94lCN.png",
@@ -16911,10 +16898,31 @@
     "idMal": 59204,
     "title": "Magic Knight Rayearth (2026)",
     "episodeNumber": 5,
-    "episodeDate": "2026-11-18T16:30:00Z",
+    "episodeDate": "2026-11-18T15:15:00Z",
     "totalEpisodes": null,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178868-mfp0HIHNJNAm.jpg",
+    "delayed": false,
+    "delayedIndefinitely": false,
+    "delayedText": null,
+    "verified": true,
+    "dateType": "confirmed",
+    "projected": false,
+    "batchRelease": false,
+    "batchStartEpisode": null,
+    "batchEndEpisode": null,
+    "episodeRangeLabel": null,
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 199068,
+    "idMal": 62534,
+    "title": "The Prince of Tennis II U-17 WORLD CUP: Final Member Selection Match",
+    "episodeNumber": 6,
+    "episodeDate": "2026-11-18T16:00:00Z",
+    "totalEpisodes": 13,
+    "format": "TV",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199068-2afNaytl50Ko.png",
     "delayed": false,
     "delayedIndefinitely": false,
     "delayedText": null,
@@ -16957,27 +16965,6 @@
     "totalEpisodes": 13,
     "format": "ONA",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206521-ecJuDgjth84C.png",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
-    "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
-    "source": "RockinChaos/AniSchedule"
-  },
-  {
-    "mediaId": 199068,
-    "idMal": 62534,
-    "title": "The Prince of Tennis II U-17 WORLD CUP: Final Member Selection Match",
-    "episodeNumber": 6,
-    "episodeDate": "2026-11-18T17:00:00Z",
-    "totalEpisodes": 13,
-    "format": "TV",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199068-2afNaytl50Ko.png",
     "delayed": false,
     "delayedIndefinitely": false,
     "delayedText": null,
@@ -18020,7 +18007,7 @@
     "idMal": 58518,
     "title": "Sasaki and Peeps Season 2",
     "episodeNumber": 6,
-    "episodeDate": "2026-11-25T14:00:00.000Z",
+    "episodeDate": "2026-11-25T13:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx176314-lpvca6vjmkeO.jpg",
@@ -18036,14 +18023,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-18T14:00:00Z"
+    "projectionBaseDate": "2026-11-18T13:00:00Z"
   },
   {
     "mediaId": 211778,
     "idMal": 64084,
     "title": "The World's Strongest Witch",
     "episodeNumber": 6,
-    "episodeDate": "2026-11-25T14:00:00.000Z",
+    "episodeDate": "2026-11-25T13:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx211778-0MXK5HqVFBYH.jpg",
@@ -18059,14 +18046,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-18T14:00:00Z"
+    "projectionBaseDate": "2026-11-18T13:00:00Z"
   },
   {
     "mediaId": 152677,
     "idMal": 52480,
     "title": "The Detective Is Already Dead Season 2",
     "episodeNumber": 6,
-    "episodeDate": "2026-11-25T14:30:00.000Z",
+    "episodeDate": "2026-11-25T13:30:00.000Z",
     "totalEpisodes": 13,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx152677-gtJbgjE94lCN.png",
@@ -18082,7 +18069,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-18T14:30:00Z"
+    "projectionBaseDate": "2026-11-18T13:30:00Z"
   },
   {
     "mediaId": 135865,
@@ -18112,7 +18099,7 @@
     "idMal": 62534,
     "title": "The Prince of Tennis II U-17 WORLD CUP: Final Member Selection Match",
     "episodeNumber": 7,
-    "episodeDate": "2026-11-25T17:00:00.000Z",
+    "episodeDate": "2026-11-25T16:00:00.000Z",
     "totalEpisodes": 13,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199068-2afNaytl50Ko.png",
@@ -18128,7 +18115,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-18T17:00:00Z"
+    "projectionBaseDate": "2026-11-18T16:00:00Z"
   },
   {
     "mediaId": 159042,
@@ -18775,7 +18762,7 @@
     "idMal": 58518,
     "title": "Sasaki and Peeps Season 2",
     "episodeNumber": 7,
-    "episodeDate": "2026-12-02T14:00:00.000Z",
+    "episodeDate": "2026-12-02T13:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx176314-lpvca6vjmkeO.jpg",
@@ -18791,14 +18778,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-18T14:00:00Z"
+    "projectionBaseDate": "2026-11-18T13:00:00Z"
   },
   {
     "mediaId": 211778,
     "idMal": 64084,
     "title": "The World's Strongest Witch",
     "episodeNumber": 7,
-    "episodeDate": "2026-12-02T14:00:00.000Z",
+    "episodeDate": "2026-12-02T13:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx211778-0MXK5HqVFBYH.jpg",
@@ -18814,14 +18801,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-18T14:00:00Z"
+    "projectionBaseDate": "2026-11-18T13:00:00Z"
   },
   {
     "mediaId": 152677,
     "idMal": 52480,
     "title": "The Detective Is Already Dead Season 2",
     "episodeNumber": 7,
-    "episodeDate": "2026-12-02T14:30:00.000Z",
+    "episodeDate": "2026-12-02T13:30:00.000Z",
     "totalEpisodes": 13,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx152677-gtJbgjE94lCN.png",
@@ -18837,14 +18824,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-18T14:30:00Z"
+    "projectionBaseDate": "2026-11-18T13:30:00Z"
   },
   {
     "mediaId": 199068,
     "idMal": 62534,
     "title": "The Prince of Tennis II U-17 WORLD CUP: Final Member Selection Match",
     "episodeNumber": 8,
-    "episodeDate": "2026-12-02T17:00:00.000Z",
+    "episodeDate": "2026-12-02T16:00:00.000Z",
     "totalEpisodes": 13,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199068-2afNaytl50Ko.png",
@@ -18860,7 +18847,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-18T17:00:00Z"
+    "projectionBaseDate": "2026-11-18T16:00:00Z"
   },
   {
     "mediaId": 159042,
@@ -19419,7 +19406,7 @@
     "idMal": 58518,
     "title": "Sasaki and Peeps Season 2",
     "episodeNumber": 8,
-    "episodeDate": "2026-12-09T14:00:00.000Z",
+    "episodeDate": "2026-12-09T13:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx176314-lpvca6vjmkeO.jpg",
@@ -19435,14 +19422,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-18T14:00:00Z"
+    "projectionBaseDate": "2026-11-18T13:00:00Z"
   },
   {
     "mediaId": 211778,
     "idMal": 64084,
     "title": "The World's Strongest Witch",
     "episodeNumber": 8,
-    "episodeDate": "2026-12-09T14:00:00.000Z",
+    "episodeDate": "2026-12-09T13:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx211778-0MXK5HqVFBYH.jpg",
@@ -19458,14 +19445,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-18T14:00:00Z"
+    "projectionBaseDate": "2026-11-18T13:00:00Z"
   },
   {
     "mediaId": 152677,
     "idMal": 52480,
     "title": "The Detective Is Already Dead Season 2",
     "episodeNumber": 8,
-    "episodeDate": "2026-12-09T14:30:00.000Z",
+    "episodeDate": "2026-12-09T13:30:00.000Z",
     "totalEpisodes": 13,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx152677-gtJbgjE94lCN.png",
@@ -19481,14 +19468,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-18T14:30:00Z"
+    "projectionBaseDate": "2026-11-18T13:30:00Z"
   },
   {
     "mediaId": 199068,
     "idMal": 62534,
     "title": "The Prince of Tennis II U-17 WORLD CUP: Final Member Selection Match",
     "episodeNumber": 9,
-    "episodeDate": "2026-12-09T17:00:00.000Z",
+    "episodeDate": "2026-12-09T16:00:00.000Z",
     "totalEpisodes": 13,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199068-2afNaytl50Ko.png",
@@ -19504,7 +19491,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-18T17:00:00Z"
+    "projectionBaseDate": "2026-11-18T16:00:00Z"
   },
   {
     "mediaId": 159042,
@@ -20017,7 +20004,7 @@
     "idMal": 58518,
     "title": "Sasaki and Peeps Season 2",
     "episodeNumber": 9,
-    "episodeDate": "2026-12-16T14:00:00.000Z",
+    "episodeDate": "2026-12-16T13:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx176314-lpvca6vjmkeO.jpg",
@@ -20033,14 +20020,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-18T14:00:00Z"
+    "projectionBaseDate": "2026-11-18T13:00:00Z"
   },
   {
     "mediaId": 211778,
     "idMal": 64084,
     "title": "The World's Strongest Witch",
     "episodeNumber": 9,
-    "episodeDate": "2026-12-16T14:00:00.000Z",
+    "episodeDate": "2026-12-16T13:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx211778-0MXK5HqVFBYH.jpg",
@@ -20056,14 +20043,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-18T14:00:00Z"
+    "projectionBaseDate": "2026-11-18T13:00:00Z"
   },
   {
     "mediaId": 152677,
     "idMal": 52480,
     "title": "The Detective Is Already Dead Season 2",
     "episodeNumber": 9,
-    "episodeDate": "2026-12-16T14:30:00.000Z",
+    "episodeDate": "2026-12-16T13:30:00.000Z",
     "totalEpisodes": 13,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx152677-gtJbgjE94lCN.png",
@@ -20079,14 +20066,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-18T14:30:00Z"
+    "projectionBaseDate": "2026-11-18T13:30:00Z"
   },
   {
     "mediaId": 199068,
     "idMal": 62534,
     "title": "The Prince of Tennis II U-17 WORLD CUP: Final Member Selection Match",
     "episodeNumber": 10,
-    "episodeDate": "2026-12-16T17:00:00.000Z",
+    "episodeDate": "2026-12-16T16:00:00.000Z",
     "totalEpisodes": 13,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199068-2afNaytl50Ko.png",
@@ -20102,7 +20089,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-18T17:00:00Z"
+    "projectionBaseDate": "2026-11-18T16:00:00Z"
   },
   {
     "mediaId": 159042,
@@ -20592,7 +20579,7 @@
     "idMal": 58518,
     "title": "Sasaki and Peeps Season 2",
     "episodeNumber": 10,
-    "episodeDate": "2026-12-23T14:00:00.000Z",
+    "episodeDate": "2026-12-23T13:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx176314-lpvca6vjmkeO.jpg",
@@ -20608,14 +20595,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-18T14:00:00Z"
+    "projectionBaseDate": "2026-11-18T13:00:00Z"
   },
   {
     "mediaId": 211778,
     "idMal": 64084,
     "title": "The World's Strongest Witch",
     "episodeNumber": 10,
-    "episodeDate": "2026-12-23T14:00:00.000Z",
+    "episodeDate": "2026-12-23T13:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx211778-0MXK5HqVFBYH.jpg",
@@ -20631,14 +20618,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-18T14:00:00Z"
+    "projectionBaseDate": "2026-11-18T13:00:00Z"
   },
   {
     "mediaId": 152677,
     "idMal": 52480,
     "title": "The Detective Is Already Dead Season 2",
     "episodeNumber": 10,
-    "episodeDate": "2026-12-23T14:30:00.000Z",
+    "episodeDate": "2026-12-23T13:30:00.000Z",
     "totalEpisodes": 13,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx152677-gtJbgjE94lCN.png",
@@ -20654,14 +20641,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-18T14:30:00Z"
+    "projectionBaseDate": "2026-11-18T13:30:00Z"
   },
   {
     "mediaId": 199068,
     "idMal": 62534,
     "title": "The Prince of Tennis II U-17 WORLD CUP: Final Member Selection Match",
     "episodeNumber": 11,
-    "episodeDate": "2026-12-23T17:00:00.000Z",
+    "episodeDate": "2026-12-23T16:00:00.000Z",
     "totalEpisodes": 13,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199068-2afNaytl50Ko.png",
@@ -20677,7 +20664,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-18T17:00:00Z"
+    "projectionBaseDate": "2026-11-18T16:00:00Z"
   },
   {
     "mediaId": 159042,
@@ -21075,7 +21062,7 @@
     "idMal": 58518,
     "title": "Sasaki and Peeps Season 2",
     "episodeNumber": 11,
-    "episodeDate": "2026-12-30T14:00:00.000Z",
+    "episodeDate": "2026-12-30T13:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx176314-lpvca6vjmkeO.jpg",
@@ -21091,14 +21078,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-18T14:00:00Z"
+    "projectionBaseDate": "2026-11-18T13:00:00Z"
   },
   {
     "mediaId": 211778,
     "idMal": 64084,
     "title": "The World's Strongest Witch",
     "episodeNumber": 11,
-    "episodeDate": "2026-12-30T14:00:00.000Z",
+    "episodeDate": "2026-12-30T13:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx211778-0MXK5HqVFBYH.jpg",
@@ -21114,14 +21101,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-18T14:00:00Z"
+    "projectionBaseDate": "2026-11-18T13:00:00Z"
   },
   {
     "mediaId": 152677,
     "idMal": 52480,
     "title": "The Detective Is Already Dead Season 2",
     "episodeNumber": 11,
-    "episodeDate": "2026-12-30T14:30:00.000Z",
+    "episodeDate": "2026-12-30T13:30:00.000Z",
     "totalEpisodes": 13,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx152677-gtJbgjE94lCN.png",
@@ -21137,14 +21124,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-18T14:30:00Z"
+    "projectionBaseDate": "2026-11-18T13:30:00Z"
   },
   {
     "mediaId": 199068,
     "idMal": 62534,
     "title": "The Prince of Tennis II U-17 WORLD CUP: Final Member Selection Match",
     "episodeNumber": 12,
-    "episodeDate": "2026-12-30T17:00:00.000Z",
+    "episodeDate": "2026-12-30T16:00:00.000Z",
     "totalEpisodes": 13,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199068-2afNaytl50Ko.png",
@@ -21160,7 +21147,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-18T17:00:00Z"
+    "projectionBaseDate": "2026-11-18T16:00:00Z"
   },
   {
     "mediaId": 159042,
@@ -21397,7 +21384,7 @@
     "idMal": 58518,
     "title": "Sasaki and Peeps Season 2",
     "episodeNumber": 12,
-    "episodeDate": "2027-01-06T14:00:00.000Z",
+    "episodeDate": "2027-01-06T13:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx176314-lpvca6vjmkeO.jpg",
@@ -21413,14 +21400,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-18T14:00:00Z"
+    "projectionBaseDate": "2026-11-18T13:00:00Z"
   },
   {
     "mediaId": 211778,
     "idMal": 64084,
     "title": "The World's Strongest Witch",
     "episodeNumber": 12,
-    "episodeDate": "2027-01-06T14:00:00.000Z",
+    "episodeDate": "2027-01-06T13:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx211778-0MXK5HqVFBYH.jpg",
@@ -21436,14 +21423,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-18T14:00:00Z"
+    "projectionBaseDate": "2026-11-18T13:00:00Z"
   },
   {
     "mediaId": 152677,
     "idMal": 52480,
     "title": "The Detective Is Already Dead Season 2",
     "episodeNumber": 12,
-    "episodeDate": "2027-01-06T14:30:00.000Z",
+    "episodeDate": "2027-01-06T13:30:00.000Z",
     "totalEpisodes": 13,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx152677-gtJbgjE94lCN.png",
@@ -21459,14 +21446,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-18T14:30:00Z"
+    "projectionBaseDate": "2026-11-18T13:30:00Z"
   },
   {
     "mediaId": 199068,
     "idMal": 62534,
     "title": "The Prince of Tennis II U-17 WORLD CUP: Final Member Selection Match",
     "episodeNumber": 13,
-    "episodeDate": "2027-01-06T17:00:00.000Z",
+    "episodeDate": "2027-01-06T16:00:00.000Z",
     "totalEpisodes": 13,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199068-2afNaytl50Ko.png",
@@ -21482,7 +21469,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-18T17:00:00Z"
+    "projectionBaseDate": "2026-11-18T16:00:00Z"
   },
   {
     "mediaId": 159042,
@@ -21696,7 +21683,7 @@
     "idMal": 52480,
     "title": "The Detective Is Already Dead Season 2",
     "episodeNumber": 13,
-    "episodeDate": "2027-01-13T14:30:00.000Z",
+    "episodeDate": "2027-01-13T13:30:00.000Z",
     "totalEpisodes": 13,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx152677-gtJbgjE94lCN.png",
@@ -21712,7 +21699,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-18T14:30:00Z"
+    "projectionBaseDate": "2026-11-18T13:30:00Z"
   },
   {
     "mediaId": 212799,
