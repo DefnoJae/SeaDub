@@ -17091,7 +17091,7 @@
     "idMal": 61987,
     "title": "The Apothecary Diaries Season 3",
     "episodeNumber": 6,
-    "episodeDate": "2026-11-20T16:00:00Z",
+    "episodeDate": "2026-11-20T15:30:00Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195516-MJpUZlOberqH.jpg",
@@ -17112,7 +17112,7 @@
     "idMal": 63293,
     "title": "Firefly Wedding",
     "episodeNumber": 5,
-    "episodeDate": "2026-11-20T17:00:00Z",
+    "episodeDate": "2026-11-20T16:00:00Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205909-DM0fAzNQulod.jpg",
@@ -17152,22 +17152,14 @@
   {
     "mediaId": 140842,
     "idMal": 50250,
-    "title": "Chiikawa",
+    "title": null,
+    "format": "TV_SHORT",
+    "duration": 2,
     "episodeNumber": 22,
     "episodeDate": "2026-11-20T22:00:00Z",
-    "totalEpisodes": null,
-    "format": "TV_SHORT",
-    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx140842-T0geOCa3zS0A.jpg",
-    "delayed": false,
-    "delayedIndefinitely": false,
-    "delayedText": null,
-    "verified": true,
-    "dateType": "confirmed",
+    "addedAt": "2026-11-20T22:00:13Z",
+    "dateType": "historical",
     "projected": false,
-    "batchRelease": false,
-    "batchStartEpisode": null,
-    "batchEndEpisode": null,
-    "episodeRangeLabel": null,
     "source": "RockinChaos/AniSchedule"
   },
   {
@@ -17515,6 +17507,27 @@
     "totalEpisodes": 8,
     "format": "ONA",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212667-8g5ktyrx34Yl.jpg",
+    "delayed": false,
+    "delayedIndefinitely": false,
+    "delayedText": null,
+    "verified": true,
+    "dateType": "confirmed",
+    "projected": false,
+    "batchRelease": false,
+    "batchStartEpisode": null,
+    "batchEndEpisode": null,
+    "episodeRangeLabel": null,
+    "source": "RockinChaos/AniSchedule"
+  },
+  {
+    "mediaId": 140842,
+    "idMal": 50250,
+    "title": "Chiikawa",
+    "episodeNumber": 23,
+    "episodeDate": "2026-11-22T17:00:00Z",
+    "totalEpisodes": null,
+    "format": "TV_SHORT",
+    "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx140842-T0geOCa3zS0A.jpg",
     "delayed": false,
     "delayedIndefinitely": false,
     "delayedText": null,
@@ -18207,7 +18220,7 @@
     "idMal": 61987,
     "title": "The Apothecary Diaries Season 3",
     "episodeNumber": 7,
-    "episodeDate": "2026-11-27T16:00:00.000Z",
+    "episodeDate": "2026-11-27T15:30:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195516-MJpUZlOberqH.jpg",
@@ -18223,14 +18236,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-20T16:00:00Z"
+    "projectionBaseDate": "2026-11-20T15:30:00Z"
   },
   {
     "mediaId": 205909,
     "idMal": 63293,
     "title": "Firefly Wedding",
     "episodeNumber": 6,
-    "episodeDate": "2026-11-27T17:00:00.000Z",
+    "episodeDate": "2026-11-27T16:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205909-DM0fAzNQulod.jpg",
@@ -18246,7 +18259,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-20T17:00:00Z"
+    "projectionBaseDate": "2026-11-20T16:00:00Z"
   },
   {
     "mediaId": 178083,
@@ -18941,7 +18954,7 @@
     "idMal": 61987,
     "title": "The Apothecary Diaries Season 3",
     "episodeNumber": 8,
-    "episodeDate": "2026-12-04T16:00:00.000Z",
+    "episodeDate": "2026-12-04T15:30:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195516-MJpUZlOberqH.jpg",
@@ -18957,14 +18970,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-20T16:00:00Z"
+    "projectionBaseDate": "2026-11-20T15:30:00Z"
   },
   {
     "mediaId": 205909,
     "idMal": 63293,
     "title": "Firefly Wedding",
     "episodeNumber": 7,
-    "episodeDate": "2026-12-04T17:00:00.000Z",
+    "episodeDate": "2026-12-04T16:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205909-DM0fAzNQulod.jpg",
@@ -18980,7 +18993,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-20T17:00:00Z"
+    "projectionBaseDate": "2026-11-20T16:00:00Z"
   },
   {
     "mediaId": 178083,
@@ -19562,7 +19575,7 @@
     "idMal": 61987,
     "title": "The Apothecary Diaries Season 3",
     "episodeNumber": 9,
-    "episodeDate": "2026-12-11T16:00:00.000Z",
+    "episodeDate": "2026-12-11T15:30:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195516-MJpUZlOberqH.jpg",
@@ -19578,14 +19591,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-20T16:00:00Z"
+    "projectionBaseDate": "2026-11-20T15:30:00Z"
   },
   {
     "mediaId": 205909,
     "idMal": 63293,
     "title": "Firefly Wedding",
     "episodeNumber": 8,
-    "episodeDate": "2026-12-11T17:00:00.000Z",
+    "episodeDate": "2026-12-11T16:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205909-DM0fAzNQulod.jpg",
@@ -19601,7 +19614,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-20T17:00:00Z"
+    "projectionBaseDate": "2026-11-20T16:00:00Z"
   },
   {
     "mediaId": 178083,
@@ -20183,7 +20196,7 @@
     "idMal": 61987,
     "title": "The Apothecary Diaries Season 3",
     "episodeNumber": 10,
-    "episodeDate": "2026-12-18T16:00:00.000Z",
+    "episodeDate": "2026-12-18T15:30:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195516-MJpUZlOberqH.jpg",
@@ -20199,14 +20212,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-20T16:00:00Z"
+    "projectionBaseDate": "2026-11-20T15:30:00Z"
   },
   {
     "mediaId": 205909,
     "idMal": 63293,
     "title": "Firefly Wedding",
     "episodeNumber": 9,
-    "episodeDate": "2026-12-18T17:00:00.000Z",
+    "episodeDate": "2026-12-18T16:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205909-DM0fAzNQulod.jpg",
@@ -20222,7 +20235,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-20T17:00:00Z"
+    "projectionBaseDate": "2026-11-20T16:00:00Z"
   },
   {
     "mediaId": 178083,
@@ -20758,7 +20771,7 @@
     "idMal": 61987,
     "title": "The Apothecary Diaries Season 3",
     "episodeNumber": 11,
-    "episodeDate": "2026-12-25T16:00:00.000Z",
+    "episodeDate": "2026-12-25T15:30:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195516-MJpUZlOberqH.jpg",
@@ -20774,14 +20787,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-20T16:00:00Z"
+    "projectionBaseDate": "2026-11-20T15:30:00Z"
   },
   {
     "mediaId": 205909,
     "idMal": 63293,
     "title": "Firefly Wedding",
     "episodeNumber": 10,
-    "episodeDate": "2026-12-25T17:00:00.000Z",
+    "episodeDate": "2026-12-25T16:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205909-DM0fAzNQulod.jpg",
@@ -20797,7 +20810,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-20T17:00:00Z"
+    "projectionBaseDate": "2026-11-20T16:00:00Z"
   },
   {
     "mediaId": 178083,
@@ -21218,7 +21231,7 @@
     "idMal": 61987,
     "title": "The Apothecary Diaries Season 3",
     "episodeNumber": 12,
-    "episodeDate": "2027-01-01T16:00:00.000Z",
+    "episodeDate": "2027-01-01T15:30:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195516-MJpUZlOberqH.jpg",
@@ -21234,14 +21247,14 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 6,
-    "projectionBaseDate": "2026-11-20T16:00:00Z"
+    "projectionBaseDate": "2026-11-20T15:30:00Z"
   },
   {
     "mediaId": 205909,
     "idMal": 63293,
     "title": "Firefly Wedding",
     "episodeNumber": 11,
-    "episodeDate": "2027-01-01T17:00:00.000Z",
+    "episodeDate": "2027-01-01T16:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205909-DM0fAzNQulod.jpg",
@@ -21257,7 +21270,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-20T17:00:00Z"
+    "projectionBaseDate": "2026-11-20T16:00:00Z"
   },
   {
     "mediaId": 212799,
@@ -21563,7 +21576,7 @@
     "idMal": 63293,
     "title": "Firefly Wedding",
     "episodeNumber": 12,
-    "episodeDate": "2027-01-08T17:00:00.000Z",
+    "episodeDate": "2027-01-08T16:00:00.000Z",
     "totalEpisodes": 12,
     "format": "TV",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205909-DM0fAzNQulod.jpg",
@@ -21579,7 +21592,7 @@
     "episodeRangeLabel": null,
     "source": "SeaDub/projection",
     "projectionBaseEpisode": 5,
-    "projectionBaseDate": "2026-11-20T17:00:00Z"
+    "projectionBaseDate": "2026-11-20T16:00:00Z"
   },
   {
     "mediaId": 212799,
