@@ -1,11 +1,11 @@
 {
   "status": "ok",
-  "updatedAt": "2026-11-25T21:53:14.357Z",
+  "updatedAt": "2026-11-26T03:54:30.743Z",
   "scheduleItems": 211,
   "confirmedScheduleItems": 61,
   "projectedScheduleItems": 150,
   "feedItems": 1314,
-  "calendarItems": 1498,
+  "calendarItems": 1497,
   "historyDays": 180,
   "futureDays": 90,
   "source": "RockinChaos/AniSchedule",
